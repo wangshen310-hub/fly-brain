@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-10-04T09:03:49.484826+00:00",
+  "repository": {
+    "defaultBranchRef": {
+      "name": "main"
+    },
+    "isPrivate": true,
+    "name": "fly-brain",
+    "url": "https://github.com/wangshen310-hub/fly-brain"
+  },
+  "tested_source_commit": "5e2d63fad85ea56fbb6daa5d47b8e542b245b952",
+  "fresh_clone_commit": "5e2d63fad85ea56fbb6daa5d47b8e542b245b952",
+  "release": {
+    "id": 402929532,
+    "tag": "v0.1.0-audit",
+    "url": "https://github.com/wangshen310-hub/fly-brain/releases/tag/v0.1.0-audit",
+    "draft": false,
+    "assets": [
+      {
+        "id": 609480569,
+        "name": "graph.npz",
+        "size": 739883106,
+        "state": "uploaded",
+        "digest": "sha256:8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+        "browser_download_url": "https://github.com/wangshen310-hub/fly-brain/releases/download/v0.1.0-audit/graph.npz"
+      },
+      {
+        "id": 609480571,
+        "name": "manifest.json",
+        "size": 4233,
+        "state": "uploaded",
+        "digest": "sha256:10ac4f7a412f884cdb0053aa8d7f6c8ee2a7b73483935897d749f452099911dd",
+        "browser_download_url": "https://github.com/wangshen310-hub/fly-brain/releases/download/v0.1.0-audit/manifest.json"
+      }
+    ]
+  },
+  "github_ci": {
+    "conclusion": "success",
+    "headSha": "5e2d63fad85ea56fbb6daa5d47b8e542b245b952",
+    "status": "completed",
+    "url": "https://github.com/wangshen310-hub/fly-brain/actions/runs/37190368874"
+  },
+  "test_reports": {
+    "tests-complete-2026-10-04.xml": {
+      "tests": "261",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "25.759"
+    },
+    "tests-fresh-github-clone-2026-10-04.xml": {
+      "tests": "261",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "89.180"
+    },
+    "tests-github-ci-2026-10-04.xml": {
+      "tests": "261",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "time": "187.386"
+    }
+  },
+  "complete_model_downloaded_from_github": true,
+  "downloaded_model_full_graph_inference_and_nonzero_state_replay": true,
+  "float_state_atol": 1e-06,
+  "integer_spikes_and_timing_exact": true,
+  "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+  "graph_sha256": "8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+  "original_local_memories_preserved": true,
+  "ordinary_game_learning_validated": false,
+  "scope": "Repository/model delivery and execution verified. Not evidence of successful Snake learning."
+}

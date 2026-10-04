@@ -1,0 +1,138 @@
+{
+  "matched": true,
+  "array_checks": {
+    "ids": true,
+    "pre": true,
+    "post": true,
+    "signed_base": true,
+    "original_sign": true,
+    "modulation_mask": true,
+    "rest": true,
+    "retina": true,
+    "uv": true,
+    "r8": true,
+    "r8_uv": true,
+    "r8_channel": true,
+    "KC": true,
+    "graded_lamina": true,
+    "left": true,
+    "right": true,
+    "forward_left": true,
+    "forward_right": true,
+    "exc_crow": true,
+    "exc_col": true,
+    "exc_value": true,
+    "exc_tcrow": true,
+    "exc_tcol": true,
+    "exc_tvalue": true,
+    "inh_crow": true,
+    "inh_col": true,
+    "inh_value": true,
+    "inh_tcrow": true,
+    "inh_tcol": true,
+    "inh_tvalue": true
+  },
+  "shapes": {
+    "ids": [
+      166700
+    ],
+    "pre": [
+      25582938
+    ],
+    "post": [
+      25582938
+    ],
+    "signed_base": [
+      25582938
+    ],
+    "original_sign": [
+      25582938
+    ],
+    "modulation_mask": [
+      166700
+    ],
+    "rest": [
+      166700
+    ],
+    "retina": [
+      3335
+    ],
+    "uv": [
+      3335,
+      2
+    ],
+    "r8": [
+      811
+    ],
+    "r8_uv": [
+      811,
+      2
+    ],
+    "r8_channel": [
+      811
+    ],
+    "KC": [
+      4064
+    ],
+    "graded_lamina": [
+      8884
+    ],
+    "left": [
+      1
+    ],
+    "right": [
+      1
+    ],
+    "forward_left": [
+      1
+    ],
+    "forward_right": [
+      1
+    ],
+    "exc_crow": [
+      166701
+    ],
+    "exc_col": [
+      15333789
+    ],
+    "exc_value": [
+      15333789
+    ],
+    "exc_tcrow": [
+      166701
+    ],
+    "exc_tcol": [
+      15333789
+    ],
+    "exc_tvalue": [
+      15333789
+    ],
+    "inh_crow": [
+      166701
+    ],
+    "inh_col": [
+      9813608
+    ],
+    "inh_value": [
+      9813608
+    ],
+    "inh_tcrow": [
+      166701
+    ],
+    "inh_tcol": [
+      9813608
+    ],
+    "inh_tvalue": [
+      9813608
+    ]
+  },
+  "actual_counts": {
+    "neurons": 166700,
+    "anatomical_edges": 25582938,
+    "fast_exc_edges": 15333789,
+    "fast_inh_edges": 9813608,
+    "nonfast_edges_retained": 435541
+  },
+  "graph_sha256": "8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+  "scope": "Complete archived graph arrays, not a learning claim"
+}
