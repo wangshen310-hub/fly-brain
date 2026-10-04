@@ -1,0 +1,8 @@
+{
+  "step": 60,
+  "checkpoint": {
+    "path": "models/current/training-memory.pt",
+    "sha256": "7d776128441f39266819f5fcaf37cc79c0827a2c2774687cc1bb510bbda2dee2",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  }
+}

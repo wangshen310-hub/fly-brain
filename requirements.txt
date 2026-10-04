@@ -1,0 +1,6 @@
+numpy==2.4.6
+pandas==3.0.5
+pyarrow==25.0.1
+Pillow==12.3.0
+ziglang==0.16.0
+pytest==9.1.1

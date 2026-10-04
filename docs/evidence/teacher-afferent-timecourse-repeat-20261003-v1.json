@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "independent_os_process": true,
+  "same_frozen_parameters": true,
+  "conditions": {
+    "left-food": {
+      "actual_full_spike_counts_exact": true,
+      "actions_exact": true,
+      "timing_exact": true,
+      "max_motor_final_voltage_abs_diff": 0.0
+    },
+    "forward-food": {
+      "actual_full_spike_counts_exact": true,
+      "actions_exact": true,
+      "timing_exact": true,
+      "max_motor_final_voltage_abs_diff": 0.0
+    },
+    "right-food": {
+      "actual_full_spike_counts_exact": true,
+      "actions_exact": true,
+      "timing_exact": true,
+      "max_motor_final_voltage_abs_diff": 0.0
+    },
+    "vision-off": {
+      "actual_full_spike_counts_exact": true,
+      "actions_exact": true,
+      "timing_exact": true,
+      "max_motor_final_voltage_abs_diff": 1.1920928955078125e-07
+    }
+  },
+  "all_actual_count_hashes_and_actions_exact": true,
+  "full_neural_float_state_comparison": false,
+  "scope": "Four constant-image conditions, ten persistent 100ms windows each, same trained parameters; no game-progress or full-float-state replay claim.",
+  "first_sha256": "594b4f332e03c657d9753607820f58d475fc0f790d9856ab98d4f3baddd2e1f3",
+  "second_sha256": "609f66343ac2cbc29bad3b64cdb1224a1a9bd6e6317207cb12d2fd2883111d63"
+}

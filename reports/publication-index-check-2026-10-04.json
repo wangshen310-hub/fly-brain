@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "git_files": 356,
+  "total_git_worktree_bytes": 40902172,
+  "largest_git_files": [
+    {
+      "path": "docs/evidence/upstream/signal_arrays.npz",
+      "bytes": 8224428
+    },
+    {
+      "path": "models/current/replay.pt",
+      "bytes": 6682821
+    },
+    {
+      "path": "models/controls/warm-upstream/brain.pt",
+      "bytes": 6007999
+    },
+    {
+      "path": "models/current/replay-states.npz",
+      "bytes": 3769551
+    },
+    {
+      "path": "docs/evidence/frozen/trained-events.json",
+      "bytes": 3064474
+    },
+    {
+      "path": "models/controls/mismatch/training-memory.pt",
+      "bytes": 2034001
+    },
+    {
+      "path": "models/current/training-memory.pt",
+      "bytes": 2034001
+    },
+    {
+      "path": "models/controls/initial-afferents.pt",
+      "bytes": 2013853
+    }
+  ],
+  "rejected": [],
+  "complete_graph_delivery": "GitHub Release asset; not excluded from delivery",
+  "secret_scan": "Credential patterns scanned without printing matched contents"
+}

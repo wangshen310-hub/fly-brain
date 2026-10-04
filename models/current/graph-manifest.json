@@ -1,0 +1,66 @@
+{
+  "version": "complete-signed-MaleCNS-canonical-CSR-export-v2",
+  "neurons": 166700,
+  "anatomical_edges": 25582938,
+  "fast_exc_edges": 15333789,
+  "fast_inh_edges": 9813608,
+  "nonfast_edges_retained": 435541,
+  "source_graph_sha256": "f4d41f011e97e510761d011634891b1c082f61f91463eb586ee9cf8c6371b1d1",
+  "source_fast_signed_weight_sha256": "d14f6bc615638cbfc010ef6eb463ee69ca3d2d7ba3e2a7dd398e06d5b29f7208",
+  "source_prepared_sha256": "6a8b6c5531dd17038ebe40f917d0902edad5ccd5bd3100a4a0fb1c678ce3cf03",
+  "array_sha256": {
+    "ids": "6b6b40c3bddf84b1281ef0b18db06927c2bf61c5f4cb32a4219ec9b7839dc2e5",
+    "pre": "34ac8338e1b1fb5f9b0e0d624aa44d76189e668619f4ada704f51794c37bcd77",
+    "post": "4cc5e857d3481f433576f35ddb8d580cc33cf8e22b6651fa03e08cde5d956d90",
+    "signed_base": "c5a18aa2300454ae4d98c33e069b5d77ed05ce2d69147cfa9d11b77a8bd29119",
+    "original_sign": "0c473bf6715ef1b5306944a9c0a8be76304099356ee684f43f8456154ed8572a",
+    "modulation_mask": "914dcf25dae442aecbcf27565f7bc8be76ea8254e7fbc944f2efe6e2413e6d5a",
+    "rest": "075aa2a00fb03f1c2bea140c4e8206a5dd14d92c82f8fea9a25d3cc4c8f30193",
+    "retina": "5ec145156d998f582e5d8f08c4174e10f7f853d34745118adab8589f192d04b4",
+    "uv": "51f7dafd4355a06176418e22373ffcdf5bc066f75050da6dcbaaaccbad55a714",
+    "r8": "27c803c738f86c0509cabc57269e265bac832d8b4477773688e59a14d671f0ff",
+    "r8_uv": "e567b93a289fa467ec1096295c4682dce0dfd4f7d92844159f7eb4a380e22719",
+    "r8_channel": "350fc24c7884470b78254805a557e57bf12b89b71ea8a32af2f4929e951555ae",
+    "KC": "9e990d10a63b0f74cd7bbbdc5369082f24d5246487af944ba289bc6bf48d4b75",
+    "graded_lamina": "33fe1a17e1a22a65d82704a3763d5aaa658bbdb18b04f6d3cc27935c0a565ac8",
+    "left": "872c49759bc0ccf9f196f5e9fa501b42583225769d3f696b5826347976bb7f47",
+    "right": "303725fa269a586429937efb1a178f6b5faf619d5450861482eb9fe4a5ef9273",
+    "forward_left": "817582fca69e4a353868466d3a02114f3f7b945fad73b96be37523d1c0e18b70",
+    "forward_right": "4f8320d91e97d546dc799848e8d218e18050af7a7964e0414de9e5479006d7e3",
+    "exc_crow": "d350d28421f1b054031bc3677a99efccc4aa41e055111be4714e85d542082d73",
+    "exc_col": "443c4041aa4e048db6c7a8bd895a260b8ad0831b90a5b015e1a49440490b4b64",
+    "exc_value": "0521b63ac54425847f5fc041a3a7a7d1f8af4ae5514c292bf1a0a3d731cdd53b",
+    "exc_tcrow": "c61e7d11cee1a2ec41b460301b133eb5236a71629bda7e4c96d3cbdd325785bd",
+    "exc_tcol": "a1d58a647290190fd2612635c5a8eadd354873bd24aa1341bdee74f75db157cd",
+    "exc_tvalue": "836cb4cb15e4b162e54991f53f48c1d5edf6f26449399b1a4a245a7078f01310",
+    "inh_crow": "f0f2079a864e28eba25d9f6dc6caf8255ed1f3357d849a3d3303cedf408ff969",
+    "inh_col": "3e454c6cf4959e066d2cc25ef7a1d2dd209366cea063a6f0d7c30a87b1d691d2",
+    "inh_value": "5982660ae3ef2b22052fae16fd9b456d2db57b54aa9154e220491ff543d637de",
+    "inh_tcrow": "29da20d589bc13e15c5737e581c23f640856caa9b046e297266d21325bae4407",
+    "inh_tcol": "4f2348ba15fee13b357738c388b14119e812ae931b0edf0ae381869ba0797a2b",
+    "inh_tvalue": "7a1a1a7f21cd6f1a81b2862793491cf509c31d49f20bf3ce8a884f802e608bf4"
+  },
+  "graph_sha256": "8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+  "export_source_sha256": "f419b0d81b6ee6616577ba1c93203fc09b9905246eb646e580e2f9f5715eab72",
+  "motor_ids": {
+    "left": [
+      523769
+    ],
+    "right": [
+      10360
+    ],
+    "forward_left": [
+      10162
+    ],
+    "forward_right": [
+      10059
+    ]
+  },
+  "normalization": "absolute incoming fast budget, preserving each existing sign and endpoint",
+  "assumptions": "Sparse engineering conductance model; pure modulatory edges have no fast event. No physiological fit or successful game learning claimed.",
+  "parent_export_sha256": "9da32c2b68b5cf8dc214c58981d689d17a2f7f25b4fc2332cad99d401a04d2bb",
+  "parent_manifest_sha256": "1a591313555b34e40e8d40ee28ac82da19c8b6118de2a0fb2d0dce7aa4815123",
+  "csr_canonicalizer_sha256": "762ecbace695889a172943d3812b5d7e7ed9644dcc1dd0dbf66d6a882b01504a",
+  "csr_layout_source_sha256": "f686e4a9e3084cdafd488c10b49ee77d432be71ec2e5d689e791a1538a025dee",
+  "csr_change": "Sort transpose columns and their paired weights only; forward, anatomical arrays and all other arrays unchanged."
+}

@@ -1,0 +1,9 @@
+{
+  "original_source": "vendor\\stonkfly\\neural\\kernel.cpp",
+  "original_sha256": "ac286326fc65e8a04d892d43d91c8cfc5393973e89164b20380c50046d1cb51d",
+  "candidate_sha256": "64ab166377c966f36118103d14c16431f97453b30c13922f844f37b8fee8ffad",
+  "modified_dt": false,
+  "graph_pruning": false,
+  "floating_point_equations_modified": false,
+  "native_audit_passed": false
+}

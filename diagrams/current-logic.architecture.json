@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "果蝇连接组贪吃蛇 · 当前逻辑框架",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [1390, 800],
+    "views": [
+      {"id":"play-loop","label":"神经控制一局","focus":["state","image","retina","connectome","readout","outcome"],"note":"RGB 图像进入完整连接组；固定读出只使用神经脉冲，棋局核验回执后执行动作。"},
+      {"id":"learning-loop","label":"奖惩与记忆","focus":["outcome","feedback","paired","synapses","checkpoint"],"note":"神经奖惩刺激与棋局回报分别记录；完整正负候选比较后才更新突触增益。"},
+      {"id":"display","label":"只读页面","focus":["outcome"],"note":"实时服务向网页公开棋局与脉冲，网页不能提交游戏动作。"}
+    ]
+  },
+  "components": [
+    {"id":"state","type":"backend","label":"棋局状态","sublabel":"CurriculumGame","pos":[50,300],"size":[180,74]},
+    {"id":"image","type":"backend","label":"固定棋盘 RGB","sublabel":"ReadableGame · 320×180","pos":[275,300],"size":[180,74]},
+    {"id":"retina","type":"backend","label":"感光输入","sublabel":"RateRetinaBrain","pos":[500,300],"size":[180,74]},
+    {"id":"connectome","type":"backend","label":"MaleCNS 连接组","sublabel":"166,700 神经元","pos":[725,300],"size":[180,74]},
+    {"id":"readout","type":"backend","label":"脉冲转向读出","sublabel":"左 / 前 / 右","pos":[950,300],"size":[180,74]},
+    {"id":"outcome","type":"backend","label":"动作与碰撞","sublabel":"回执核验 · 蛇移动","pos":[1175,300],"size":[180,74]},
+    {"id":"feedback","type":"backend","label":"奖惩事件","sublabel":"吃食 / 死亡 / 无输出","pos":[1175,545],"size":[180,74]},
+    {"id":"paired","type":"backend","label":"成对回报搜索","sublabel":"正负扰动 · Adam","pos":[950,545],"size":[180,74]},
+    {"id":"synapses","type":"database","label":"候选突触增益","sublabel":"256 参数 · 原拓扑","pos":[725,545],"size":[180,74]},
+    {"id":"checkpoint","type":"database","label":"代际记忆存档","sublabel":"NPZ + SHA-256","pos":[500,545],"size":[180,74]}
+  ],
+  "connections": [
+    {"id":"draw","from":"state","to":"image","label":"渲染","variant":"emphasis"},
+    {"id":"light","from":"image","to":"retina","label":"RGB 像素","variant":"emphasis"},
+    {"id":"spikes","from":"retina","to":"connectome","label":"感光电流","variant":"emphasis"},
+    {"id":"motor","from":"connectome","to":"readout","label":"脉冲","variant":"emphasis"},
+    {"id":"receipt","from":"readout","to":"outcome","label":"神经回执","variant":"emphasis"},
+    {"id":"next","from":"outcome","to":"state","label":"更新下一步棋局","variant":"dashed","fromSide":"top","toSide":"top","via":[[1265,205],[140,205]]},
+    {"id":"event","from":"outcome","to":"feedback","label":"吃食 / 死亡 / 无输出","labelDy":24},
+    {"id":"returns","from":"feedback","to":"paired","label":"局回报"},
+    {"id":"update","from":"paired","to":"synapses","label":"更新"},
+    {"id":"weights","from":"synapses","to":"connectome","label":"现有连接权重","fromSide":"top","toSide":"bottom"},
+    {"id":"save","from":"synapses","to":"checkpoint","label":"存档"}
+  ],
+  "cards": [
+    {"dot":"cyan","title":"控制权","items":["只有完整 MaleCNS 连接组的实际脉冲能决定左转、直行或右转。","无有效输出时惩罚并继续下一个观察窗口；网页不提供动作接口。"]},
+    {"dot":"amber","title":"奖惩与学习","items":["奖惩刺激交付原生神经回路；当前候选局内权重冻结。","成对候选在相同世界种子上比较回报，整代结束后更新 256 个共享增益。"]},
+    {"dot":"violet","title":"证据边界","items":["视觉映射、操作点与成对优化都是工程假设。","已有训练与存档不能单独证明学会；需要冻结评估与对照。"]}
+  ]
+}

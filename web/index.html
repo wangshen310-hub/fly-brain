@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>蝇脑 · 贪吃蛇实验室</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="蝇脑贪吃蛇实验室">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 10v15M12 16l-5 7m13-7 5 7M13 9l-3-4m9 4 3-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><ellipse cx="16" cy="15" rx="3.5" ry="7" fill="currentColor"/><path d="M12 13C2 4 1 17 11 19M20 13C30 4 31 17 21 19" stroke="currentColor" stroke-width="1.5"/></svg></span>
+        <span>蝇脑<span class="brand-separator">/</span><span class="brand-subtitle">贪吃蛇实验室</span></span>
+      </a>
+      <div class="connection"><span id="connection-dot" class="status-dot"></span><span id="connection-label">正在连接本地实验</span></div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div><p class="eyebrow">CONNECTOME EXPERIMENT · 01</p><h1>让神经活动，走出下一步。</h1><p class="intro-copy">棋盘是环境，果蝇连接组是控制器。观察它如何回应食物与死亡。</p></div>
+        <div class="evidence-note"><span class="note-icon" aria-hidden="true">i</span><span>实验性神经模型<br><strong>学习效果尚未证实</strong></span></div>
+      </section>
+
+      <section class="metrics" aria-label="当前棋局数据">
+        <div class="metric metric-score"><span class="metric-label">本局得分</span><div><strong id="score">—</strong><span class="metric-unit">每份食物 +1</span></div></div>
+        <div class="metric"><span class="metric-label">当前棋局</span><div><strong id="episode">—</strong><span class="metric-unit">局</span></div></div>
+        <div class="metric"><span class="metric-label">本局步数</span><div><strong id="step">—</strong><span class="metric-unit">步</span></div></div>
+        <div class="metric"><span class="metric-label">累计食物</span><div><strong id="total-food">—</strong><span class="metric-unit">份</span></div></div>
+      </section>
+
+      <div class="experiment-grid">
+        <section class="panel arena-panel" aria-labelledby="arena-title">
+          <div class="panel-heading"><div><span class="section-index">01</span><h2 id="arena-title">实验棋盘</h2></div><span id="run-status" class="pill">等待状态</span></div>
+          <div class="arena-layout">
+            <div class="board-wrap">
+              <canvas id="board" width="640" height="640" aria-label="贪吃蛇当前棋盘，只显示服务端返回的神经控制结果"></canvas>
+              <div id="board-placeholder" class="board-placeholder"><span class="placeholder-cross" aria-hidden="true">＋</span><strong>等待真实棋局</strong><span>连接后显示服务端状态<br>开始前不会演示移动</span></div>
+            </div>
+            <div class="board-caption"><span><i class="legend-dot snake-dot"></i>神经控制的蛇</span><span><i class="legend-dot food-dot"></i>食物 · +1</span><span id="board-size" class="board-size">— × —</span></div>
+            <p class="board-rule">撞墙或碰到未腾空的身体会死亡并惩罚；无有效输出时保持不动，惩罚后继续尝试</p>
+          </div>
+          <div class="control-strip">
+            <button id="run-button" class="button button-primary" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z" fill="currentColor"/></svg><span>开始实验</span></button>
+            <button id="pause-button" class="button" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4h3v12H6zm5 0h3v12h-3z" fill="currentColor"/></svg><span>暂停</span></button>
+            <div class="control-spacer"></div>
+            <button id="save-button" class="button button-quiet" disabled>保存记忆</button>
+            <button id="reset-button" class="button button-quiet" disabled>新棋局</button>
+          </div>
+          <div id="autosave-status" class="autosave-status" role="status" aria-live="polite"><span id="autosave-dot" class="status-dot"></span><span id="autosave-label">等待自动保存状态</span><span id="autosave-time" class="autosave-time">尚未记录成功保存</span></div>
+          <div class="experiment-message"><span id="phase-dot" class="status-dot"></span><p id="state-message">正在读取实验状态。棋盘不会在浏览器中自行推进。</p></div>
+        </section>
+
+        <aside class="right-column">
+          <section class="panel neural-panel" aria-labelledby="neural-title">
+            <div class="panel-heading"><div><span class="section-index">02</span><h2 id="neural-title">神经决策</h2></div><span id="brain-status" class="subtle-badge">等待加载</span></div>
+            <div class="decision-summary"><span>最近一次选择</span><strong id="last-action">—</strong></div>
+            <div class="channels" aria-label="三个动作通道的实际读出值">
+              <div class="channel"><div class="channel-label"><span><b aria-hidden="true">↶</b> 向左转</span><output id="left-value">—</output></div><div class="channel-track"><span id="left-bar"></span></div></div>
+              <div class="channel"><div class="channel-label"><span><b aria-hidden="true">↑</b> 向前走</span><output id="forward-value">—</output></div><div class="channel-track"><span id="forward-bar"></span></div></div>
+              <div class="channel"><div class="channel-label"><span><b aria-hidden="true">↷</b> 向右转</span><output id="right-value">—</output></div><div class="channel-track"><span id="right-bar"></span></div></div>
+            </div>
+            <p class="microcopy">条形长度按本次读出幅度缩放，不代表概率。左右转差距不超过较强一侧的 20% 时改为直行。</p>
+            <div class="neural-stats"><div><span>神经元</span><strong id="neuron-count">—</strong></div><div><span>连接</span><strong id="edge-count">—</strong></div><div><span>神经时间</span><strong id="neural-time">—</strong></div><div><span>本次计算耗时</span><strong id="compute-time">—</strong></div></div>
+          </section>
+
+          <section class="panel sensory-panel" aria-labelledby="sensory-title">
+            <div class="panel-heading"><div><span class="section-index">03</span><h2 id="sensory-title">它看到的画面</h2></div><span id="sensory-badge" class="subtle-badge">该步感官快照</span></div>
+            <div class="sensory-image-wrap"><canvas id="observation" width="320" height="180" role="img" aria-label="经过哈希校验的服务端感官快照" hidden></canvas><div id="observation-placeholder" class="sensory-placeholder">等待匹配的感官快照</div></div>
+            <p id="sensory-source" class="sensory-source">等待来源步骤</p>
+            <p id="sensory-legend" class="sensory-legend" hidden>珊瑚红：蛇头 · 绿色：身体 · 蓝色：食物 · 黑色：墙</p>
+            <p id="sensory-view" class="microcopy">整个棋盘的位置和朝向固定，蛇头在棋盘内移动；食物吃到前保持原位置。只复制经校验的服务端像素。</p>
+          </section>
+
+          <section class="panel feedback-panel" aria-labelledby="feedback-title">
+            <div class="feedback-label"><span class="section-index">04</span><h2 id="feedback-title">最近奖惩</h2></div><div id="feedback-kind" class="feedback-value">等待事件</div><p id="feedback-detail">吃食交付奖励，死亡或无有效输出交付惩罚。</p>
+          </section>
+        </aside>
+      </div>
+
+      <section class="panel log-panel" aria-labelledby="log-title">
+        <div class="panel-heading"><div><span class="section-index">05</span><h2 id="log-title">实验记录</h2><span id="event-count" class="subtle-badge">0 条</span></div><span id="snapshot-time" class="snapshot-time">尚未收到状态</span></div>
+        <div id="event-list" class="event-list"><p class="empty-log">连接、决策与奖惩记录将在这里显示。</p></div>
+      </section>
+
+      <details class="technical panel"><summary><span>模型与原始状态</span><span class="details-hint">查看可核查的技术信息 <b aria-hidden="true">＋</b></span></summary><div class="technical-content"><p>这里展示服务端返回的神经信息与决策数据。前端只读取状态、绘制棋盘及发送实验命令，不生成方向或神经活动。</p><div class="technical-grid"><div><h3>神经模型</h3><pre id="brain-details">等待数据</pre></div><div><h3>决策与奖惩</h3><pre id="decision-details">等待数据</pre></div></div></div></details>
+      <footer><span>蝇脑 · 贪吃蛇实验室</span><span>所有移动均来自后端神经计算 · 无人工方向控制</span></footer>
+    </main>
+  </div>
+
+  <dialog id="reset-dialog"><form method="dialog"><span class="dialog-eyebrow">新的开始，保留记忆</span><h2>开始一个新棋局？</h2><p>当前棋局将结束并重置。已保存的可塑状态会保留；短时神经状态按后端的新局协议处理。</p><p class="dialog-note">这不会清空大脑记忆。</p><div class="dialog-actions"><button value="cancel" class="button">取消</button><button value="confirm" class="button button-primary">确认新棋局</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

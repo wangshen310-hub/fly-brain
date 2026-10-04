@@ -1,0 +1,9 @@
+{
+  "original_source": "vendor/stonkfly/neural/kernel.cpp",
+  "original_sha256": "ac286326fc65e8a04d892d43d91c8cfc5393973e89164b20380c50046d1cb51d",
+  "candidate_sha256": "6ed41efb740990d1286830a268264fe4d540fcb44242cfb402617bb09b674310",
+  "change": "Optional synapses-stage Poisson voltage events and target-only refractory override. All other neural, edge and LTD operations retained.",
+  "primary_reference": "https://github.com/philshiu/Drosophila_brain_model/blob/91bdd1e7dcf193f3e7ca5a8933497fcef63b7960/model.py",
+  "jump_mV": 68.75,
+  "dt_ms": 0.1
+}

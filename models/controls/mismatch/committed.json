@@ -1,0 +1,8 @@
+{
+  "step": 60,
+  "checkpoint": {
+    "path": "models/controls/mismatch/training-memory.pt",
+    "sha256": "8298a1c496461c2cf93fa9069a28dd080ee82dc14faae8d6dc1812e990fc7cdb",
+    "parameter_sha256": "7fb435413ecec7143a8b6783340e0ac089db996d8d8e66e5650293c85baa4f22"
+  }
+}

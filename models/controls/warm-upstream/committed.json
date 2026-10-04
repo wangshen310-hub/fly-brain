@@ -1,0 +1,8 @@
+{
+  "step": 200,
+  "checkpoint": {
+    "path": "models/controls/warm-upstream/brain.pt",
+    "sha256": "7221d5bc3d3df74e9cb4c92148f64c8f573b133011eeeb8b1f61ae4d4f1ed37f",
+    "parameter_sha256": "6c167fa33943ab535c12e8d4dddba28a3f74265791ab72fb199893cf480b5e0c"
+  }
+}

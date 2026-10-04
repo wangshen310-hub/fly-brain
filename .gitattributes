@@ -1,0 +1,6 @@
+# Checkpoint identities hash exact source bytes. Do not normalize LF/CRLF.
+* -text
+*.pt binary
+*.npz binary
+*.png binary
+*.jpg binary

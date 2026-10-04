@@ -1,0 +1,4531 @@
+[
+  {
+    "episode": 0,
+    "seed": 26733925,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 26733925,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        1,
+        9
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "36064a9ee6977ea10d590f7b008d8ca9221bb285947f86c4d9c56aeb742e5545"
+    },
+    "final": {
+      "seed": 26733925,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        1,
+        9
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "96a839f27af0aa433a6288f433faeb3ca311d96d60d90fade84c5da164e9ad42"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 1,
+    "seed": 2068516925,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 2068516925,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        1,
+        3
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "34db51faaf7759aea3b4f37edf50f1ba2af0518a47e87d0a8fe0d0b03fd4ba77"
+    },
+    "final": {
+      "seed": 2068516925,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        1,
+        3
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "c71f8996410ca143e495263aba3e369c6b27ce44ea637af9f24828bd2b03719d"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 2,
+    "seed": 1097461180,
+    "score": 0,
+    "decisions": 48,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1097461180,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          7,
+          11
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        9,
+        6
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "1e1373997d7dc45d51929892f5648960d6ec4ea79c88076780d6f25deeda23db"
+    },
+    "final": {
+      "seed": 1097461180,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 48,
+      "step": 48,
+      "snake": [
+        [
+          8,
+          11
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          7,
+          10
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        9,
+        6
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "4f6d832b159cbe5ffd612c96a9b433e2a627ae39555f93479537d1e7cd5627a9"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 3,
+    "seed": 1779799829,
+    "score": 0,
+    "decisions": 71,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1779799829,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        10,
+        0
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "883dee12642a2012cb987e32ee0fa91bbf7f70dad5157df49629dc688681e973"
+    },
+    "final": {
+      "seed": 1779799829,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 71,
+      "step": 71,
+      "snake": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        10,
+        0
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "f8698fd9a9de94351bb660b5674f8af665a5b4cb71efd5c9255afe4e4dc76ae0"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 4,
+    "seed": 1952354320,
+    "score": 0,
+    "decisions": 36,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1952354320,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        8,
+        9
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "64aa6c797fd0d8345072dcd5747061b844458184833fb8e30971ae1db9866941"
+    },
+    "final": {
+      "seed": 1952354320,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 36,
+      "step": 36,
+      "snake": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        8,
+        9
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "0cecb6976cd886f3c7cc0d5704c1380878a4980c80ac346b667bd74836afead8"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 5,
+    "seed": 580784330,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 580784330,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        3,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "1f830fff68770a45f22cac0a66d709c4cd7b9e797054dc91eeaefe85eaaeb9d3"
+    },
+    "final": {
+      "seed": 580784330,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          9,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        3,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "5b5722b9069c71c0cb9aaf2040a7ad1b05515c81a3a9c2f0edb5307c6c28f812"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 6,
+    "seed": 1630185806,
+    "score": 0,
+    "decisions": 2,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1630185806,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          5,
+          11
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        7,
+        4
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "e4c9995f53db480dc44e3d252db119c216860b67ca85f3ee2c42d3701ac376dc"
+    },
+    "final": {
+      "seed": 1630185806,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 2,
+      "step": 2,
+      "snake": [
+        [
+          8,
+          11
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          6,
+          11
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        7,
+        4
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "5639b9b8a0e71d403439912687b996101592c553c0eb23f49499cfdc4e763502"
+    },
+    "actions": [
+      "forward",
+      "right"
+    ]
+  },
+  {
+    "episode": 7,
+    "seed": 2019616464,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 2019616464,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        7,
+        7
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "6d8496198c14a8f5b7b43b6fc48f0b877a9b1e969f339483affe02a4fd3b81dd"
+    },
+    "final": {
+      "seed": 2019616464,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        7,
+        7
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "df06f220c14e43b047cb8d995aa07ae9b7eda1fcd57bd85893999eb45463d6c4"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 8,
+    "seed": 1056514675,
+    "score": 0,
+    "decisions": 33,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1056514675,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        0,
+        3
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "9a7d36d04159392ec0814774a1ae6e219ce68ba5173fda43a0946b8c2bcefc51"
+    },
+    "final": {
+      "seed": 1056514675,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 33,
+      "step": 33,
+      "snake": [
+        [
+          0,
+          9
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          9
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        0,
+        3
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "77cc389d38296514c88a1ea1c8825629efc8b8d5dea03d429f6a5f4653e41957"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "forward",
+      "forward",
+      "right",
+      "left",
+      "right",
+      "forward",
+      "forward",
+      "forward",
+      "forward"
+    ]
+  },
+  {
+    "episode": 9,
+    "seed": 1120270661,
+    "score": 0,
+    "decisions": 10,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1120270661,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          9,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        6,
+        6
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "b6bc9cfe48426909244c413e0840072d189aef0a65d5021bf562c79f5f80e5bd"
+    },
+    "final": {
+      "seed": 1120270661,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 10,
+      "step": 10,
+      "snake": [
+        [
+          11,
+          3
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        6,
+        6
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "ba4f1271cbdcd8a2490e3ec294aa08b80a08765fdb8951a3884fd7e1c26d8420"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "left",
+      "forward",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 10,
+    "seed": 133524799,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 133524799,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        1,
+        6
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "8d59cf4a1a324f9dfb9a789cc3e055fcc7bd5f2a083226482cc9381d144ab2b8"
+    },
+    "final": {
+      "seed": 133524799,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        1,
+        6
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "a25410fbe6f733fb57fa926c8155a85f3a8c9c79761aac78a8b1081ec915ff89"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 11,
+    "seed": 1781387539,
+    "score": 0,
+    "decisions": 82,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1781387539,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        4,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "6f38f887f34548a71c9fb9e6e3410da61f99f4e3a14cb0f682e06862b22aee6f"
+    },
+    "final": {
+      "seed": 1781387539,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 82,
+      "step": 82,
+      "snake": [
+        [
+          6,
+          11
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        4,
+        1
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "6519b4106e58542f0cc263b446047f0c3845ddb92a3590e16deb145eb18a9176"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 12,
+    "seed": 2026118677,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 2026118677,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        3,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "6cd337fcb5ddd586ff14f327de4ca19c2b7a1efcb087da0d84b0852b2355d3e4"
+    },
+    "final": {
+      "seed": 2026118677,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          5,
+          11
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          4,
+          10
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        3,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "ee051ea45df4e7c4674a12a5a39be04e09f7dadbeaafdf34d179bf4163aae28e"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 13,
+    "seed": 2138079223,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 2138079223,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        9,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "dd88dd7d47fb8237b76f1e455e9416726bed10cfff8c0f8bbf05d1978f9ad9f8"
+    },
+    "final": {
+      "seed": 2138079223,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        9,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "ce113632afcd60dd621e3d4e5877a5a39c99b0e408d9d9ad8e760702a7f3ea97"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 14,
+    "seed": 898841510,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 898841510,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        5,
+        11
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "6cd145eb8ed710f3b806c9f2a4badc554109a78b581f76067d86c5263c821f06"
+    },
+    "final": {
+      "seed": 898841510,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          8,
+          3
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        5,
+        11
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "ae2851e3921c5992539dbbb679fe036d1877d6c6585d73e0e153af9b1673e459"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 15,
+    "seed": 837257846,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 837257846,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        4,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "3d7f09190e9a545efa36ae9ebd38cea3ccaba9beb35312bd52c8f9bdff3cbc77"
+    },
+    "final": {
+      "seed": 837257846,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        4,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "8aac97109f6acc423d1098550e22e8ea141460e24134527775eaf2c353520484"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 16,
+    "seed": 1922770331,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 1922770331,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        11,
+        10
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "e09a27d45867d9da093ecce4e2f4fbe1e7c81f13016829e5c82ccc363b320979"
+    },
+    "final": {
+      "seed": 1922770331,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        11,
+        10
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "5fc876e4093a21aaca59372a52655de62707446b6e2d9f2eb065ff67551937de"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 17,
+    "seed": 209662202,
+    "score": 0,
+    "decisions": 1,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 209662202,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          11,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        3,
+        7
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "aeef34578129ea0959b2a9366e8f2e194214c41b9c3db4742254ee3897a17a86"
+    },
+    "final": {
+      "seed": 209662202,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 1,
+      "step": 1,
+      "snake": [
+        [
+          11,
+          11
+        ],
+        [
+          10,
+          11
+        ],
+        [
+          9,
+          11
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        3,
+        7
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "aeef34578129ea0959b2a9366e8f2e194214c41b9c3db4742254ee3897a17a86"
+    },
+    "actions": [
+      "forward"
+    ]
+  },
+  {
+    "episode": 18,
+    "seed": 1468108588,
+    "score": 0,
+    "decisions": 34,
+    "silent": 0,
+    "reward": -1.0,
+    "terminal": true,
+    "death_reason": "wall",
+    "truncated": false,
+    "initial": {
+      "seed": 1468108588,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          5,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        4,
+        10
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "d2012c17bf613ee87459f0af6fa85e62a2c15d604375c34e643f3428d69f160f"
+    },
+    "final": {
+      "seed": 1468108588,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 34,
+      "step": 34,
+      "snake": [
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        4,
+        10
+      ],
+      "alive": false,
+      "terminal": true,
+      "score": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "pending_feedback": null,
+      "phase": "terminal",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "f22549453f13c0a07ae3c5774b047e3417c0cd4c9ad784dbab258b765e86cc62"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward"
+    ]
+  },
+  {
+    "episode": 19,
+    "seed": 490948478,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 490948478,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          7
+        ],
+        [
+          10,
+          8
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        9,
+        10
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "5495f9e161b4886b518fcfb30cd5621840eed3473829db6b2840a37de7d2cb5a"
+    },
+    "final": {
+      "seed": 490948478,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          10,
+          4
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        9,
+        10
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "5f715736f3e5cf7b9d40021b37df16fe4cc8f74c8c7dd359c69d3743de6df833"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 20,
+    "seed": 554113210,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 554113210,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        10,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "9469d464e1802b924015593fd5e92c2ac960f397e04927f898bf13ca67732f9b"
+    },
+    "final": {
+      "seed": 554113210,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          1,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        10,
+        1
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "e85844da58061a0ba0699b813e4698c78c26106db06641d522f8f1c9a5b6efee"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 21,
+    "seed": 778766691,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 778766691,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        6,
+        5
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "f3e05035ddb0a1ce3b1b34a08950c1dfb0a8e3ec2d3f809f03ef2c0042adea5d"
+    },
+    "final": {
+      "seed": 778766691,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "direction": 1,
+      "food": [
+        6,
+        5
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "78ca27b0f77d182a55a671d6f643d9cce978e5b7f5ccab6bd4be2d6f5f9ee1ff"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 22,
+    "seed": 1647535745,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 1647535745,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "direction": 0,
+      "food": [
+        10,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "03ec97455dd64d3c9e8e15c0d791d545e74c88f25e3768800a1392b5ff7c73a6"
+    },
+    "final": {
+      "seed": 1647535745,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        10,
+        8
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "8222f41b8a7e351fa06e6650168fb23a2f5271e4883ce14abffc6053eca3be4e"
+    },
+    "actions": [
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  },
+  {
+    "episode": 23,
+    "seed": 853412058,
+    "score": 0,
+    "decisions": 100,
+    "silent": 0,
+    "reward": 0.0,
+    "terminal": false,
+    "death_reason": null,
+    "truncated": true,
+    "initial": {
+      "seed": 853412058,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 0,
+      "step": 0,
+      "snake": [
+        [
+          2,
+          9
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          4,
+          9
+        ]
+      ],
+      "direction": 3,
+      "food": [
+        9,
+        3
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "a3a494978d91d56fbe001823b9544acb78c047043c5444277abc1c20739d819a"
+    },
+    "final": {
+      "seed": 853412058,
+      "size": 12,
+      "episode_id": 1,
+      "episode": 1,
+      "step_id": 100,
+      "step": 100,
+      "snake": [
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "direction": 2,
+      "food": [
+        9,
+        3
+      ],
+      "alive": true,
+      "terminal": false,
+      "score": 0,
+      "death_reason": null,
+      "outcome": null,
+      "pending_feedback": null,
+      "phase": "waiting_neural",
+      "sensory_version": "fixed-world-distinct-body-v4",
+      "sensory_geometry": {
+        "projection": "fixed_world",
+        "tile_pixels": 12,
+        "board_cells": 12,
+        "board_origin": [
+          88,
+          18
+        ],
+        "image_size": [
+          320,
+          180
+        ],
+        "wall_cells": 1
+      },
+      "observation_hash": "28f76e488527b9f01a4868c36e41fef4029239c976f47575b4bd38c15f137287"
+    },
+    "actions": [
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "forward",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right",
+      "right"
+    ]
+  }
+]

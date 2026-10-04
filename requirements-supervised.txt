@@ -1,0 +1,10 @@
+# CUDA checkpoint identity requires this exact Torch build.
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+numpy==2.3.3
+Pillow==12.3.0
+pytest==9.1.1
+pandas==3.0.5
+pyarrow==25.0.1
+ziglang==0.16.0
+google-crc32c==1.9.0

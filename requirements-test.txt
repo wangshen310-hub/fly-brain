@@ -1,0 +1,8 @@
+# Install torch==2.11.0 from the official CPU index separately for CPU CI.
+numpy==2.3.3
+Pillow==12.3.0
+pytest==9.1.1
+pandas==3.0.5
+pyarrow==25.0.1
+ziglang==0.16.0
+google-crc32c==1.9.0

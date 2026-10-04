@@ -1,0 +1,1493 @@
+{
+  "status": "complete",
+  "checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-normal-v1\\memory-0060.pt",
+    "sha256": "7d776128441f39266819f5fcaf37cc79c0827a2c2774687cc1bb510bbda2dee2",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  },
+  "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+  "conditions": {
+    "left-food": {
+      "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+      "visual_enabled": true,
+      "windows": [
+        {
+          "start_tick": 0,
+          "end_tick": 100,
+          "action": "forward",
+          "reason": "fixed_raw_turn",
+          "difference": 0,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              12,
+              13
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            17,
+            16,
+            22,
+            15,
+            0,
+            2
+          ],
+          "motor_final_voltage": [
+            0.4209612011909485,
+            0.6761500835418701,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 400962,
+          "full_counts_sha256": "eeebbfb4e4292baa0666ab2b7f75d1b4fcc3c064aecacbb23112a1e80d45a4c6"
+        },
+        {
+          "start_tick": 100,
+          "end_tick": 200,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            22,
+            33,
+            20,
+            0,
+            14
+          ],
+          "motor_final_voltage": [
+            0.695421040058136,
+            0.569100558757782,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556061,
+          "full_counts_sha256": "219cd08d6d4b1a224a79fca4f0cb6268f63207f973b8857dd03220344d4e10a5"
+        },
+        {
+          "start_tick": 200,
+          "end_tick": 300,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            20,
+            34,
+            20,
+            0,
+            12
+          ],
+          "motor_final_voltage": [
+            0.6303900480270386,
+            0.42207157611846924,
+            0.6299890875816345,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555647,
+          "full_counts_sha256": "63188cc57ae0dd8883a4ae126319d4ed1c6fb2a9e764c7dac9ad1d20fff4733f"
+        },
+        {
+          "start_tick": 300,
+          "end_tick": 400,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            24,
+            22,
+            33,
+            20,
+            0,
+            7
+          ],
+          "motor_final_voltage": [
+            0.6839573383331299,
+            0.7065646052360535,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555361,
+          "full_counts_sha256": "33005c98d014c67aebf8002fcc03bf0e191bc28eb4afae3e53590defb541b117"
+        },
+        {
+          "start_tick": 400,
+          "end_tick": 500,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            8
+          ],
+          "motor_final_voltage": [
+            0.4759039580821991,
+            0.6123740673065186,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555292,
+          "full_counts_sha256": "2d305a88f3d5cc0d6361dc5703137823b86c3e790b7b054829231f69ff46fbfd"
+        },
+        {
+          "start_tick": 500,
+          "end_tick": 600,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            34,
+            20,
+            0,
+            13
+          ],
+          "motor_final_voltage": [
+            0.6790504455566406,
+            0.48294180631637573,
+            0.6229161620140076,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554993,
+          "full_counts_sha256": "3e2cefa7abdc9f2b6d6dd0c40651d00930c36563dfc13f2777d9e1d0f3c371cb"
+        },
+        {
+          "start_tick": 600,
+          "end_tick": 700,
+          "action": "forward",
+          "reason": "fixed_raw_turn",
+          "difference": 0,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            24,
+            21,
+            33,
+            20,
+            0,
+            7
+          ],
+          "motor_final_voltage": [
+            0.4000000059604645,
+            0.7352650165557861,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554917,
+          "full_counts_sha256": "310fde08831d9b11d15be0c0aa1f95bdb385f8a2badf27da3357c4e9b28f15d5"
+        },
+        {
+          "start_tick": 700,
+          "end_tick": 800,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            13
+          ],
+          "motor_final_voltage": [
+            0.6656500101089478,
+            0.6512079834938049,
+            0.4000000059604645,
+            0.6732045412063599
+          ],
+          "actual_total_spikes": 555077,
+          "full_counts_sha256": "9f6d5c57126111db439d167d63fdb9102ba14111f81d13308a6ed82b01b31a9e"
+        },
+        {
+          "start_tick": 800,
+          "end_tick": 900,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            34,
+            20,
+            0,
+            9
+          ],
+          "motor_final_voltage": [
+            0.6348474025726318,
+            0.5379007458686829,
+            0.6374146938323975,
+            0.6562541723251343
+          ],
+          "actual_total_spikes": 554648,
+          "full_counts_sha256": "e14d08d126db4459f7fda94b68c1b24a74d1313730adafce525cd0ab36eda3fd"
+        },
+        {
+          "start_tick": 900,
+          "end_tick": 1000,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            20,
+            33,
+            20,
+            0,
+            12
+          ],
+          "motor_final_voltage": [
+            0.48065370321273804,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.5354516506195068
+          ],
+          "actual_total_spikes": 554644,
+          "full_counts_sha256": "6d0c87f1c8a05c9155b309ab96bb2e361138407bf0e5976d3f96d8e993c0fd66"
+        }
+      ]
+    },
+    "forward-food": {
+      "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+      "visual_enabled": true,
+      "windows": [
+        {
+          "start_tick": 0,
+          "end_tick": 100,
+          "action": "forward",
+          "reason": "fixed_raw_turn",
+          "difference": 0,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              12,
+              13
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            16,
+            17,
+            22,
+            15,
+            0,
+            2
+          ],
+          "motor_final_voltage": [
+            0.4209612011909485,
+            0.6761500835418701,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 400963,
+          "full_counts_sha256": "6a433c11f73e528eec4fa2ab52ef8a2f4be8e074ec40b3fb682e61517af9d648"
+        },
+        {
+          "start_tick": 100,
+          "end_tick": 200,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            14
+          ],
+          "motor_final_voltage": [
+            0.7092177271842957,
+            0.5691341161727905,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556036,
+          "full_counts_sha256": "12a1f7fdae01c28431ad9ffd88d1cd90343ca7b5d44a355a45088535a13c7af8"
+        },
+        {
+          "start_tick": 200,
+          "end_tick": 300,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            34,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.6307438611984253,
+            0.4220578074455261,
+            0.6368657350540161,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555609,
+          "full_counts_sha256": "476b4419ea7a745e38922ea96712b378b0adaf878f8c97378fb5130fecc6b7e4"
+        },
+        {
+          "start_tick": 300,
+          "end_tick": 400,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            7
+          ],
+          "motor_final_voltage": [
+            0.7387233972549438,
+            0.7081950306892395,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555297,
+          "full_counts_sha256": "08d000f02d7db92ccc6b13a881830e51a3bb6907acfcde45503bd5d63bd3bb74"
+        },
+        {
+          "start_tick": 400,
+          "end_tick": 500,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            24,
+            21,
+            33,
+            20,
+            0,
+            7
+          ],
+          "motor_final_voltage": [
+            0.6643943786621094,
+            0.6129076480865479,
+            0.4000000059604645,
+            0.6886759400367737
+          ],
+          "actual_total_spikes": 555250,
+          "full_counts_sha256": "4c1b9a1c07258701a553dbfa52d6b23cb71a613cba8413db79060bcdf703ded9"
+        },
+        {
+          "start_tick": 500,
+          "end_tick": 600,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            34,
+            20,
+            0,
+            9
+          ],
+          "motor_final_voltage": [
+            0.6526588201522827,
+            0.4826468825340271,
+            0.6254109740257263,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554945,
+          "full_counts_sha256": "d83d1a5f1e30b61809e29a6b1baa1d88b51760befb0710ab4211f99701bd7f5b"
+        },
+        {
+          "start_tick": 600,
+          "end_tick": 700,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.5145343542098999,
+            0.7363173365592957,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554697,
+          "full_counts_sha256": "1119915c377b2eff623dd87541ddcb6786563dee45404ab02c1135493d8de15d"
+        },
+        {
+          "start_tick": 700,
+          "end_tick": 800,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            21,
+            33,
+            20,
+            0,
+            11
+          ],
+          "motor_final_voltage": [
+            0.7084130644798279,
+            0.6522374153137207,
+            0.4000000059604645,
+            0.551960289478302
+          ],
+          "actual_total_spikes": 554679,
+          "full_counts_sha256": "aa486dd1d7af45bd1f0806ff4cab9a60c52a18b5cbdc7a06e8f74a5c0ddcc74a"
+        },
+        {
+          "start_tick": 800,
+          "end_tick": 900,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            22,
+            34,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.6456325054168701,
+            0.5363156795501709,
+            0.6330931186676025,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554496,
+          "full_counts_sha256": "cbd5db493f2a3491d0141faa45d6ed59a1694f8e23d6173f0fa7d8fbc312001e"
+        },
+        {
+          "start_tick": 900,
+          "end_tick": 1000,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            13
+          ],
+          "motor_final_voltage": [
+            0.4623728096485138,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554354,
+          "full_counts_sha256": "c8566fd3bcddf92a3b5235ef5c7568210edfcd472eee01c45b090df666f1784e"
+        }
+      ]
+    },
+    "right-food": {
+      "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+      "visual_enabled": true,
+      "windows": [
+        {
+          "start_tick": 0,
+          "end_tick": 100,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              12,
+              13
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            17,
+            17,
+            22,
+            15,
+            0,
+            3
+          ],
+          "motor_final_voltage": [
+            0.7453144788742065,
+            0.6761499643325806,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 400962,
+          "full_counts_sha256": "63fdb1fa53199619cdc79c614ae49df8e6b58158349219fdd19c1c403119f7b5"
+        },
+        {
+          "start_tick": 100,
+          "end_tick": 200,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            14
+          ],
+          "motor_final_voltage": [
+            0.7115034461021423,
+            0.5687454342842102,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556026,
+          "full_counts_sha256": "65e71977845b1eee68e49d898468e408ac4b3f3b31f90b7e09f40a223d5a772a"
+        },
+        {
+          "start_tick": 200,
+          "end_tick": 300,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            34,
+            20,
+            0,
+            13
+          ],
+          "motor_final_voltage": [
+            0.7010267376899719,
+            0.42216241359710693,
+            0.6366097331047058,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555579,
+          "full_counts_sha256": "e83ee11640b75fce6833924f5ff0a9c9815bd63831dfa6ef23567a301a1873da"
+        },
+        {
+          "start_tick": 300,
+          "end_tick": 400,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            8
+          ],
+          "motor_final_voltage": [
+            0.6946512460708618,
+            0.7078617811203003,
+            0.4000000059604645,
+            0.5673608779907227
+          ],
+          "actual_total_spikes": 555049,
+          "full_counts_sha256": "2ceca86f4d49e083db753f8b25c24a7b1a176b092e57f80e6c65d09b1893c17f"
+        },
+        {
+          "start_tick": 400,
+          "end_tick": 500,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            22,
+            33,
+            20,
+            0,
+            12
+          ],
+          "motor_final_voltage": [
+            0.47443491220474243,
+            0.6129189133644104,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554924,
+          "full_counts_sha256": "4ab8a2c7e363da50638f859ed53d06cf803f121b025849d46af92808ab62dc1d"
+        },
+        {
+          "start_tick": 500,
+          "end_tick": 600,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            34,
+            20,
+            0,
+            14
+          ],
+          "motor_final_voltage": [
+            0.6597763299942017,
+            0.4825184643268585,
+            0.6224902272224426,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 555191,
+          "full_counts_sha256": "5199448e5fdcdfab8859b3f25e81401017b9cde1180097a0b05b0c5efe4164a1"
+        },
+        {
+          "start_tick": 600,
+          "end_tick": 700,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            24,
+            21,
+            33,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.6547324657440186,
+            0.7369239330291748,
+            0.4000000059604645,
+            0.7130810618400574
+          ],
+          "actual_total_spikes": 554634,
+          "full_counts_sha256": "62b72e391524ef26ea99a4ff04ecbbefb3e97dfdc2ad45d620cbc952097df546"
+        },
+        {
+          "start_tick": 700,
+          "end_tick": 800,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            21,
+            33,
+            20,
+            0,
+            9
+          ],
+          "motor_final_voltage": [
+            0.7245834469795227,
+            0.6517738103866577,
+            0.4000000059604645,
+            0.5451517701148987
+          ],
+          "actual_total_spikes": 554484,
+          "full_counts_sha256": "a36df7d5a48fe4becc27c0bc824ffa4b1c730029fdcdb6e7a20ced8d50abdfb6"
+        },
+        {
+          "start_tick": 800,
+          "end_tick": 900,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            24,
+            21,
+            34,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.6837589144706726,
+            0.5370674729347229,
+            0.6272761821746826,
+            0.532209038734436
+          ],
+          "actual_total_spikes": 554496,
+          "full_counts_sha256": "9e672d33cb5147896c6f49a110e01d6c6c1670efd8422cd7a5aefc22bce963c7"
+        },
+        {
+          "start_tick": 900,
+          "end_tick": 1000,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            12
+          ],
+          "motor_final_voltage": [
+            0.6614000201225281,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 554111,
+          "full_counts_sha256": "369ce3cf4e18781bbc5bf6480be97e96f21481571cf7dc18505efd45c3046a37"
+        }
+      ]
+    },
+    "vision-off": {
+      "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+      "visual_enabled": false,
+      "windows": [
+        {
+          "start_tick": 0,
+          "end_tick": 100,
+          "action": "forward",
+          "reason": "fixed_raw_turn",
+          "difference": 0,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              12,
+              13
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            17,
+            16,
+            22,
+            15,
+            0,
+            2
+          ],
+          "motor_final_voltage": [
+            0.4415501654148102,
+            0.6764901876449585,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 402191,
+          "full_counts_sha256": "a65acaefc9da55cb6910a9426ff29b7d6ae71baccef1f27fff17ed1a16611c6a"
+        },
+        {
+          "start_tick": 100,
+          "end_tick": 200,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            11
+          ],
+          "motor_final_voltage": [
+            0.46191027760505676,
+            0.5687674283981323,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 557742,
+          "full_counts_sha256": "f18d7b1dbe2b4145fdb73ad3ae9a1f74ceaf7fabff98e4e568dc28fb18f0f0d7"
+        },
+        {
+          "start_tick": 200,
+          "end_tick": 300,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            34,
+            20,
+            0,
+            13
+          ],
+          "motor_final_voltage": [
+            0.6808760166168213,
+            0.42210572957992554,
+            0.639312207698822,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 557055,
+          "full_counts_sha256": "f97d7c9a46cb41d9ae2d0a5238f8306b4e8b308fe7636b22c9cd4146af5e6807"
+        },
+        {
+          "start_tick": 300,
+          "end_tick": 400,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            21,
+            33,
+            20,
+            0,
+            14
+          ],
+          "motor_final_voltage": [
+            0.7166582942008972,
+            0.7081596851348877,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 557124,
+          "full_counts_sha256": "8b25b68bc90d95af98a50db65805635d9250771209c9922fc8110ecb7db1e3bb"
+        },
+        {
+          "start_tick": 400,
+          "end_tick": 500,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            33,
+            20,
+            0,
+            10
+          ],
+          "motor_final_voltage": [
+            0.5847230553627014,
+            0.613306999206543,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 557132,
+          "full_counts_sha256": "15d402f2059bc14cbe3c9138e81066d803a10810b623125ddf147a5ae6f3cf25"
+        },
+        {
+          "start_tick": 500,
+          "end_tick": 600,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 3,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              1
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            34,
+            20,
+            0,
+            11
+          ],
+          "motor_final_voltage": [
+            0.708331823348999,
+            0.48276209831237793,
+            0.6269795894622803,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556938,
+          "full_counts_sha256": "c62968fa38dd9be1f708371d863a2da3afe29a4f9abd2624db57e960847ac3db"
+        },
+        {
+          "start_tick": 600,
+          "end_tick": 700,
+          "action": "forward",
+          "reason": "fixed_raw_turn",
+          "difference": 0,
+          "balance_limit": 0.6000000000000001,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              3
+            ],
+            "forward": [
+              17,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            26,
+            20,
+            33,
+            20,
+            0,
+            7
+          ],
+          "motor_final_voltage": [
+            0.449612021446228,
+            0.7362237572669983,
+            0.4000000059604645,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556692,
+          "full_counts_sha256": "256b89e1897a799b21c239df79d08b6ad118d301c0dfa9e488e6288770cc706e"
+        },
+        {
+          "start_tick": 700,
+          "end_tick": 800,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            33,
+            20,
+            0,
+            9
+          ],
+          "motor_final_voltage": [
+            0.7089231610298157,
+            0.6530776023864746,
+            0.4000000059604645,
+            0.5397018194198608
+          ],
+          "actual_total_spikes": 556936,
+          "full_counts_sha256": "d7c0caa1994be40a1047cf1ce29b13dae214248cd45aa3624a658ac1d8f8ebb7"
+        },
+        {
+          "start_tick": 800,
+          "end_tick": 900,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 2,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              2
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              16,
+              20
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            21,
+            34,
+            20,
+            0,
+            9
+          ],
+          "motor_final_voltage": [
+            0.7060139179229736,
+            0.5373021364212036,
+            0.6303234696388245,
+            0.4000000059604645
+          ],
+          "actual_total_spikes": 556538,
+          "full_counts_sha256": "04abfc35a54a8c5c21a64377a32fa7c608aef24bf78b2a5842b94ef9a3bfbccf"
+        },
+        {
+          "start_tick": 900,
+          "end_tick": 1000,
+          "action": "right",
+          "reason": "fixed_raw_turn",
+          "difference": 1,
+          "balance_limit": 0.8,
+          "counts": {
+            "left": [
+              3
+            ],
+            "right": [
+              4
+            ],
+            "forward": [
+              17,
+              19
+            ]
+          },
+          "tracked_neuron_window_counts": [
+            25,
+            20,
+            33,
+            20,
+            0,
+            8
+          ],
+          "motor_final_voltage": [
+            0.4414660632610321,
+            0.4000000059604645,
+            0.4000000059604645,
+            0.6999547481536865
+          ],
+          "actual_total_spikes": 556607,
+          "full_counts_sha256": "cc3860bbbbe8b47f0468a4e27bfaa5e980bc34ef2ee9f0b899b87799e30b0d92"
+        }
+      ]
+    }
+  },
+  "tracked_neuron_ids": [
+    21744,
+    61354,
+    19331,
+    10067,
+    10260,
+    13920
+  ],
+  "left_forward_motor_count_differences_at_windows": [
+    4,
+    5,
+    6
+  ],
+  "left_forward_action_differences_at_windows": [
+    6
+  ],
+  "source_sha256": "13c242e4492b95f7a9a7137375113cf6fba42aea91c55483f64015d9362d5ac5",
+  "scope": "Same fixed training pose; constant images held for ten continuous neural windows. Read-only latency/state probe, not moving-game performance or learning."
+}

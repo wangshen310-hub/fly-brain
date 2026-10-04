@@ -1,0 +1,152 @@
+{
+  "status": "complete",
+  "fresh_process": true,
+  "matched": true,
+  "conditions": 2,
+  "all_state_hashes_byte_exact": false,
+  "checks": [
+    {
+      "actual_spikes_and_receipt_exact": true,
+      "refractory_exact": true,
+      "timing_exact": true,
+      "float_state_within_preregistered_atol": true,
+      "receipt_float_within_atol": true,
+      "max_abs": {
+        "v": 1.1920928955078125e-07,
+        "ge": 4.76837158203125e-07,
+        "gi": 2.9802322387695312e-08,
+        "adaptation": 0.0,
+        "refractory": 0.0,
+        "release_queue": 0.0
+      }
+    },
+    {
+      "actual_spikes_and_receipt_exact": true,
+      "refractory_exact": true,
+      "timing_exact": true,
+      "float_state_within_preregistered_atol": true,
+      "receipt_float_within_atol": true,
+      "max_abs": {
+        "v": 1.1920928955078125e-07,
+        "ge": 2.384185791015625e-07,
+        "gi": 2.9802322387695312e-08,
+        "adaptation": 0.0,
+        "refractory": 0.0,
+        "release_queue": 0.0
+      }
+    }
+  ],
+  "float_state_atol": 1e-06,
+  "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+  "expert_imported": false,
+  "ordinary_game_learning_validated": false,
+  "actual": [
+    {
+      "receipt": {
+        "action": "right",
+        "reason": "fixed_raw_turn",
+        "difference": 2,
+        "balance_limit": 0.8,
+        "counts": {
+          "left": [
+            2
+          ],
+          "right": [
+            4
+          ],
+          "forward": [
+            16,
+            20
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+        "full_counts_sha256": "5caf501bc11301d40563562a3b57eaab9b6d3d1651d2e6cfc67361cf2c863d4a",
+        "actual_total_spikes": 555629,
+        "voltage_min": -0.36651965975761414,
+        "voltage_max": 1.4527870416641235,
+        "start_tick": 200,
+        "end_tick": 300,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      "state": {
+        "v": "ce1d5c55df1f917ae37afcd7ac537c4647f8f2e29f0fbc55fe51b0fa11d9b975",
+        "ge": "83b92a2ba510ac5ccf80f1c96bcdb2a303a54551f672374180dd5643eef3b381",
+        "gi": "c0954f95211dcbfac09c4f9f3881e354ffac7331aae535fa433fe1f8c1cf0788",
+        "adaptation": "db1ae70e54f4d08c720086ffbc32f9581a595c3bb6d57ff51af625d24283023b",
+        "refractory": "648ac0592b9b62a9980bf508049846046312d15931d2687cda29bcf7cd4f85ba",
+        "release_queue": "1ded95eb6325f64b4b53b0056f7063eecca9a3db5dd0edd4989ab81c47103799",
+        "cursor": 0,
+        "ticks": 300
+      }
+    },
+    {
+      "receipt": {
+        "action": "right",
+        "reason": "fixed_raw_turn",
+        "difference": 1,
+        "balance_limit": 0.6000000000000001,
+        "counts": {
+          "left": [
+            2
+          ],
+          "right": [
+            3
+          ],
+          "forward": [
+            17,
+            20
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+        "full_counts_sha256": "137315ef7671695ae8688be9e317f95a13dc5ac4846c76549ba0b85d168dd115",
+        "actual_total_spikes": 555341,
+        "voltage_min": -0.3590102195739746,
+        "voltage_max": 1.452102780342102,
+        "start_tick": 300,
+        "end_tick": 400,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      "state": {
+        "v": "cf4dcca8655f207fa741c0eb572075ba113b4b63689ac22012e2b411ed944e75",
+        "ge": "a1959b80eda3229cc3f2bd69620a5c1ad7a21c41e13e5217f4fd874f841903ac",
+        "gi": "693647d1d05764dd2c312ec601c94f50570e298917e8b809a6f056dd8311dd3e",
+        "adaptation": "d09526072ded54c14baf341c1515c805eff82438f26ee6d3db6717518d2f5a2b",
+        "refractory": "159b7660d54f18a5e2d07c6672070500f78746a4ac33dd4d5024d13b743e81bf",
+        "release_queue": "35563c5a217490243bb35a2ba4b35c4bb865601f599eb097e992f03da137b1bc",
+        "cursor": 0,
+        "ticks": 400
+      }
+    }
+  ],
+  "interpretation": "Finite full-state continuation of the new trained protocol, not old game memory migration."
+}

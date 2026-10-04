@@ -1,0 +1,1626 @@
+{
+  "status": "complete",
+  "pid": 83408,
+  "source_sha256": "50a4d6c91113358cd2c037b0f7fb7a8c4951ad1026b6b29739a7b28eb6e09a4d",
+  "config": {
+    "graph": "runtime/supervised-graph-20261003-v4",
+    "dataset": "runtime/teacher-scenes-20261003-v1",
+    "warm_run": "runtime/teacher-spiking-fit-20261003-s1003-v1",
+    "run": "runtime/teacher-afferent-probe-20261003-normal-v1",
+    "steps": 60,
+    "lr": 0.03,
+    "mismatch": false
+  },
+  "brain": {
+    "version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2",
+    "graph_sha256": "8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+    "dynamics": {
+      "dt_ms": 1.0,
+      "window_ms": 100,
+      "delay_steps": 2,
+      "refractory_steps": 2,
+      "synapse_ms": 5.0,
+      "threshold": 0.75,
+      "exc_reversal": 3.0,
+      "inh_reversal": -0.5,
+      "derivative_width": 0.15,
+      "margin": 0.2
+    },
+    "source_sha256": "9c2a193ba247694f487a497d238a1199a46a1006ad61f42c8fbd23deb84df952",
+    "optics_source_sha256": "9a4a822066e9295009c763f86699c328ad87eb010f83b4c641a6222cd0ab3bf8",
+    "motor_ids": {
+      "left": [
+        523769
+      ],
+      "right": [
+        10360
+      ],
+      "forward_left": [
+        10162
+      ],
+      "forward_right": [
+        10059
+      ]
+    },
+    "input": "fixed RGB uint8 only",
+    "numerics": {
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "device_type": "cuda",
+      "float_state_atol": 1e-06,
+      "integer_spikes_and_timing": "exact",
+      "GPU_bitwise_state_replay": false
+    },
+    "teacher_or_game_state_at_inference": false,
+    "external_action_network": false,
+    "learned": [
+      "Individual efficacy of existing DNa02 incoming synapses only"
+    ],
+    "fixed": [
+      "all graph endpoints",
+      "fast signs",
+      "optical sampling",
+      "motor decoder"
+    ],
+    "assumptions": "New normalized conductance dynamics and graded early vision; surrogate derivative during engineering training only. Not legacy native equivalence. Existing afferent plasticity is an engineering locus, not established in-vivo fruit-fly learning.",
+    "afferent_source_sha256": "b1f670b78a0a8a2484a924d464772408da3496cda064642882cfc1f2c69cc25b",
+    "afferent_edges": 2319,
+    "afferent_identity_sha256": "e4653b80e6d382d2f372178c5dbc287b941197c08962977bdc8ff2900616e094",
+    "frozen_upstream_neuron_parameters": true,
+    "gain_factor_bound": [
+      0.01831563888873418,
+      54.598150033144236
+    ]
+  },
+  "warm_checkpoint": {
+    "path": "C:\\Users\\wangs\\Documents\\Codex\\2026-09-12\\new-chat\\fly-brain-snake\\runtime\\teacher-spiking-fit-20261003-s1003-v1\\memory-0200.pt",
+    "sha256": "7221d5bc3d3df74e9cb4c92148f64c8f573b133011eeeb8b1f61ae4d4f1ed37f",
+    "parameter_sha256": "6c167fa33943ab535c12e8d4dddba28a3f74265791ab72fb199893cf480b5e0c"
+  },
+  "frame_sha256": [
+    "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+    "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+    "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341"
+  ],
+  "train_indices": [
+    0,
+    1,
+    2
+  ],
+  "assigned_labels": [
+    0,
+    1,
+    2
+  ],
+  "physical_labels": [
+    0,
+    1,
+    2
+  ],
+  "training_cases": 3,
+  "heldout_cases": 0,
+  "ordinary_game_learning_validated": false,
+  "interpretation": "Optimization/conditional-output sanity check on TRAINING images only; fitting them is overfitting, not generalization.",
+  "progress": [
+    {
+      "step": 1,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 2,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 3,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 4,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 5,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 6,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 7,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 8,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 9,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 10,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "e24c98049e70130570222482d4c52c9a55430035d88443b79b6a138576cf1655",
+            "actual_total_spikes": 400962,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "5a0d488eaf1d201552b2471e0b3b2f9a70242cd66d5483b2d976fdb74b8f5495",
+            "actual_total_spikes": 400963,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "276741b09901b404abc4275685e9c8998430b1384094a4e03febdf7604f98412",
+            "actual_total_spikes": 400959,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 1,
+        "physical_direction_correct": 1,
+        "cases": 3,
+        "actions": [
+          "forward",
+          "forward",
+          "forward"
+        ]
+      }
+    },
+    {
+      "step": 11,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 12,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 13,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 14,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 15,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 16,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 17,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 18,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 19,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 20,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "e24c98049e70130570222482d4c52c9a55430035d88443b79b6a138576cf1655",
+            "actual_total_spikes": 400962,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "5a0d488eaf1d201552b2471e0b3b2f9a70242cd66d5483b2d976fdb74b8f5495",
+            "actual_total_spikes": 400963,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.2,
+            "counts": {
+              "left": [
+                1
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "276741b09901b404abc4275685e9c8998430b1384094a4e03febdf7604f98412",
+            "actual_total_spikes": 400959,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 1,
+        "physical_direction_correct": 1,
+        "cases": 3,
+        "actions": [
+          "forward",
+          "forward",
+          "forward"
+        ]
+      }
+    },
+    {
+      "step": 21,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 22,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 23,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 24,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 25,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 26,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 27,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 28,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 29,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1031502485275269
+    },
+    {
+      "step": 30,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -1,
+            "balance_limit": 0.4,
+            "counts": {
+              "left": [
+                2
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "6f7e2e31106558cca53e99cffae359a6554f201d9f6a7dc922f7e2b051d7a28f",
+            "actual_total_spikes": 400968,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -1,
+            "balance_limit": 0.4,
+            "counts": {
+              "left": [
+                2
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "ffa6eea89c8b0eab7d8dd62b7d1ffc1587813e69289ce12f1fbce293a21265ae",
+            "actual_total_spikes": 400969,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -1,
+            "balance_limit": 0.4,
+            "counts": {
+              "left": [
+                2
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "28d2e0951b29602baff98948e6b86f0240642f01997e8f6a945b4c88e883585e",
+            "actual_total_spikes": 400968,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 1,
+        "physical_direction_correct": 1,
+        "cases": 3,
+        "actions": [
+          "left",
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "step": 31,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 32,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 33,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 34,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 35,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 36,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 37,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 38,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327
+    },
+    {
+      "step": 39,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327
+    },
+    {
+      "step": 40,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -2,
+            "balance_limit": 0.6000000000000001,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "86164ea819410c59fc6e0ab80f9884201d1289952ac8cc9777b8673602b12110",
+            "actual_total_spikes": 400973,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -2,
+            "balance_limit": 0.6000000000000001,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "8a8c01ea92999bd0cf0bc26acd034de2e44ea526c1af4771aaab291091d32d2c",
+            "actual_total_spikes": 400974,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "left",
+            "reason": "fixed_raw_turn",
+            "difference": -1,
+            "balance_limit": 0.4,
+            "counts": {
+              "left": [
+                2
+              ],
+              "right": [
+                1
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "cf93de9ef406d9861e6498f453ee464b89af15defcb1c45bc563aa72a74c504e",
+            "actual_total_spikes": 400966,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 1,
+        "physical_direction_correct": 1,
+        "cases": 3,
+        "actions": [
+          "left",
+          "left",
+          "left"
+        ]
+      }
+    },
+    {
+      "step": 41,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327
+    },
+    {
+      "step": 42,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327
+    },
+    {
+      "step": 43,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.4637550115585327
+    },
+    {
+      "step": 44,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.3879257440567017
+    },
+    {
+      "step": 45,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1170910596847534
+    },
+    {
+      "step": 46,
+      "pair_loss": 3.440189838409424,
+      "CE": 0.8908445835113525
+    },
+    {
+      "step": 47,
+      "pair_loss": 3.440189838409424,
+      "CE": 0.8908445835113525
+    },
+    {
+      "step": 48,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1408050060272217
+    },
+    {
+      "step": 49,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1408050060272217
+    },
+    {
+      "step": 50,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.4032455682754517,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "right",
+            "reason": "fixed_raw_turn",
+            "difference": 1,
+            "balance_limit": 0.8,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                4
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "f39ba17fafae1e742ea2006f9f77f042098512051073f0ba20e51cc61090ec04",
+            "actual_total_spikes": 400964,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "right",
+            "reason": "fixed_raw_turn",
+            "difference": 1,
+            "balance_limit": 0.8,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                4
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "b7321d967d6b5f9881ee8bbaada419bde33ffdb5bec087bdc3f4546a7e79085c",
+            "actual_total_spikes": 400965,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "right",
+            "reason": "fixed_raw_turn",
+            "difference": 1,
+            "balance_limit": 0.8,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                4
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "dff07edbec0e88d615845f7eef666782cb6cbd827012f2023e9b8bd424d951a0",
+            "actual_total_spikes": 400964,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 1,
+        "physical_direction_correct": 1,
+        "cases": 3,
+        "actions": [
+          "right",
+          "right",
+          "right"
+        ]
+      }
+    },
+    {
+      "step": 51,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.4032455682754517
+    },
+    {
+      "step": 52,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.4032455682754517
+    },
+    {
+      "step": 53,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.4032455682754517
+    },
+    {
+      "step": 54,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.4032455682754517
+    },
+    {
+      "step": 55,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.2723616361618042
+    },
+    {
+      "step": 56,
+      "pair_loss": 3.440189838409424,
+      "CE": 1.2723616361618042
+    },
+    {
+      "step": 57,
+      "pair_loss": 4.253856182098389,
+      "CE": 1.1408050060272217
+    },
+    {
+      "step": 58,
+      "pair_loss": 3.440189838409424,
+      "CE": 0.8908445835113525
+    },
+    {
+      "step": 59,
+      "pair_loss": 3.440189838409424,
+      "CE": 0.8908445835113525
+    },
+    {
+      "step": 60,
+      "pair_loss": 3.440189838409424,
+      "CE": 0.8908445835113525,
+      "frozen_three_scene_evaluation": {
+        "receipts": [
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.6000000000000001,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                3
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+            "full_counts_sha256": "eeebbfb4e4292baa0666ab2b7f75d1b4fcc3c064aecacbb23112a1e80d45a4c6",
+            "actual_total_spikes": 400962,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "forward",
+            "reason": "fixed_raw_turn",
+            "difference": 0,
+            "balance_limit": 0.6000000000000001,
+            "counts": {
+              "left": [
+                3
+              ],
+              "right": [
+                3
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+            "full_counts_sha256": "6a433c11f73e528eec4fa2ab52ef8a2f4be8e074ec40b3fb682e61517af9d648",
+            "actual_total_spikes": 400963,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          },
+          {
+            "action": "right",
+            "reason": "fixed_raw_turn",
+            "difference": 1,
+            "balance_limit": 0.6000000000000001,
+            "counts": {
+              "left": [
+                2
+              ],
+              "right": [
+                3
+              ],
+              "forward": [
+                12,
+                13
+              ]
+            },
+            "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+            "selected_cell_ids": {
+              "left": [
+                523769
+              ],
+              "right": [
+                10360
+              ],
+              "forward_left": [
+                10162
+              ],
+              "forward_right": [
+                10059
+              ]
+            },
+            "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+            "full_counts_sha256": "63fdb1fa53199619cdc79c614ae49df8e6b58158349219fdd19c1c403119f7b5",
+            "actual_total_spikes": 400962,
+            "voltage_min": -0.35776710510253906,
+            "voltage_max": 1.464166283607483,
+            "start_tick": 0,
+            "end_tick": 100,
+            "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+          }
+        ],
+        "assignment_correct": 2,
+        "physical_direction_correct": 2,
+        "cases": 3,
+        "actions": [
+          "forward",
+          "forward",
+          "right"
+        ]
+      }
+    }
+  ],
+  "initial": {
+    "receipts": [
+      {
+        "action": "forward",
+        "reason": "fixed_raw_turn",
+        "difference": 0,
+        "balance_limit": 0.2,
+        "counts": {
+          "left": [
+            1
+          ],
+          "right": [
+            1
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+        "full_counts_sha256": "e24c98049e70130570222482d4c52c9a55430035d88443b79b6a138576cf1655",
+        "actual_total_spikes": 400962,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      {
+        "action": "forward",
+        "reason": "fixed_raw_turn",
+        "difference": 0,
+        "balance_limit": 0.2,
+        "counts": {
+          "left": [
+            1
+          ],
+          "right": [
+            1
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+        "full_counts_sha256": "5a0d488eaf1d201552b2471e0b3b2f9a70242cd66d5483b2d976fdb74b8f5495",
+        "actual_total_spikes": 400963,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      {
+        "action": "forward",
+        "reason": "fixed_raw_turn",
+        "difference": 0,
+        "balance_limit": 0.2,
+        "counts": {
+          "left": [
+            1
+          ],
+          "right": [
+            1
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+        "full_counts_sha256": "276741b09901b404abc4275685e9c8998430b1384094a4e03febdf7604f98412",
+        "actual_total_spikes": 400959,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      }
+    ],
+    "assignment_correct": 1,
+    "physical_direction_correct": 1,
+    "cases": 3,
+    "actions": [
+      "forward",
+      "forward",
+      "forward"
+    ]
+  },
+  "rank_gradient": {
+    "afferent_log_gain": {
+      "norm": 0.0034189745783805847,
+      "finite": true,
+      "nonzero": 740
+    }
+  },
+  "step": 60,
+  "best_checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-normal-v1\\best-0060.pt",
+    "sha256": "6c05776f58abb7ae0fa2cd4e5c494f46eac6e45005ce1a735e1d66088e40e67e",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  },
+  "final": {
+    "receipts": [
+      {
+        "action": "forward",
+        "reason": "fixed_raw_turn",
+        "difference": 0,
+        "balance_limit": 0.6000000000000001,
+        "counts": {
+          "left": [
+            3
+          ],
+          "right": [
+            3
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+        "full_counts_sha256": "eeebbfb4e4292baa0666ab2b7f75d1b4fcc3c064aecacbb23112a1e80d45a4c6",
+        "actual_total_spikes": 400962,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      {
+        "action": "forward",
+        "reason": "fixed_raw_turn",
+        "difference": 0,
+        "balance_limit": 0.6000000000000001,
+        "counts": {
+          "left": [
+            3
+          ],
+          "right": [
+            3
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+        "full_counts_sha256": "6a433c11f73e528eec4fa2ab52ef8a2f4be8e074ec40b3fb682e61517af9d648",
+        "actual_total_spikes": 400963,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      {
+        "action": "right",
+        "reason": "fixed_raw_turn",
+        "difference": 1,
+        "balance_limit": 0.6000000000000001,
+        "counts": {
+          "left": [
+            2
+          ],
+          "right": [
+            3
+          ],
+          "forward": [
+            12,
+            13
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+        "full_counts_sha256": "63fdb1fa53199619cdc79c614ae49df8e6b58158349219fdd19c1c403119f7b5",
+        "actual_total_spikes": 400962,
+        "voltage_min": -0.35776710510253906,
+        "voltage_max": 1.464166283607483,
+        "start_tick": 0,
+        "end_tick": 100,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      }
+    ],
+    "assignment_correct": 2,
+    "physical_direction_correct": 2,
+    "cases": 3,
+    "actions": [
+      "forward",
+      "forward",
+      "right"
+    ]
+  },
+  "visual_off": [
+    {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.6000000000000001,
+      "counts": {
+        "left": [
+          3
+        ],
+        "right": [
+          3
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+      "full_counts_sha256": "a65acaefc9da55cb6910a9426ff29b7d6ae71baccef1f27fff17ed1a16611c6a",
+      "actual_total_spikes": 402191,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.472258448600769,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.6000000000000001,
+      "counts": {
+        "left": [
+          3
+        ],
+        "right": [
+          3
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+      "full_counts_sha256": "a65acaefc9da55cb6910a9426ff29b7d6ae71baccef1f27fff17ed1a16611c6a",
+      "actual_total_spikes": 402191,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.472258448600769,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.6000000000000001,
+      "counts": {
+        "left": [
+          3
+        ],
+        "right": [
+          3
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+      "full_counts_sha256": "a65acaefc9da55cb6910a9426ff29b7d6ae71baccef1f27fff17ed1a16611c6a",
+      "actual_total_spikes": 402191,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.472258448600769,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    }
+  ],
+  "trained_parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+  "fits_all_three_training_cases": false
+}

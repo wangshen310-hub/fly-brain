@@ -1,0 +1,118 @@
+{
+  "checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-normal-v1\\replay.pt",
+    "sha256": "30934f9bea2881ea38e663b3d11ef4597ce6077968dd68dd21537444b9f56764",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  },
+  "expected": [
+    {
+      "receipt": {
+        "action": "right",
+        "reason": "fixed_raw_turn",
+        "difference": 2,
+        "balance_limit": 0.8,
+        "counts": {
+          "left": [
+            2
+          ],
+          "right": [
+            4
+          ],
+          "forward": [
+            16,
+            20
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "634fd0711f1fc278636cd45469da5aa1dd396340bd32afd2bf1a8827c4bdd341",
+        "full_counts_sha256": "5caf501bc11301d40563562a3b57eaab9b6d3d1651d2e6cfc67361cf2c863d4a",
+        "actual_total_spikes": 555629,
+        "voltage_min": -0.36651965975761414,
+        "voltage_max": 1.4527870416641235,
+        "start_tick": 200,
+        "end_tick": 300,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      "state": {
+        "v": "23a0711993a35496184c287492c23a9196cd931a8fd2a44f708f96b85c84e529",
+        "ge": "76aee7593efaa2094ef67f08b11e77c4fee7f11069c74f034be49f35b0e27244",
+        "gi": "c478524c9844340a781ebdf5e7df7e932ce6b10606d9144d67a98a2a0d81d0b1",
+        "adaptation": "db1ae70e54f4d08c720086ffbc32f9581a595c3bb6d57ff51af625d24283023b",
+        "refractory": "648ac0592b9b62a9980bf508049846046312d15931d2687cda29bcf7cd4f85ba",
+        "release_queue": "1ded95eb6325f64b4b53b0056f7063eecca9a3db5dd0edd4989ab81c47103799",
+        "cursor": 0,
+        "ticks": 300
+      }
+    },
+    {
+      "receipt": {
+        "action": "right",
+        "reason": "fixed_raw_turn",
+        "difference": 1,
+        "balance_limit": 0.6000000000000001,
+        "counts": {
+          "left": [
+            2
+          ],
+          "right": [
+            3
+          ],
+          "forward": [
+            17,
+            20
+          ]
+        },
+        "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+        "selected_cell_ids": {
+          "left": [
+            523769
+          ],
+          "right": [
+            10360
+          ],
+          "forward_left": [
+            10162
+          ],
+          "forward_right": [
+            10059
+          ]
+        },
+        "input_sha256": "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394",
+        "full_counts_sha256": "137315ef7671695ae8688be9e317f95a13dc5ac4846c76549ba0b85d168dd115",
+        "actual_total_spikes": 555341,
+        "voltage_min": -0.3590102195739746,
+        "voltage_max": 1.452102780342102,
+        "start_tick": 300,
+        "end_tick": 400,
+        "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+      },
+      "state": {
+        "v": "bfab875fe6925e85082b54269171350482f0010d836a54b8d6ce6c5ce9fb17fb",
+        "ge": "1d1bd7e9ffdb28ce17649b0f767e76f338e7cf44953cac318b5c387817a66648",
+        "gi": "2c3877073aaf749206c56ff864830b18a99c37b4ce84039695ab909dbd219d57",
+        "adaptation": "d09526072ded54c14baf341c1515c805eff82438f26ee6d3db6717518d2f5a2b",
+        "refractory": "159b7660d54f18a5e2d07c6672070500f78746a4ac33dd4d5024d13b743e81bf",
+        "release_queue": "35563c5a217490243bb35a2ba4b35c4bb865601f599eb097e992f03da137b1bc",
+        "cursor": 0,
+        "ticks": 400
+      }
+    }
+  ],
+  "float_state_atol": 1e-06,
+  "frames_sha256": "ee7f894d889001d4d09bda53cef4092a6a22ed1a9fb942c30c042f1e77809891",
+  "expected_states_sha256": "891ff3c5d130740e38f4c1aa3d6e28be26cfa620e1221b5c716884ae77b41e9a"
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>果蝇脑 · 奖惩学习验证</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,"Microsoft YaHei",sans-serif;background:#101820;color:#edf5fc}body{max-width:1120px;margin:auto;padding:32px 24px}h1{font-size:30px}h2{font-size:20px}p{line-height:1.8;color:#becad8}a{color:#7de2cd}.tag,small{font-size:12px;color:#9cb4c9}.tag{letter-spacing:2px}.note{border-left:3px solid #e6bf72;padding:16px 22px;background:#242a31;line-height:1.8;margin:24px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}.card{padding:22px;border:1px solid #334658;border-radius:14px;background:#1b2734}.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:14px;margin:20px 0}.flow span{background:#243a43;padding:12px;border-radius:8px}strong{color:#7de2cd}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:12px 5px;border-bottom:1px solid #334658;text-align:left}th{color:#a6b8ca;font-weight:400}button,select{font:inherit;background:#293e50;color:#eef7ff;border:1px solid #48627b;border-radius:6px;padding:9px 14px;cursor:pointer}button:disabled{opacity:.4;cursor:default}img{width:100%;image-rendering:pixelated;background:#555;border-radius:8px}.mono{font-family:ui-monospace,monospace;overflow-wrap:anywhere;font-size:12px;color:#96afc5}details{margin:20px 0}summary{cursor:pointer;color:#bbccde}.status{color:#e6bf72}.hidden{display:none}#trace{margin-top:22px}#trace .grid{grid-template-columns:1.2fr 1fr}#traceText{line-height:1.9}.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}@media(max-width:700px){#trace .grid{grid-template-columns:1fr}body{padding:20px 14px}}
+</style>
+<div class="tag">MALE CNS · CONNECTOME LEARNING</div>
+<h1>动作来自脉冲，学习需要证据</h1>
+<p>这里展示成对奖惩优化的新实验。完整连接组控制每次行动，奖励只用于更新已有突触。旧游戏与旧记忆独立保留。</p>
+<div class="note"><b>尚未证明：能可靠学习普通贪吃蛇。</b><br>旧方案在普通食物的 12 局评估中，训练前后都吃到 0 次。新实验会重新比较冻结成绩；参数变化和实验完成都不等于学会。</div>
+<div class="flow"><span>固定棋盘 RGB</span>→<span>原有感光细胞</span>→<span>完整果蝇连接组</span>→<span>左右脉冲比较</span>→<span>蛇的动作</span></div>
+<p><small>奖惩回路：同一批游戏 → 比较正、负突触扰动的实际回报 → 更新已有连接 → 保存累积参数。此规则是工程模型，不能等同于天然果蝇的学习机制。</small></p>
+<div class="row"><select id="choose" aria-label="实验"></select><span id="connection" class="tag">读取已提交记录…</span></div>
+<section id="main" class="card" style="margin-top:20px">正在读取…</section>
+<section id="trace" class="card">
+<div class="row"><h2>真实神经输入与动作回放</h2><button id="load">载入轨迹</button></div>
+<p id="traceLabel">回放读取已保存的真实神经记录，并核对每帧像素哈希；不会重新训练或产生动作。</p>
+<div id="player" class="hidden"><div class="grid"><img id="frame" alt="经过哈希核对的真实神经输入画面"><div id="traceText"></div></div>
+<div class="row" style="margin-top:18px"><button id="prev">上一步</button><button id="play">播放</button><button id="next">下一步</button><small id="counter"></small></div></div>
+</section>
+<details><summary>旧实验与失败对照</summary><div id="history" class="grid"></div></details>
+<p><small>只读页面，每 5 秒读取已提交结果。状态来自存档，更新时间不等于进程心跳。关闭页面不会给训练器发送停止指令。</small></p>
+<script>
+const $=s=>document.querySelector(s), esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const labels={before_fixed_pose:'训练前 · 固定姿态',after_fixed_pose:'训练后 · 固定姿态',before_nearby_food:'训练前 · 近食物',after_nearby_food:'训练后 · 近食物',before_uniform_food:'训练前 · 普通食物',after_uniform_food:'训练后 · 普通食物',training:'训练期',before:'训练前',after:'训练后'};
+const statusName={initializing:'初始化 / 基线评估',running:'训练或评估中',complete:'该实验已结束',failed:'实验出错',interrupted:'实验中断，可续训'};
+const stages={fixed_pose:'固定起始姿态',nearby_food:'随机姿态、近食物',uniform_food:'普通随机食物'};
+const phases={loading_native_graph:'加载完整连接组',baseline_evaluation:'训练前冻结评估',training:'成对参数训练',final_frozen_evaluation:'训练后冻结评估',finished:'完成本轮实验'};
+let runs=[], current='', replay=null, index=0, timer=null;
+function foodTable(r){return '<table><tr><th>冻结评估条件</th><th>吃食数 / 局数</th></tr>'+Object.entries(r.food).map(([k,v])=>`<tr><td>${esc(labels[k]||k)}</td><td><strong>${v.food}</strong> / ${v.n}</td></tr>`).join('')+'</table>'}
+function render(){const r=runs.find(r=>r.name===current);if(!r){$('#main').textContent='尚无成对训练记录';return}const p=r.progress||{},m=r.mechanism||{};$('#main').innerHTML=`<div class="row"><h2>成对突触优化 · 开发验证</h2><span class="status">${esc(statusName[r.status]||r.status)}</span></div><div class="mono">${esc(r.name)}</div><p>已提交 <strong>${r.completed}</strong> / ${r.settings?.generations??'?'} 代 · <strong>${r.memory_saved}</strong> 个记忆存档</p><p>${esc(phases[p.phase]||p.phase||'')}${p.generation?' · 第 '+p.generation+' 代':''}${p.stage?' · '+esc(stages[p.stage]||p.stage):''}${p.pair?' · 第 '+p.pair+' 对':''}</p><p><small>166,700 个神经元 · 25,582,938 条连接${m.mutable_edges?' · 可塑连接 '+m.mutable_edges.toLocaleString()+' 条 · '+m.dimensions+' 个共享增益参数':''}</small></p>${foodTable(r)}${r.error&&['failed','interrupted'].includes(r.status)?'<p class="status">'+esc(r.error)+'</p>':''}<p><small>最近提交：${new Date(r.updated_at*1000).toLocaleString()}。只看训练后关闭探索的吃食成绩，并结合对照，才能判断学习。</small></p>`;$('#load').disabled=false}
+async function update(){try{const response=await fetch('/api/progress',{cache:'no-store'});if(!response.ok)throw Error(response.status);const d=await response.json();runs=d.runs;const fresh=runs.filter(r=>r.name.startsWith('paired-native-snake-')).sort((a,b)=>b.updated_at-a.updated_at);$('#choose').innerHTML=fresh.map(r=>`<option value="${esc(r.name)}">${esc(r.name)}</option>`).join('');if(!fresh.some(r=>r.name===current))current=fresh[0]?.name||'';$('#choose').value=current;render();$('#connection').textContent='已读取 · '+new Date(d.time*1000).toLocaleTimeString();$('#history').innerHTML=runs.filter(r=>!r.name.startsWith('paired-native-snake-')).map(r=>`<div class="card"><div class="mono">${esc(r.name)}</div><p>${esc(statusName[r.status]||r.status)} · ${r.completed} 个记录</p>${foodTable(r)}${Object.entries(r.evaluations).map(([k,v])=>'<p>'+esc(k)+'：同类 '+(100*v.familiar_distribution.accuracy).toFixed(1)+'%；全新 '+(100*v.novel_pixels.accuracy).toFixed(1)+'%</p>').join('')}</div>`).join('')}catch(e){$('#connection').textContent='读取失败：'+e.message}}
+function pause(){clearInterval(timer);timer=null;$('#play').textContent='播放'}
+function draw(){if(!replay?.ready)return;const f=replay.frames[index];$('#frame').src=f.image;const a={left:'左转',right:'右转',forward:'直行'};$('#traceText').innerHTML=`<b>神经决定：${a[f.action]||'无有效输出'}</b><br>左脉冲：${esc(f.counts.left.join(' / '))}<br>右脉冲：${esc(f.counts.right.join(' / '))}<br>已吃食：${f.food}<br>本步反馈：${f.feedback?(f.feedback.kind==='reward'?'奖励':'惩罚'):'无'}<br><small>实际规则：${esc(f.reason)}<br>像素 SHA-256 已核对</small><div class="mono">${esc(f.observation_sha256)}</div>`;$('#counter').textContent=(index+1)+' / '+replay.frames.length+' 个实际决策窗口';$('#prev').disabled=index===0;$('#next').disabled=index===replay.frames.length-1}
+$('#choose').onchange=()=>{current=$('#choose').value;pause();$('#player').classList.add('hidden');render()};
+$('#load').onclick=async()=>{pause();try{const response=await fetch('/api/replay?run='+encodeURIComponent(current));if(!response.ok)throw Error(response.status);replay=await response.json();$('#traceLabel').textContent=replay.label+(replay.ready?' · 最终吃食 '+replay.food+' · '+replay.reason:'');$('#player').classList.toggle('hidden',!replay.ready);index=0;draw()}catch(e){$('#traceLabel').textContent='轨迹未能验证：'+e.message}};
+$('#prev').onclick=()=>{pause();index=Math.max(0,index-1);draw()};$('#next').onclick=()=>{pause();index=Math.min(replay.frames.length-1,index+1);draw()};$('#play').onclick=()=>{if(timer){pause();return}if(index===replay.frames.length-1)index=0;draw();$('#play').textContent='暂停回放';timer=setInterval(()=>{if(index<replay.frames.length-1){index++;draw()}else pause()},900)};
+update();setInterval(update,5000);
+</script></html>

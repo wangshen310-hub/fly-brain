@@ -1,0 +1,7562 @@
+[
+  {
+    "episode": 0,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "36064a9ee6977ea10d590f7b008d8ca9221bb285947f86c4d9c56aeb742e5545",
+      "full_counts_sha256": "638080a592dcef0c3d61ce7e102691bf7c4c61356d2b77652298b865b793052a",
+      "actual_total_spikes": 400897,
+      "voltage_min": -0.35811617970466614,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "26733925:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "36064a9ee6977ea10d590f7b008d8ca9221bb285947f86c4d9c56aeb742e5545",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 0,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "24a6fe1d91e89cb96b2e89beaf089d8c439e237baff3f636b8fd9bdf68715b9e",
+      "full_counts_sha256": "a169c0ca14d30e541965118b1e606a8e51a7b75e385545e2b65650c8bc218e74",
+      "actual_total_spikes": 555969,
+      "voltage_min": -0.36827221512794495,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "26733925:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "24a6fe1d91e89cb96b2e89beaf089d8c439e237baff3f636b8fd9bdf68715b9e",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 0,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "91bc496f626352d4b65033b60520ccf839df16cef5a92e6d1004dd0ce5ec1011",
+      "full_counts_sha256": "9bbfb60a0c6d7a4560fd62dfc3bd634ac7926cc8c0e1a3244220599722e0827d",
+      "actual_total_spikes": 555396,
+      "voltage_min": -0.3647921085357666,
+      "voltage_max": 1.4584776163101196,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "26733925:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "91bc496f626352d4b65033b60520ccf839df16cef5a92e6d1004dd0ce5ec1011",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 0,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "4b66d43d41ec82803a734d8227ac069de6c8a0b618e23c682dd4504938fd6ea1",
+      "full_counts_sha256": "a17a2dbb5a4340a9ab33b2685dbb307ffe835dd75dcd2fa37a856f61bbe8d8ad",
+      "actual_total_spikes": 555068,
+      "voltage_min": -0.35719534754753113,
+      "voltage_max": 1.4478133916854858,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "26733925:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "4b66d43d41ec82803a734d8227ac069de6c8a0b618e23c682dd4504938fd6ea1",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 0,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "67db1683cc8f9b7be8919a9893424501d2eda400438ec61d0a73afdf555ea524",
+      "full_counts_sha256": "2edde419b720559dd11ba6d9301cd99b9c4f034debbd8884c66726918468b381",
+      "actual_total_spikes": 555090,
+      "voltage_min": -0.3665379285812378,
+      "voltage_max": 1.4861483573913574,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "26733925:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "67db1683cc8f9b7be8919a9893424501d2eda400438ec61d0a73afdf555ea524",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 0,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "16827c57d94501f08bbbcd7ac04a181999d0826315c8da7e40867895078b37e7",
+      "full_counts_sha256": "2ebb0de3ea4fb58c6d5165fc9ba9d4acb4797e05391b233f2b426f4f8a2173ca",
+      "actual_total_spikes": 554867,
+      "voltage_min": -0.36592838168144226,
+      "voltage_max": 1.4698609113693237,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "26733925:1:5:aversive",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        7
+      ],
+      "feedback_complete": false,
+      "observation_hash": "16827c57d94501f08bbbcd7ac04a181999d0826315c8da7e40867895078b37e7",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 1,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "34db51faaf7759aea3b4f37edf50f1ba2af0518a47e87d0a8fe0d0b03fd4ba77",
+      "full_counts_sha256": "9e457b912dc5cd443c7e7bbd993b634748216bfdfab53d205de7c134b1f4a08d",
+      "actual_total_spikes": 400900,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2068516925:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "34db51faaf7759aea3b4f37edf50f1ba2af0518a47e87d0a8fe0d0b03fd4ba77",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 1,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "60e1a8066f5f8b64d29e3461cb87b1157faad097ac8b97e40c6ad6237def51c5",
+      "full_counts_sha256": "cf55daa33991c491392a971ed5bb0750c1f67c64befbf78b96d0ca03ea9b6947",
+      "actual_total_spikes": 556003,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "2068516925:1:1:aversive",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        2,
+        12
+      ],
+      "feedback_complete": false,
+      "observation_hash": "60e1a8066f5f8b64d29e3461cb87b1157faad097ac8b97e40c6ad6237def51c5",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1e1373997d7dc45d51929892f5648960d6ec4ea79c88076780d6f25deeda23db",
+      "full_counts_sha256": "a26f8b2e9281383862eccf9da6efe9c1c40ae5cb647807bcdf18d45bc53f6109",
+      "actual_total_spikes": 400878,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "1e1373997d7dc45d51929892f5648960d6ec4ea79c88076780d6f25deeda23db",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "472900152ef41df5b17209d86837a93785e2846f2548bd5d44fa6e5eb3407255",
+      "full_counts_sha256": "954d24944112eefdf92149400dc13dd4946b42ef95aad0ac28ad4fbb1b396627",
+      "actual_total_spikes": 555973,
+      "voltage_min": -0.36752864718437195,
+      "voltage_max": 1.455081582069397,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "472900152ef41df5b17209d86837a93785e2846f2548bd5d44fa6e5eb3407255",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "a42681e30dcde40a948600ba9a147815c3cc1599562344bf223682d02fdabf5a",
+      "full_counts_sha256": "acca2f5df3c3a14345e12c2d91616ef8fed40d34f68b22e3a80580568203a71c",
+      "actual_total_spikes": 555347,
+      "voltage_min": -0.3666052520275116,
+      "voltage_max": 1.4531983137130737,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "a42681e30dcde40a948600ba9a147815c3cc1599562344bf223682d02fdabf5a",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "04b2cb10d42c9cee64f755a5bb67ac8bbfa80abbb840ce96b2813a316cc8c8fd",
+      "full_counts_sha256": "8cea879b0290e6e1c9d5a4eac897f74637e725acc1ef3fabda6425da200c52e0",
+      "actual_total_spikes": 555189,
+      "voltage_min": -0.3580031096935272,
+      "voltage_max": 1.4500658512115479,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "04b2cb10d42c9cee64f755a5bb67ac8bbfa80abbb840ce96b2813a316cc8c8fd",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "2b9240e7d8b7b650e13f9ff9b55421f402f5ea39219b768724124346ad91e359",
+      "full_counts_sha256": "6f1e9e1f8fed17e2865cf63318d6b57a22ea337721c20c8d00425e7a76469f63",
+      "actual_total_spikes": 555348,
+      "voltage_min": -0.3669188320636749,
+      "voltage_max": 1.4482322931289673,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "2b9240e7d8b7b650e13f9ff9b55421f402f5ea39219b768724124346ad91e359",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "083a1895214a59eee36c1ac516766070742a787221689116d88bd3743944cd3f",
+      "full_counts_sha256": "6995604c6022880ce6ed67fa08a43ed9ebf4222f745518dd77d586c4d828daf8",
+      "actual_total_spikes": 555157,
+      "voltage_min": -0.36624982953071594,
+      "voltage_max": 1.4476089477539062,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "083a1895214a59eee36c1ac516766070742a787221689116d88bd3743944cd3f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e18991f77edd28401716a4c5f7d135014fc9ae8bc0e36f4b4689bde797b2a191",
+      "full_counts_sha256": "e2da150bf6578864009f03f71ebc0630f805d556bda21c49d47241a2d82aa014",
+      "actual_total_spikes": 554897,
+      "voltage_min": -0.35880792140960693,
+      "voltage_max": 1.4575698375701904,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1097461180:1:6:none",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e18991f77edd28401716a4c5f7d135014fc9ae8bc0e36f4b4689bde797b2a191",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 2,
+    "decision": 7,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1ee9e3e60f105a73078189b8ebc1b9aaee1385b130d19e854bbc8ab21c331350",
+      "full_counts_sha256": "2cd2c081203f3a32e0984ee883549a5c59632349726af61cd009f4fefd076dd6",
+      "actual_total_spikes": 555025,
+      "voltage_min": -0.3671111762523651,
+      "voltage_max": 1.4350800514221191,
+      "start_tick": 700,
+      "end_tick": 800,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1097461180:1:7:aversive",
+      "episode_id": 1,
+      "step_id": 7,
+      "next_step_id": 8,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        11
+      ],
+      "feedback_complete": false,
+      "observation_hash": "1ee9e3e60f105a73078189b8ebc1b9aaee1385b130d19e854bbc8ab21c331350",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 3,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "883dee12642a2012cb987e32ee0fa91bbf7f70dad5157df49629dc688681e973",
+      "full_counts_sha256": "003829a9545a8a13b7a29520476e9b0d1872f2368b8ec8260589dc333563e024",
+      "actual_total_spikes": 400883,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4665570259094238,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1779799829:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "883dee12642a2012cb987e32ee0fa91bbf7f70dad5157df49629dc688681e973",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 3,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "c23bac1b8a3d8d590cde354d903670ab9e5b7ddb91916ad0e58593b01b16921d",
+      "full_counts_sha256": "0f4a759824b24b0a33249b06e787cd8746622e405eb9e46230c11b07c952914e",
+      "actual_total_spikes": 555929,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.465236783027649,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1779799829:1:1:aversive",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        1
+      ],
+      "feedback_complete": false,
+      "observation_hash": "c23bac1b8a3d8d590cde354d903670ab9e5b7ddb91916ad0e58593b01b16921d",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 4,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "64aa6c797fd0d8345072dcd5747061b844458184833fb8e30971ae1db9866941",
+      "full_counts_sha256": "638080a592dcef0c3d61ce7e102691bf7c4c61356d2b77652298b865b793052a",
+      "actual_total_spikes": 400897,
+      "voltage_min": -0.35811617970466614,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1952354320:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "64aa6c797fd0d8345072dcd5747061b844458184833fb8e30971ae1db9866941",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 4,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "d5c1442e2ee0ab8f2fd1259ba808be987840d8a9e8ced474a529a13e1e845cb8",
+      "full_counts_sha256": "8d12ac401f96935d2a3ec255488ab453628034994d46450148b766f5d39d8efe",
+      "actual_total_spikes": 555965,
+      "voltage_min": -0.36827221512794495,
+      "voltage_max": 1.4609155654907227,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1952354320:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "d5c1442e2ee0ab8f2fd1259ba808be987840d8a9e8ced474a529a13e1e845cb8",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 4,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "410711f1522acc14ba42e1a62c5b23f2c768683384420bff6bec1a197e268a07",
+      "full_counts_sha256": "1edc91d9b1ff2fc329144432085dce211d3bce8d5fad87a2550b58abfda1dcfa",
+      "actual_total_spikes": 555296,
+      "voltage_min": -0.3645102083683014,
+      "voltage_max": 1.44728422164917,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1952354320:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        1,
+        12
+      ],
+      "feedback_complete": false,
+      "observation_hash": "410711f1522acc14ba42e1a62c5b23f2c768683384420bff6bec1a197e268a07",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1f830fff68770a45f22cac0a66d709c4cd7b9e797054dc91eeaefe85eaaeb9d3",
+      "full_counts_sha256": "6e92ca82466f6bf058c49b711b1e5b12932e199a276c4ea6511e248ce3d533eb",
+      "actual_total_spikes": 400893,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.484238862991333,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "1f830fff68770a45f22cac0a66d709c4cd7b9e797054dc91eeaefe85eaaeb9d3",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "409c8f082a90095d635705093e61e74f967417cf0fa96322509367cc3bca69b1",
+      "full_counts_sha256": "6a46d1852981468362c1313998a981b52faa614db54cd2a09aacc8fbb4b002ef",
+      "actual_total_spikes": 556043,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4429759979248047,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "409c8f082a90095d635705093e61e74f967417cf0fa96322509367cc3bca69b1",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "97daa06544531ca7ca219c784a9c6268b77d5fb91988e5f1ef888885d1edd338",
+      "full_counts_sha256": "415b6ca62cdc7fe3711d97db1fb6e6c979c261ce3d3d374200b56c9cdc2753a6",
+      "actual_total_spikes": 555268,
+      "voltage_min": -0.3651059567928314,
+      "voltage_max": 1.4741677045822144,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "97daa06544531ca7ca219c784a9c6268b77d5fb91988e5f1ef888885d1edd338",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "4a5e6543295736faf01c4920829086d0b6f69f74fbf9ac19c84c6931406fc5b1",
+      "full_counts_sha256": "0538403d8eb77c43e238b23b18340cb97e9eaacfe6de9783a0a5fa9b2422df69",
+      "actual_total_spikes": 554990,
+      "voltage_min": -0.3567018210887909,
+      "voltage_max": 1.443282961845398,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "4a5e6543295736faf01c4920829086d0b6f69f74fbf9ac19c84c6931406fc5b1",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "cb0a041378e5fcb1457aafe735290755444a2f0b595407f1a820ce5ef8a10317",
+      "full_counts_sha256": "4758c1454520556bd1f2bcfbf2a7f5059b6dd2b1b70602a3c281f9d0d2ae9762",
+      "actual_total_spikes": 554975,
+      "voltage_min": -0.3662153482437134,
+      "voltage_max": 1.4678555727005005,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "cb0a041378e5fcb1457aafe735290755444a2f0b595407f1a820ce5ef8a10317",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6275121ef99e4f2a5a92b42f04b3d3a117fcd13da971fff5b8f614b26fba8fb9",
+      "full_counts_sha256": "25411705af6f97a17f017a8c371eb6084968cfd8ae279c794bbf89f894e467c2",
+      "actual_total_spikes": 554858,
+      "voltage_min": -0.3652167320251465,
+      "voltage_max": 1.4630837440490723,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "580784330:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6275121ef99e4f2a5a92b42f04b3d3a117fcd13da971fff5b8f614b26fba8fb9",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 5,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "bf9f2a165894028e410b09e4d515daa3454fb03232b487e41d101509b4e10a57",
+      "full_counts_sha256": "300ad1c305e1bf5f4be02a7df1005ac338ffdb8fc01c7ab6487007f37d7c483f",
+      "actual_total_spikes": 554701,
+      "voltage_min": -0.35775211453437805,
+      "voltage_max": 1.452633023262024,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "580784330:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        3
+      ],
+      "feedback_complete": false,
+      "observation_hash": "bf9f2a165894028e410b09e4d515daa3454fb03232b487e41d101509b4e10a57",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 6,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e4c9995f53db480dc44e3d252db119c216860b67ca85f3ee2c42d3701ac376dc",
+      "full_counts_sha256": "be1bb13c049d66c7349131029b25d062dd5750c6e7c84e5dae015cc1a9eb7ed4",
+      "actual_total_spikes": 400893,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1630185806:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e4c9995f53db480dc44e3d252db119c216860b67ca85f3ee2c42d3701ac376dc",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 6,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "70e4d903b96cc33a15770b337910f691ad63ca31cdad544326a56965355ec041",
+      "full_counts_sha256": "183d2d4c0744eba8dfd6a4e99556f2d7852f989885c40ea5c5d41c29933d88e1",
+      "actual_total_spikes": 555953,
+      "voltage_min": -0.36826810240745544,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1630185806:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "70e4d903b96cc33a15770b337910f691ad63ca31cdad544326a56965355ec041",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 6,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "f5cce2af5d733829a1eaeddca5b7207d8ba0efcf307324ca3129187b65976e5b",
+      "full_counts_sha256": "558afc8025b45beeac1a06f6f962256a3f87944c043e1fcaa8eb6b0485bb17dd",
+      "actual_total_spikes": 555418,
+      "voltage_min": -0.3651179075241089,
+      "voltage_max": 1.4552867412567139,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1630185806:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "f5cce2af5d733829a1eaeddca5b7207d8ba0efcf307324ca3129187b65976e5b",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 6,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "aec44bc7dbbcd9b12a7abf39586c877803ef95e3ada46558f04aa97e27417ae8",
+      "full_counts_sha256": "63f9820220f78c45b431edfdbe6913182f1ff18c339f1ff4e43d47b3d0ed7eae",
+      "actual_total_spikes": 555227,
+      "voltage_min": -0.3567361831665039,
+      "voltage_max": 1.4461647272109985,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1630185806:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "aec44bc7dbbcd9b12a7abf39586c877803ef95e3ada46558f04aa97e27417ae8",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 6,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "0277db5c15d9969eecf8afa653c213033efec82f9c7c093280ec9b646d4d311c",
+      "full_counts_sha256": "0cf101fd92e6351ec67527e3d1162689ec4fc5d3ae4b4835d6550da95c899f61",
+      "actual_total_spikes": 554962,
+      "voltage_min": -0.3662188947200775,
+      "voltage_max": 1.4708138704299927,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1630185806:1:4:aversive",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        12,
+        11
+      ],
+      "feedback_complete": false,
+      "observation_hash": "0277db5c15d9969eecf8afa653c213033efec82f9c7c093280ec9b646d4d311c",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 7,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6d8496198c14a8f5b7b43b6fc48f0b877a9b1e969f339483affe02a4fd3b81dd",
+      "full_counts_sha256": "d257e040dde6eefbe382d979463e8b3e4cf3562d17a90ac1d2e7258e690850f9",
+      "actual_total_spikes": 400897,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2019616464:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6d8496198c14a8f5b7b43b6fc48f0b877a9b1e969f339483affe02a4fd3b81dd",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 7,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "23847fe620f233427cf9c08d02f4db47f6b135ee8e41e7d4f04bc8a6367dcf88",
+      "full_counts_sha256": "47570dc36849387fa021405bfc473d79c5aaaef74fcb3ed035b036b9c30644fe",
+      "actual_total_spikes": 556016,
+      "voltage_min": -0.36806613206863403,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2019616464:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "23847fe620f233427cf9c08d02f4db47f6b135ee8e41e7d4f04bc8a6367dcf88",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 7,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "77c05c9d49b39a0de713d003c0f01d6f504a53d5e9e6ea088c0f01ac6527d2ee",
+      "full_counts_sha256": "297d5f84601d604a33ad933fa811cc0fe812ac1a7921d55531baa54b4e517dda",
+      "actual_total_spikes": 555491,
+      "voltage_min": -0.3650950789451599,
+      "voltage_max": 1.4552569389343262,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "2019616464:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        9
+      ],
+      "feedback_complete": false,
+      "observation_hash": "77c05c9d49b39a0de713d003c0f01d6f504a53d5e9e6ea088c0f01ac6527d2ee",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9a7d36d04159392ec0814774a1ae6e219ce68ba5173fda43a0946b8c2bcefc51",
+      "full_counts_sha256": "059e2373ab5fde5c405f7512163eb59cae1e0bb16eac4522c0724af59e574c63",
+      "actual_total_spikes": 400907,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9a7d36d04159392ec0814774a1ae6e219ce68ba5173fda43a0946b8c2bcefc51",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "f651bd08538bd6de8a950e6ff6fed722726bd6ca9c57188ac0336b2fd28bccbd",
+      "full_counts_sha256": "43ebf51bdbcc5ebb0d7aa270814bdcabcdac2ca5316dc016c08f1050219f8ff6",
+      "actual_total_spikes": 555912,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4609273672103882,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "f651bd08538bd6de8a950e6ff6fed722726bd6ca9c57188ac0336b2fd28bccbd",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "fb9f23d1fb0c11c0aa9aad139959d77bcff5e3164e7acc460ef70aec81386cd5",
+      "full_counts_sha256": "e1922369ce3843d409a601e6376665dfadeeae03e36e61b4daacaa6cc5d72ff8",
+      "actual_total_spikes": 555470,
+      "voltage_min": -0.36452630162239075,
+      "voltage_max": 1.4473066329956055,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "fb9f23d1fb0c11c0aa9aad139959d77bcff5e3164e7acc460ef70aec81386cd5",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "20cd6b3c08a985f414ebf5a31385b57879ac1bb1abb334739bc0238ff9ab34b8",
+      "full_counts_sha256": "2a93d4a54bab7ddad76ed9609ef351022325d568151d17f8c41c09e7da395e3b",
+      "actual_total_spikes": 555284,
+      "voltage_min": -0.356929749250412,
+      "voltage_max": 1.4460608959197998,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "20cd6b3c08a985f414ebf5a31385b57879ac1bb1abb334739bc0238ff9ab34b8",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1ecd51dfd1f81ee5d7c29aa4e5b6b13445ccfb14cf155809f3ae9d5d5e6d8941",
+      "full_counts_sha256": "670f5ba3378c3f71a1c3d69511fd2f5fa5c97a0337d870ebf39ab64bc44bee6c",
+      "actual_total_spikes": 555177,
+      "voltage_min": -0.3663454055786133,
+      "voltage_max": 1.4504162073135376,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "1ecd51dfd1f81ee5d7c29aa4e5b6b13445ccfb14cf155809f3ae9d5d5e6d8941",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "ea24af9560fc41784f5c3d80959387d65b8e654ec07900c6b3afc513436ce0b3",
+      "full_counts_sha256": "22a114bb93ef1f867bc6f14cc3fbf343cf4f779dbbbe7bbf579ce74ea8fa7a84",
+      "actual_total_spikes": 554826,
+      "voltage_min": -0.365183025598526,
+      "voltage_max": 1.4365726709365845,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1056514675:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "ea24af9560fc41784f5c3d80959387d65b8e654ec07900c6b3afc513436ce0b3",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 8,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "15b0a3f2d3bc432763694b4f1db4ab22243a5b178ba2db1374e19b6b1435486b",
+      "full_counts_sha256": "b412f7bedd0323d9eb8d36bc5c61873b827a90c7f542c6bf2e03f14fbdea05f8",
+      "actual_total_spikes": 554950,
+      "voltage_min": -0.3577946424484253,
+      "voltage_max": 1.456878423690796,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1056514675:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        6,
+        12
+      ],
+      "feedback_complete": false,
+      "observation_hash": "15b0a3f2d3bc432763694b4f1db4ab22243a5b178ba2db1374e19b6b1435486b",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 9,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "b6bc9cfe48426909244c413e0840072d189aef0a65d5021bf562c79f5f80e5bd",
+      "full_counts_sha256": "c063f963893aee51000f0b1a3895a17ac796c23c08c11de5407513aca7d6379f",
+      "actual_total_spikes": 400870,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1120270661:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "b6bc9cfe48426909244c413e0840072d189aef0a65d5021bf562c79f5f80e5bd",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 9,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "569ab5fd8be05dead9819ba1528df93099cff85fbb11de16bcdfff5010750e83",
+      "full_counts_sha256": "8a6148c0572a416facbf0aee0e366361a59d4ecf9c6e2511e294d14b69a9714f",
+      "actual_total_spikes": 555949,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1120270661:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "569ab5fd8be05dead9819ba1528df93099cff85fbb11de16bcdfff5010750e83",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 9,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "692ac76338a57718fcfbc1194b48c873975ac420f533985b030bb1d99b849886",
+      "full_counts_sha256": "9f6b38e5e381be92291cb989fb11341e3e6cb446f5f61a389b43ae1ed5f362c9",
+      "actual_total_spikes": 555248,
+      "voltage_min": -0.3653933107852936,
+      "voltage_max": 1.4584200382232666,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1120270661:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        12,
+        6
+      ],
+      "feedback_complete": false,
+      "observation_hash": "692ac76338a57718fcfbc1194b48c873975ac420f533985b030bb1d99b849886",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "8d59cf4a1a324f9dfb9a789cc3e055fcc7bd5f2a083226482cc9381d144ab2b8",
+      "full_counts_sha256": "22fbaaa0ab27f50aa7b4ca8f93d318bf69dc4bb08955879a0930aa293831f146",
+      "actual_total_spikes": 400887,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "8d59cf4a1a324f9dfb9a789cc3e055fcc7bd5f2a083226482cc9381d144ab2b8",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "f3de9fd796a1d9bf9d7e59fedb596b92f8949e93f4595943905e6dba4755779c",
+      "full_counts_sha256": "233bfb76456694e69039b0f26486d6aaf68cce46bea75ba12974fbe0de6bbb9c",
+      "actual_total_spikes": 556020,
+      "voltage_min": -0.3680327832698822,
+      "voltage_max": 1.4609357118606567,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "f3de9fd796a1d9bf9d7e59fedb596b92f8949e93f4595943905e6dba4755779c",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "adab2c9cca80e2cb752c85c740b2c7128f7fa93ee5d712798294a1953e5e5bd9",
+      "full_counts_sha256": "2f02613420c4321f0674133fd7310f9109bf91698abf98425ca3debc128bb973",
+      "actual_total_spikes": 555328,
+      "voltage_min": -0.3650960326194763,
+      "voltage_max": 1.4582929611206055,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "adab2c9cca80e2cb752c85c740b2c7128f7fa93ee5d712798294a1953e5e5bd9",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "df92f9c2ab7661548a532fd5003bb3d6c9b07fab0342bd2df77cae2a7ee40d1d",
+      "full_counts_sha256": "17f4b4481cc5a9b4021f78d3c7b4f573f8666984088cef3e1c277a960ad369a1",
+      "actual_total_spikes": 555095,
+      "voltage_min": -0.3567129373550415,
+      "voltage_max": 1.4364887475967407,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "df92f9c2ab7661548a532fd5003bb3d6c9b07fab0342bd2df77cae2a7ee40d1d",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "ffab0a5689fe919eab18bf9595f33200545763c46aededdf520fed291ebc607e",
+      "full_counts_sha256": "92bbcec555b4473d1c312c506433b35b238ac5a2c666e617016d4cc8e6344fbd",
+      "actual_total_spikes": 555009,
+      "voltage_min": -0.3668380379676819,
+      "voltage_max": 1.4653046131134033,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "ffab0a5689fe919eab18bf9595f33200545763c46aededdf520fed291ebc607e",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "a3fb022ba8d599ed227f80d0abfe622d44eb8c74b85668ed5e2c25de7e95667e",
+      "full_counts_sha256": "7b1a3512e87d00d10f51fa8f279d1ed6ae3bddec1076eaa5b0cd5178c5c5dd67",
+      "actual_total_spikes": 554890,
+      "voltage_min": -0.3658422827720642,
+      "voltage_max": 1.4613674879074097,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "133524799:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "a3fb022ba8d599ed227f80d0abfe622d44eb8c74b85668ed5e2c25de7e95667e",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 10,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "63ba4b1fdece88701e7e16f9a07c23ce56d523ad1db11ce4577666abf23aec79",
+      "full_counts_sha256": "12c59e90e8bed44112891f77fd7c9c3d47a65c00c1d207d6b224cdf5218f00fe",
+      "actual_total_spikes": 554870,
+      "voltage_min": -0.3589796721935272,
+      "voltage_max": 1.4790645837783813,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "133524799:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        4,
+        12
+      ],
+      "feedback_complete": false,
+      "observation_hash": "63ba4b1fdece88701e7e16f9a07c23ce56d523ad1db11ce4577666abf23aec79",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6f38f887f34548a71c9fb9e6e3410da61f99f4e3a14cb0f682e06862b22aee6f",
+      "full_counts_sha256": "74e4a0741e06e4a5ebbdfbfbde02ec3caba5daecf62046868304083255efad4a",
+      "actual_total_spikes": 400907,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6f38f887f34548a71c9fb9e6e3410da61f99f4e3a14cb0f682e06862b22aee6f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6b10c1fce633531622e5766a5d39de2a4ccd243d0f513628d26bd18da5d7021e",
+      "full_counts_sha256": "087e6b5e6bdc56a7ca072393ae82b0d1a32ad955b6fc9d9de0bf833a751054bb",
+      "actual_total_spikes": 556065,
+      "voltage_min": -0.36829885840415955,
+      "voltage_max": 1.4590846300125122,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6b10c1fce633531622e5766a5d39de2a4ccd243d0f513628d26bd18da5d7021e",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e45de49f7897d4db8ec1fa2b1046bd9d6a167f851e4af4ecf980ae2fa2ac5a95",
+      "full_counts_sha256": "e639c3590d5ab4705d22b8ebd8cb829bdbda7f3380a04679f65a422e5a734f50",
+      "actual_total_spikes": 555335,
+      "voltage_min": -0.3668009638786316,
+      "voltage_max": 1.435078740119934,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e45de49f7897d4db8ec1fa2b1046bd9d6a167f851e4af4ecf980ae2fa2ac5a95",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "3ed893a67918a45d93b4f190dc4dcd4ff01680795ace94b68fba923648e09d5f",
+      "full_counts_sha256": "d636700021d4982f59ebf095afd4ebf14f580f835ca0a996b78f394db8629402",
+      "actual_total_spikes": 555344,
+      "voltage_min": -0.3571910262107849,
+      "voltage_max": 1.4426746368408203,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "3ed893a67918a45d93b4f190dc4dcd4ff01680795ace94b68fba923648e09d5f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9bbd9609c88dd2939a74aed8f578bc9ce60edfef8656072cc14ec9bd51aaf46e",
+      "full_counts_sha256": "b4644b5d0ab540acb19b858cdd4df34d4d8d5babdf39342b7215e3b9c25c826a",
+      "actual_total_spikes": 555054,
+      "voltage_min": -0.3665080964565277,
+      "voltage_max": 1.4499626159667969,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9bbd9609c88dd2939a74aed8f578bc9ce60edfef8656072cc14ec9bd51aaf46e",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "8cfa0b56f5dff756d4d02fd564d16520afcc3ef67e46da7b5a53520d754e0399",
+      "full_counts_sha256": "051d2a0bd6d5a1a7566a8f54179438a3709810d9d61aa3248acfc2bf685906fa",
+      "actual_total_spikes": 554917,
+      "voltage_min": -0.36581531167030334,
+      "voltage_max": 1.461521029472351,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1781387539:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "8cfa0b56f5dff756d4d02fd564d16520afcc3ef67e46da7b5a53520d754e0399",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 11,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "38d0ff4a0c2d9a4fb562ca64d83ed01e8a86afb874a1930ab1d350651cb38c8a",
+      "full_counts_sha256": "f59dcbaaef7824a6377a4a31c00c3a0a10d4a437370f3c5032cb82600f01f5fe",
+      "actual_total_spikes": 554790,
+      "voltage_min": -0.3587192893028259,
+      "voltage_max": 1.4476619958877563,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1781387539:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        10
+      ],
+      "feedback_complete": false,
+      "observation_hash": "38d0ff4a0c2d9a4fb562ca64d83ed01e8a86afb874a1930ab1d350651cb38c8a",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 12,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6cd337fcb5ddd586ff14f327de4ca19c2b7a1efcb087da0d84b0852b2355d3e4",
+      "full_counts_sha256": "f48800a94640994409a516ba8071c37f9de0909f78f838466fd8cea1267178a8",
+      "actual_total_spikes": 400895,
+      "voltage_min": -0.3574070334434509,
+      "voltage_max": 1.484238862991333,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2026118677:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6cd337fcb5ddd586ff14f327de4ca19c2b7a1efcb087da0d84b0852b2355d3e4",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 12,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e8493f71e2a7660c5cf3b05041dadea779c31b97a0584b13fcacd15063127b5b",
+      "full_counts_sha256": "d12416a53f22f8914732ff0f3cfeccb8b80ecf87c5979b2392d15e2d3cb961cc",
+      "actual_total_spikes": 555956,
+      "voltage_min": -0.36721473932266235,
+      "voltage_max": 1.4496816396713257,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2026118677:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e8493f71e2a7660c5cf3b05041dadea779c31b97a0584b13fcacd15063127b5b",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 12,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "401e6f7cdc1cecabada30fe87f85ee415b31e3771a62f32e2b252157d74b996b",
+      "full_counts_sha256": "be499437bedce6d4f5b7dd79ad8f96914894a090d73cc5ae769c6255050f5b92",
+      "actual_total_spikes": 555575,
+      "voltage_min": -0.3657486140727997,
+      "voltage_max": 1.4719072580337524,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "2026118677:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        5,
+        12
+      ],
+      "feedback_complete": false,
+      "observation_hash": "401e6f7cdc1cecabada30fe87f85ee415b31e3771a62f32e2b252157d74b996b",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 13,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "dd88dd7d47fb8237b76f1e455e9416726bed10cfff8c0f8bbf05d1978f9ad9f8",
+      "full_counts_sha256": "d257e040dde6eefbe382d979463e8b3e4cf3562d17a90ac1d2e7258e690850f9",
+      "actual_total_spikes": 400897,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2138079223:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "dd88dd7d47fb8237b76f1e455e9416726bed10cfff8c0f8bbf05d1978f9ad9f8",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 13,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "ba6a90fe96c07f25874343359a5a4001ddd163fa76e8cc83c742eba4ac629b4f",
+      "full_counts_sha256": "4ec15b48ef82684083e0ec4d65749b669b1f17fd8d1452b35bf7e103edb733c7",
+      "actual_total_spikes": 556012,
+      "voltage_min": -0.36806613206863403,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "2138079223:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "ba6a90fe96c07f25874343359a5a4001ddd163fa76e8cc83c742eba4ac629b4f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 13,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "96cba9e8db09194aaf7663e9973ecf66bc3c3a0f4cd23c9bf1da6de89f94d883",
+      "full_counts_sha256": "69e649c4e4d55f621748a5166b779867fff71bed368c34e3478d4f87e1aa6876",
+      "actual_total_spikes": 555476,
+      "voltage_min": -0.3665243089199066,
+      "voltage_max": 1.4552569389343262,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "2138079223:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        8
+      ],
+      "feedback_complete": false,
+      "observation_hash": "96cba9e8db09194aaf7663e9973ecf66bc3c3a0f4cd23c9bf1da6de89f94d883",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6cd145eb8ed710f3b806c9f2a4badc554109a78b581f76067d86c5263c821f06",
+      "full_counts_sha256": "d5194885d2aa23a07c631643096546508aa3dce48848bb36394a8681e23adf0a",
+      "actual_total_spikes": 400875,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6cd145eb8ed710f3b806c9f2a4badc554109a78b581f76067d86c5263c821f06",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e62b9f146413c6d5c0d37945e357dedac28ad795f1597c6ad552073d67b7cda4",
+      "full_counts_sha256": "bc835c78a704651d9a06952d2ae848d28557ca13ce2405aff786d769bb82a3d2",
+      "actual_total_spikes": 555999,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4609123468399048,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e62b9f146413c6d5c0d37945e357dedac28ad795f1597c6ad552073d67b7cda4",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "cd01d0bec317d410c7aaeeea96c184ef212b7261f029d1b77694dbbb9400f08f",
+      "full_counts_sha256": "35cb0c0cf164045928a537dbbe3b9e65af3ce6d819099cce9f3f11cfc4c462bf",
+      "actual_total_spikes": 555308,
+      "voltage_min": -0.36653780937194824,
+      "voltage_max": 1.4607696533203125,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "cd01d0bec317d410c7aaeeea96c184ef212b7261f029d1b77694dbbb9400f08f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "bfa6d9958f32899c66e15ae58e609d4a5617710be7492b35a7cf4c1c72f267e9",
+      "full_counts_sha256": "519f464c05ee194c68983246d5f315ab9c42c50c7b2a78b66057d24efa6fd008",
+      "actual_total_spikes": 555357,
+      "voltage_min": -0.3575761318206787,
+      "voltage_max": 1.4270689487457275,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "bfa6d9958f32899c66e15ae58e609d4a5617710be7492b35a7cf4c1c72f267e9",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "05bee66feb49f360e457aeb97bf4c5219c8385fdee395205551b3c7ee991219c",
+      "full_counts_sha256": "de3d6390fbce24bb9b80b9c1f2e5e0c28aef900923ffe20cf1f8dd3fa50358a1",
+      "actual_total_spikes": 555237,
+      "voltage_min": -0.36621347069740295,
+      "voltage_max": 1.448086142539978,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "05bee66feb49f360e457aeb97bf4c5219c8385fdee395205551b3c7ee991219c",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "c5651b05221893765ae9539316dba8972f08017e1739a2fcb70f97907c689c05",
+      "full_counts_sha256": "d9ba13394a0cf09227eda5e0d320c4ac3e349cf9d29e8560aa0421f01460f355",
+      "actual_total_spikes": 555317,
+      "voltage_min": -0.36502718925476074,
+      "voltage_max": 1.4682338237762451,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "c5651b05221893765ae9539316dba8972f08017e1739a2fcb70f97907c689c05",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "affacd2ef4f9a7c422ab6190a5ae612589365c767c3867cc7b0746100510bb41",
+      "full_counts_sha256": "fff8c77e63d9eca6a2b5e1fd4e8216768275cee1ab963e895350176b16db523d",
+      "actual_total_spikes": 554859,
+      "voltage_min": -0.35767754912376404,
+      "voltage_max": 1.47478449344635,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "898841510:1:6:none",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "affacd2ef4f9a7c422ab6190a5ae612589365c767c3867cc7b0746100510bb41",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 14,
+    "decision": 7,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "a6e7aed5f9efb273670b43f9e3ff7ab9d8c94a0c8c6a2ed5452a8e80d8aeef40",
+      "full_counts_sha256": "7e89bc7eee35b74e006e9eb1d1cd6ef860ab58b7d511cdcb00ea339043099785",
+      "actual_total_spikes": 555230,
+      "voltage_min": -0.36744046211242676,
+      "voltage_max": 1.4519225358963013,
+      "start_tick": 700,
+      "end_tick": 800,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "898841510:1:7:aversive",
+      "episode_id": 1,
+      "step_id": 7,
+      "next_step_id": 8,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        2
+      ],
+      "feedback_complete": false,
+      "observation_hash": "a6e7aed5f9efb273670b43f9e3ff7ab9d8c94a0c8c6a2ed5452a8e80d8aeef40",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 15,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "3d7f09190e9a545efa36ae9ebd38cea3ccaba9beb35312bd52c8f9bdff3cbc77",
+      "full_counts_sha256": "281549010934957e24971fdf7f5d9864acf492e6339c077716b11c6c59bb0ae7",
+      "actual_total_spikes": 400894,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "837257846:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "3d7f09190e9a545efa36ae9ebd38cea3ccaba9beb35312bd52c8f9bdff3cbc77",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 15,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "bea7f71b61922f47fcd2602bdaddbf69423c6bdf88abf4311cdfe38e903a8e18",
+      "full_counts_sha256": "4294bfa9045dedc851fae89ac1b6ccbb2dc99f4ec44ac0e106ca07e957c5266c",
+      "actual_total_spikes": 555953,
+      "voltage_min": -0.3680373728275299,
+      "voltage_max": 1.4590880870819092,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "837257846:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "bea7f71b61922f47fcd2602bdaddbf69423c6bdf88abf4311cdfe38e903a8e18",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 15,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "461841e437a459e79022632d0f55552cbd230d3a693296ab7d6adc2d69ab49ab",
+      "full_counts_sha256": "69757175f235ca971da2f594fd4c8f4aad32f1544dc8fe9f1a8e13b5ae25538e",
+      "actual_total_spikes": 555403,
+      "voltage_min": -0.3653794229030609,
+      "voltage_max": 1.4581502676010132,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "837257846:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "461841e437a459e79022632d0f55552cbd230d3a693296ab7d6adc2d69ab49ab",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 15,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "5d8636a4bca9ff1d17ea169dd0f3421f22499e5920ce00185e02e434338f15c7",
+      "full_counts_sha256": "c48bf72764a5f1c7b6022cfbeffd96a414f497f9ba60ab882244c56c381f5ebb",
+      "actual_total_spikes": 555407,
+      "voltage_min": -0.3572082817554474,
+      "voltage_max": 1.4441953897476196,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "837257846:1:3:aversive",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        3,
+        -1
+      ],
+      "feedback_complete": false,
+      "observation_hash": "5d8636a4bca9ff1d17ea169dd0f3421f22499e5920ce00185e02e434338f15c7",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e09a27d45867d9da093ecce4e2f4fbe1e7c81f13016829e5c82ccc363b320979",
+      "full_counts_sha256": "5cf87741fce1b9a97ebd0722dfd451e4eaf8f5db94f084cc59fd214d7bad8a86",
+      "actual_total_spikes": 400897,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e09a27d45867d9da093ecce4e2f4fbe1e7c81f13016829e5c82ccc363b320979",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "19434763c6c0b52dc4f968d1c9938edacc4650197ddc8bfb778d4545ed4a0b48",
+      "full_counts_sha256": "18d317f652ae3c30e3ebf8d603cefbd8a6b7642a64c95587cbec1057c2245611",
+      "actual_total_spikes": 555975,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4590846300125122,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "19434763c6c0b52dc4f968d1c9938edacc4650197ddc8bfb778d4545ed4a0b48",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "d5a2ee1101eddc4ef39c12fcd03f55ea29e26af5eb07c527ca75cdb9a76097f2",
+      "full_counts_sha256": "435eff2da172edf0143c527d57209048e2497cc22696723dd8b27606ec2eeb9a",
+      "actual_total_spikes": 555305,
+      "voltage_min": -0.36510178446769714,
+      "voltage_max": 1.4370261430740356,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "d5a2ee1101eddc4ef39c12fcd03f55ea29e26af5eb07c527ca75cdb9a76097f2",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "473307f68998924a534ae7347e0b8c0e5bca70999f79ad0bf9e334e0aa482ce2",
+      "full_counts_sha256": "70798411199c672800761395fe7e2275a955d7048ffb21eddfa8c0cda8965a80",
+      "actual_total_spikes": 555197,
+      "voltage_min": -0.35715818405151367,
+      "voltage_max": 1.4555128812789917,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "473307f68998924a534ae7347e0b8c0e5bca70999f79ad0bf9e334e0aa482ce2",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "40936bb3f56c22939e555f6cd86b6b0176501da2aac29f8ce46b0b07690996b0",
+      "full_counts_sha256": "c51df6d5b0d6820831a842435e4b9c24f98e36ade22f9924b41da0bef21ab37e",
+      "actual_total_spikes": 555045,
+      "voltage_min": -0.3671325147151947,
+      "voltage_max": 1.4711601734161377,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "40936bb3f56c22939e555f6cd86b6b0176501da2aac29f8ce46b0b07690996b0",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9b045bbcdce716994fd2459ad06b2e3bb93fbc8eb3c0ecbcfdfc12db536c0f2c",
+      "full_counts_sha256": "db140077abae3ea461caebbee4f9fd3e1d17d6c90d8ae0b934f39614ebca7ebb",
+      "actual_total_spikes": 555069,
+      "voltage_min": -0.36595383286476135,
+      "voltage_max": 1.462762475013733,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9b045bbcdce716994fd2459ad06b2e3bb93fbc8eb3c0ecbcfdfc12db536c0f2c",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "f49885b02c3b1939f64243af18eae21f598ea13b95f54ad2749fb6b771f43186",
+      "full_counts_sha256": "163184690bb65d42923cde5da96c80fef7d9f08ba4dc90c4c1b157b2cca421eb",
+      "actual_total_spikes": 554531,
+      "voltage_min": -0.35839468240737915,
+      "voltage_max": 1.449767827987671,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1922770331:1:6:none",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "f49885b02c3b1939f64243af18eae21f598ea13b95f54ad2749fb6b771f43186",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 16,
+    "decision": 7,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "5adf900a0f5ebde831921739ba7a771994fa582683badcd834c7a13ac4cde959",
+      "full_counts_sha256": "948559e03189751b014936a198f3a80077e0bbf5a49e2a6b14542dc9854ec5a2",
+      "actual_total_spikes": 554682,
+      "voltage_min": -0.3682463467121124,
+      "voltage_max": 1.452103614807129,
+      "start_tick": 700,
+      "end_tick": 800,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1922770331:1:7:aversive",
+      "episode_id": 1,
+      "step_id": 7,
+      "next_step_id": 8,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        12,
+        3
+      ],
+      "feedback_complete": false,
+      "observation_hash": "5adf900a0f5ebde831921739ba7a771994fa582683badcd834c7a13ac4cde959",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 17,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "aeef34578129ea0959b2a9366e8f2e194214c41b9c3db4742254ee3897a17a86",
+      "full_counts_sha256": "8d272ce9cfd9437520e7ad4444eaf17dce1c5c7f90b829608bbd5198cf7931ff",
+      "actual_total_spikes": 400907,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "209662202:1:0:aversive",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        12,
+        11
+      ],
+      "feedback_complete": false,
+      "observation_hash": "aeef34578129ea0959b2a9366e8f2e194214c41b9c3db4742254ee3897a17a86",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "d2012c17bf613ee87459f0af6fa85e62a2c15d604375c34e643f3428d69f160f",
+      "full_counts_sha256": "d3ee2b8256abf589ec8c382f976fab740bc49422ec773d7bfda75f5f8f9042f4",
+      "actual_total_spikes": 400870,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.466634750366211,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "d2012c17bf613ee87459f0af6fa85e62a2c15d604375c34e643f3428d69f160f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "eacc203c7f5b4c4f7cfc3fbc4d0f4faf90a599850705ee5f1c1f795ec23d3ce6",
+      "full_counts_sha256": "1f31d08bfdd7f755429ca59160feb9da279954986f42ef31921163e79bc63658",
+      "actual_total_spikes": 555953,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4656548500061035,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "eacc203c7f5b4c4f7cfc3fbc4d0f4faf90a599850705ee5f1c1f795ec23d3ce6",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "81e8cf2a9470fcba203bd0c89cfab381a257383eba33d51bc83418d49d42e755",
+      "full_counts_sha256": "d5c1f763fe0556bfbfd6a3b17aa6a498f714514251449fac4a3de3ee483808eb",
+      "actual_total_spikes": 555429,
+      "voltage_min": -0.3647828996181488,
+      "voltage_max": 1.4658807516098022,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "81e8cf2a9470fcba203bd0c89cfab381a257383eba33d51bc83418d49d42e755",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6b5af7177237bb8a8c60947ca43323cc7ac24c97f234259f9ee4d60c60e95973",
+      "full_counts_sha256": "c6565ccb85b1daea6cd762cf356480cf95f561056f849c8d70c86688f27e3208",
+      "actual_total_spikes": 555025,
+      "voltage_min": -0.35730794072151184,
+      "voltage_max": 1.4426361322402954,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6b5af7177237bb8a8c60947ca43323cc7ac24c97f234259f9ee4d60c60e95973",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "fd451d2e49effe015a5d0bd00c7cd4ddf5956f99491bd884ab4d76d35a840b41",
+      "full_counts_sha256": "dd7122b389ebc5ee24d84a95fecefd3aaefac849b835c9bd01cd465a7979746e",
+      "actual_total_spikes": 554879,
+      "voltage_min": -0.367184579372406,
+      "voltage_max": 1.4603831768035889,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "fd451d2e49effe015a5d0bd00c7cd4ddf5956f99491bd884ab4d76d35a840b41",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6088e7de526dfc0e1a5f6a12fdcd067d7a0550c765a8c7ee8b8456af20f9f074",
+      "full_counts_sha256": "870f116c99b9a8d8fa96bb397b580601972a87628d1f7d8a5aa5b078244ee76e",
+      "actual_total_spikes": 554996,
+      "voltage_min": -0.3659578859806061,
+      "voltage_max": 1.4866054058074951,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1468108588:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6088e7de526dfc0e1a5f6a12fdcd067d7a0550c765a8c7ee8b8456af20f9f074",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 18,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e824e405151478c410b6568c56b2c7aea06247100069622668c9d801ad80017d",
+      "full_counts_sha256": "d1d8212982cd5926bd2fd6bf5204764d0952518c132c82cb08bbc529b7b25ad4",
+      "actual_total_spikes": 554578,
+      "voltage_min": -0.3588480055332184,
+      "voltage_max": 1.4581185579299927,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1468108588:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        12,
+        1
+      ],
+      "feedback_complete": false,
+      "observation_hash": "e824e405151478c410b6568c56b2c7aea06247100069622668c9d801ad80017d",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "5495f9e161b4886b518fcfb30cd5621840eed3473829db6b2840a37de7d2cb5a",
+      "full_counts_sha256": "865102133f670ad0d3fd7032e369b38db081b01d27e220be34c9d09786ef02ba",
+      "actual_total_spikes": 400885,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "5495f9e161b4886b518fcfb30cd5621840eed3473829db6b2840a37de7d2cb5a",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9754930acae7e564dbce5d72e796323c8457e8c455584f686d9add687a29e634",
+      "full_counts_sha256": "6cd01d2969e1a791a35532c3520f09bfca30f825a0905e252d8ac5ef06660795",
+      "actual_total_spikes": 556008,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4609125852584839,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9754930acae7e564dbce5d72e796323c8457e8c455584f686d9add687a29e634",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "039b93aa6ef2e3102c19b787345a2d5a68b661af7eafaaa45ad7d39efc821cc0",
+      "full_counts_sha256": "3a2fb60050021a7edb82aa4185b4b4801ffdf4111131a481f9fad6c0a7bdb776",
+      "actual_total_spikes": 555337,
+      "voltage_min": -0.3668115735054016,
+      "voltage_max": 1.4465773105621338,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "039b93aa6ef2e3102c19b787345a2d5a68b661af7eafaaa45ad7d39efc821cc0",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e92c81af3c91adccab8135632e6761e8d51f15983e54a0641e514be79b4e732f",
+      "full_counts_sha256": "e26a894dc1f50d850474da43c10c49b4b9f71c8d44d8cc6d29ea717813b0944f",
+      "actual_total_spikes": 555095,
+      "voltage_min": -0.3573084771633148,
+      "voltage_max": 1.4680722951889038,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "e92c81af3c91adccab8135632e6761e8d51f15983e54a0641e514be79b4e732f",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "5136cae9f50dd698b08af6748b6ed6dd0dca18b10fb2499f7c35dbd82de129b2",
+      "full_counts_sha256": "749aed7e3b86e998d788715d93a01f3c6717e000ffae725962121b43b642d9ca",
+      "actual_total_spikes": 554924,
+      "voltage_min": -0.3668763041496277,
+      "voltage_max": 1.4452587366104126,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "5136cae9f50dd698b08af6748b6ed6dd0dca18b10fb2499f7c35dbd82de129b2",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "098ce2524023c95cc37ebbd2a39528135c8e516866e9fe99c42def022f0f0f27",
+      "full_counts_sha256": "64bba904e224d41beb55a93e6f3518b3ed93851367c6a163008c16cecf37c569",
+      "actual_total_spikes": 554777,
+      "voltage_min": -0.3662412166595459,
+      "voltage_max": 1.454772710800171,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "490948478:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "098ce2524023c95cc37ebbd2a39528135c8e516866e9fe99c42def022f0f0f27",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 19,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "c4d9d27109b05ba31e1b68c1c455fe22a6c539c16392f32ca14d930ba1b19cce",
+      "full_counts_sha256": "7625736ea338a73f61218c4fd09c2df0ef78d7ffd4a1194d269665673aa64415",
+      "actual_total_spikes": 554626,
+      "voltage_min": -0.35930702090263367,
+      "voltage_max": 1.4548065662384033,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "490948478:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        10,
+        -1
+      ],
+      "feedback_complete": false,
+      "observation_hash": "c4d9d27109b05ba31e1b68c1c455fe22a6c539c16392f32ca14d930ba1b19cce",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 20,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9469d464e1802b924015593fd5e92c2ac960f397e04927f898bf13ca67732f9b",
+      "full_counts_sha256": "ee198982dc8df62170aa7aea741050a65e5a534328d9483edd79224f260bf22c",
+      "actual_total_spikes": 400848,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "554113210:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9469d464e1802b924015593fd5e92c2ac960f397e04927f898bf13ca67732f9b",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 20,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "8e866415f56999beac4ea4b5d25bea3581bab0320b00c8336c103c050b2d539f",
+      "full_counts_sha256": "6618b52d6ea711720ff522017a1bdd28b614e9b903da60cec5540af161fe5363",
+      "actual_total_spikes": 555871,
+      "voltage_min": -0.3680417537689209,
+      "voltage_max": 1.4616093635559082,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "554113210:1:1:aversive",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        5
+      ],
+      "feedback_complete": false,
+      "observation_hash": "8e866415f56999beac4ea4b5d25bea3581bab0320b00c8336c103c050b2d539f",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 21,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "f3e05035ddb0a1ce3b1b34a08950c1dfb0a8e3ec2d3f809f03ef2c0042adea5d",
+      "full_counts_sha256": "6e6131de14ef20500e808586b35637a57e92725e65a708baa46ab08eea1cf5dd",
+      "actual_total_spikes": 400890,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "778766691:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "f3e05035ddb0a1ce3b1b34a08950c1dfb0a8e3ec2d3f809f03ef2c0042adea5d",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 21,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9981ea720cc51d2e487bfb35b77bdb4daedfcff96f39048ec0d68d5d49e4be0c",
+      "full_counts_sha256": "306ef2bda036b81aa28088168696d7ab78ce4b17a4461f4839565f433614c3d2",
+      "actual_total_spikes": 555986,
+      "voltage_min": -0.36827215552330017,
+      "voltage_max": 1.4590847492218018,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "778766691:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "9981ea720cc51d2e487bfb35b77bdb4daedfcff96f39048ec0d68d5d49e4be0c",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 21,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "827dcf2f5304fc843427456cf099348d29ec61c3d918bf9cfc2467a9c67b0d63",
+      "full_counts_sha256": "15b355041de4adc4c394ee213d3e844e80c40baee2e9fa28cd969525d334c971",
+      "actual_total_spikes": 555320,
+      "voltage_min": -0.3653773069381714,
+      "voltage_max": 1.473852515220642,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "778766691:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "827dcf2f5304fc843427456cf099348d29ec61c3d918bf9cfc2467a9c67b0d63",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 21,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "e2df2c11d3fabfa102cb6ccb283e11d49c92fb53c48969d00d6246789f4b8aeb",
+      "full_counts_sha256": "b11d47178708985ac394e7b78352da2bf682dc1e4fe91d5bc2967d4e82902166",
+      "actual_total_spikes": 555088,
+      "voltage_min": -0.35717320442199707,
+      "voltage_max": 1.4471079111099243,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "778766691:1:3:aversive",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        3
+      ],
+      "feedback_complete": false,
+      "observation_hash": "e2df2c11d3fabfa102cb6ccb283e11d49c92fb53c48969d00d6246789f4b8aeb",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "03ec97455dd64d3c9e8e15c0d791d545e74c88f25e3768800a1392b5ff7c73a6",
+      "full_counts_sha256": "a1be56adb8f5a1c4103c054491be9f471609999db726245559f2934853035e95",
+      "actual_total_spikes": 400905,
+      "voltage_min": -0.35811617970466614,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "03ec97455dd64d3c9e8e15c0d791d545e74c88f25e3768800a1392b5ff7c73a6",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "6a058d31a539c6255e39d8b8b8e74a6a12597ce024d856a51a3e609df4d84dd9",
+      "full_counts_sha256": "ecf002f44e1c4b8d4822bf72197366764ef0fea18bebaf1a87e7b1ed0c9a7d1e",
+      "actual_total_spikes": 555986,
+      "voltage_min": -0.36827021837234497,
+      "voltage_max": 1.4609155654907227,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "6a058d31a539c6255e39d8b8b8e74a6a12597ce024d856a51a3e609df4d84dd9",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "482cf1401df3b30a1e5f3305102765bc482e67072808f02ba2cb936ad7c17424",
+      "full_counts_sha256": "c9e1c6dfb28de16fab9491833e70d4a4130a210d79542651c9c6a68ed6520112",
+      "actual_total_spikes": 555577,
+      "voltage_min": -0.3665485978126526,
+      "voltage_max": 1.4448226690292358,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:2:none",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "482cf1401df3b30a1e5f3305102765bc482e67072808f02ba2cb936ad7c17424",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 3,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "c5e6752ec553cf00485628d04b5564b0dc5257dd4d3692ba49e7184d5f799b51",
+      "full_counts_sha256": "ef89999bf6accad5c94060ed7ce5029f5b1a60744a1c212582f0f32cad00c697",
+      "actual_total_spikes": 555274,
+      "voltage_min": -0.35674113035202026,
+      "voltage_max": 1.4721858501434326,
+      "start_tick": 300,
+      "end_tick": 400,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:3:none",
+      "episode_id": 1,
+      "step_id": 3,
+      "next_step_id": 4,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "c5e6752ec553cf00485628d04b5564b0dc5257dd4d3692ba49e7184d5f799b51",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 4,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          19
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "65e3c2ac6f59da1a362b8d8f8d298cb23d190d30fa79d6b4f6ff728f81cce534",
+      "full_counts_sha256": "6daf87f0d28204815155e96860e0dd594f4d5ade5f20e257c7d1f249f33a424e",
+      "actual_total_spikes": 555338,
+      "voltage_min": -0.3665156066417694,
+      "voltage_max": 1.4361846446990967,
+      "start_tick": 400,
+      "end_tick": 500,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:4:none",
+      "episode_id": 1,
+      "step_id": 4,
+      "next_step_id": 5,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "65e3c2ac6f59da1a362b8d8f8d298cb23d190d30fa79d6b4f6ff728f81cce534",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 5,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1a98b3667d99887fbbc53ae2d63be7e25dd115226b4ecd4991a19759e9aca605",
+      "full_counts_sha256": "7416cc37ea19eaa162afc8fda629bbdd325f57bba5a6d7124b58df15bb997816",
+      "actual_total_spikes": 554968,
+      "voltage_min": -0.3655729293823242,
+      "voltage_max": 1.4624817371368408,
+      "start_tick": 500,
+      "end_tick": 600,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "1647535745:1:5:none",
+      "episode_id": 1,
+      "step_id": 5,
+      "next_step_id": 6,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "1a98b3667d99887fbbc53ae2d63be7e25dd115226b4ecd4991a19759e9aca605",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 22,
+    "decision": 6,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "1e0d5e32f88eead2484d885f3a782f9c4a0241687d3573dd8f0d1a911c1ff343",
+      "full_counts_sha256": "b9e070f30ba6b7085e1771b74797ad1724e3266b8cf01209c8eb35eb6dee65bd",
+      "actual_total_spikes": 554693,
+      "voltage_min": -0.3581179678440094,
+      "voltage_max": 1.455998182296753,
+      "start_tick": 600,
+      "end_tick": 700,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "1647535745:1:6:aversive",
+      "episode_id": 1,
+      "step_id": 6,
+      "next_step_id": 7,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        1,
+        -1
+      ],
+      "feedback_complete": false,
+      "observation_hash": "1e0d5e32f88eead2484d885f3a782f9c4a0241687d3573dd8f0d1a911c1ff343",
+      "scalar_reward": -1.0
+    }
+  },
+  {
+    "episode": 23,
+    "decision": 0,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          1
+        ],
+        "right": [
+          1
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "a3a494978d91d56fbe001823b9544acb78c047043c5444277abc1c20739d819a",
+      "full_counts_sha256": "a8e1cbb526ffa03a76c7e861d13bda22744941f17faabcde39affb3a86045570",
+      "actual_total_spikes": 400903,
+      "voltage_min": -0.35776710510253906,
+      "voltage_max": 1.4666268825531006,
+      "start_tick": 0,
+      "end_tick": 100,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "853412058:1:0:none",
+      "episode_id": 1,
+      "step_id": 0,
+      "next_step_id": 1,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "a3a494978d91d56fbe001823b9544acb78c047043c5444277abc1c20739d819a",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 23,
+    "decision": 1,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          17,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "48f5813c9765f7228f992a59a915e29e6f1df5c1d2ab1521cd558fdbaefb03d4",
+      "full_counts_sha256": "53f27cc5a34a254b5d42429518eb2776e2db4a08ac3454140b2a5e48ef607913",
+      "actual_total_spikes": 555941,
+      "voltage_min": -0.36782020330429077,
+      "voltage_max": 1.4590729475021362,
+      "start_tick": 100,
+      "end_tick": 200,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "none",
+      "event_id": "853412058:1:1:none",
+      "episode_id": 1,
+      "step_id": 1,
+      "next_step_id": 2,
+      "action": "forward",
+      "terminal": false,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": null,
+      "outcome": null,
+      "collision_at": null,
+      "feedback_complete": true,
+      "observation_hash": "48f5813c9765f7228f992a59a915e29e6f1df5c1d2ab1521cd558fdbaefb03d4",
+      "scalar_reward": 0.0
+    }
+  },
+  {
+    "episode": 23,
+    "decision": 2,
+    "receipt": {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.2,
+      "counts": {
+        "left": [
+          0
+        ],
+        "right": [
+          0
+        ],
+        "forward": [
+          16,
+          20
+        ]
+      },
+      "version": "complete-signed-RGB-teacher-surrogate-spiking-v1",
+      "selected_cell_ids": {
+        "left": [
+          523769
+        ],
+        "right": [
+          10360
+        ],
+        "forward_left": [
+          10162
+        ],
+        "forward_right": [
+          10059
+        ]
+      },
+      "input_sha256": "9fd475eebc2914eb51e0616d2079ef94270be4c20c9c14d246248899a73604be",
+      "full_counts_sha256": "30586cbee4d41cdd05fcad100791035bfbb711ef5a5bb53a328662f38becb00d",
+      "actual_total_spikes": 555361,
+      "voltage_min": -0.36631840467453003,
+      "voltage_max": 1.455141544342041,
+      "start_tick": 200,
+      "end_tick": 300,
+      "model_version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2"
+    },
+    "event": {
+      "accepted": true,
+      "reason": "ok",
+      "kind": "aversive",
+      "event_id": "853412058:1:2:aversive",
+      "episode_id": 1,
+      "step_id": 2,
+      "next_step_id": 3,
+      "action": "forward",
+      "terminal": true,
+      "score": 0,
+      "score_delta": 0,
+      "death_reason": "wall",
+      "outcome": "death",
+      "collision_at": [
+        -1,
+        9
+      ],
+      "feedback_complete": false,
+      "observation_hash": "9fd475eebc2914eb51e0616d2079ef94270be4c20c9c14d246248899a73604be",
+      "scalar_reward": -1.0
+    }
+  }
+]

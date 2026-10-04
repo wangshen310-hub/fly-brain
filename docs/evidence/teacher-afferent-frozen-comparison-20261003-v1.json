@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "evaluation_sha256": "6e844265dbcd1f48fbdf0bf3c31da17d9f579af6131d22e1900feb8490f97705",
+  "test_pose_clusters": 8,
+  "test_frames": 72,
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 81003,
+  "comparisons": {
+    "mismatch": {
+      "extra_correct_of_72": 2,
+      "balanced_accuracy_difference": 0.0510752688172043,
+      "pose_cluster_bootstrap_95_ci": [
+        0.0,
+        0.11989247311827957
+      ],
+      "improved_scene_indices": [
+        11,
+        12,
+        14,
+        15,
+        29
+      ],
+      "worsened_scene_indices": [
+        10,
+        13,
+        17
+      ],
+      "ordinary_mean_food_difference": 0.0,
+      "paired_world_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "episodes_with_more_food": 0,
+      "episodes_with_less_food": 0
+    },
+    "reset-afferents": {
+      "extra_correct_of_72": 2,
+      "balanced_accuracy_difference": 0.0510752688172043,
+      "pose_cluster_bootstrap_95_ci": [
+        0.0,
+        0.11989247311827957
+      ],
+      "improved_scene_indices": [
+        11,
+        12,
+        14,
+        15,
+        29
+      ],
+      "worsened_scene_indices": [
+        10,
+        13,
+        17
+      ],
+      "ordinary_mean_food_difference": 0.0,
+      "paired_world_bootstrap_95_ci": [
+        0.0,
+        0.0
+      ],
+      "episodes_with_more_food": 0,
+      "episodes_with_less_food": 0
+    },
+    "vision-off": {
+      "extra_correct_of_72": 2,
+      "balanced_accuracy_difference": 0.0510752688172043,
+      "pose_cluster_bootstrap_95_ci": [
+        0.0,
+        0.11989247311827957
+      ],
+      "improved_scene_indices": [
+        11,
+        12,
+        14,
+        15,
+        29
+      ],
+      "worsened_scene_indices": [
+        10,
+        13,
+        17
+      ]
+    }
+  },
+  "source_sha256": "ac030090795940268674a56ba664cd649c8c994580be31d9ee8d94a3ec304250",
+  "bootstrap_method": "Resample whole test poses; retain original complete-test class weights in paired balanced-accuracy contributions. Resample paired world seeds for mean ordinary food scores.",
+  "interpretation": "Exploratory single-training-seed precision, not a confirmatory multi-seed learning claim; game vision-off control not performed."
+}

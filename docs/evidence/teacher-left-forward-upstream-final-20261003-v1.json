@@ -1,0 +1,88 @@
+{
+  "scope": "Actually changed upstream 200-step memory; one fixed training pose, LEFT/FORWARD food; final state and total counts only, not release time series.",
+  "changed_window_counts": [
+    {
+      "cell_id": 21744,
+      "cell_type": "LC10a",
+      "superclass": "visual_projection",
+      "actual_counts": [
+        17,
+        16,
+        17
+      ],
+      "final_voltage_delta": 0.01774650812149048
+    },
+    {
+      "cell_id": 61354,
+      "cell_type": "MeTu3c",
+      "superclass": "visual_projection",
+      "actual_counts": [
+        16,
+        17,
+        17
+      ],
+      "final_voltage_delta": 0.14650791883468628
+    },
+    {
+      "cell_id": 93076,
+      "cell_type": "Dm8b",
+      "superclass": "ol_intrinsic",
+      "actual_counts": [
+        2,
+        1,
+        2
+      ],
+      "final_voltage_delta": 0.0681425929069519
+    },
+    {
+      "cell_id": 544844,
+      "cell_type": "Dm2",
+      "superclass": "ol_intrinsic",
+      "actual_counts": [
+        20,
+        21,
+        21
+      ],
+      "final_voltage_delta": 0.0
+    },
+    {
+      "cell_id": 545756,
+      "cell_type": "Mi15",
+      "superclass": "ol_intrinsic",
+      "actual_counts": [
+        10,
+        11,
+        11
+      ],
+      "final_voltage_delta": 0.017330467700958252
+    }
+  ],
+  "changed_voltage_cells_over_1e_5": 3302,
+  "by_superclass": [
+    {
+      "superclass": "cb_intrinsic",
+      "changed_final_voltage_cells": 8,
+      "changed_actual_window_count_cells": 0
+    },
+    {
+      "superclass": "ol_intrinsic",
+      "changed_final_voltage_cells": 2924,
+      "changed_actual_window_count_cells": 3
+    },
+    {
+      "superclass": "ol_sensory",
+      "changed_final_voltage_cells": 87,
+      "changed_actual_window_count_cells": 0
+    },
+    {
+      "superclass": "visual_centrifugal",
+      "changed_final_voltage_cells": 11,
+      "changed_actual_window_count_cells": 0
+    },
+    {
+      "superclass": "visual_projection",
+      "changed_final_voltage_cells": 272,
+      "changed_actual_window_count_cells": 2
+    }
+  ]
+}

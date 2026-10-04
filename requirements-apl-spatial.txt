@@ -1,0 +1,2 @@
+# Optional data preparation dependency; existing neural dependencies unchanged.
+google-crc32c==1.9.0

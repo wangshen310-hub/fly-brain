@@ -1,0 +1,3249 @@
+{
+  "status": "complete",
+  "checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-normal-v1\\memory-0060.pt",
+    "sha256": "7d776128441f39266819f5fcaf37cc79c0827a2c2774687cc1bb510bbda2dee2",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  },
+  "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+  "frames": [
+    "bd08d2ccd456cf6cb0d161e560878a59ceebec56b28705226959d67a32400470",
+    "085353b38e2e92e3036ec6ff7414ffbed69778c3f0b721d88402617fed0d0394"
+  ],
+  "train_indices": [
+    0,
+    1
+  ],
+  "physical_scene_order": [
+    "left_food",
+    "forward_food"
+  ],
+  "actual_receipts": [
+    {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.6000000000000001,
+      "counts": {
+        "left": [
+          3
+        ],
+        "right": [
+          3
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "action": "forward",
+      "reason": "fixed_raw_turn",
+      "difference": 0,
+      "balance_limit": 0.6000000000000001,
+      "counts": {
+        "left": [
+          3
+        ],
+        "right": [
+          3
+        ],
+        "forward": [
+          12,
+          13
+        ]
+      }
+    }
+  ],
+  "all_neurons": 166700,
+  "anatomical_edges": 25582938,
+  "photoreceptors_with_different_radiance": 5,
+  "maximum_receptor_radiance_difference": 0.7805253863334656,
+  "actual_delayed_release_changed_cells": 374,
+  "non_graded_release_changed_cells": 33,
+  "changed_window_spike_count_cells": 5,
+  "motor_input_neurons": 2426,
+  "motor_input_arrivals_byte_equal": true,
+  "max_motor_input_release_difference": 0.0,
+  "nearest_changed_release_hops_to_turn": 2,
+  "nearest_changed_release_cells": [
+    {
+      "cell_id": 14602,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.8402934074401855e-06,
+      "max_voltage_difference": 2.2172927856445312e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 19789,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 6.276369094848633e-05,
+      "max_voltage_difference": 0.0007531642913818359,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 37918,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 2.6635825634002686e-06,
+      "max_voltage_difference": 3.2007694244384766e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 43554,
+      "cell_type": "Mi4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.22903156280517578,
+      "window_spike_counts": [
+        4,
+        4
+      ]
+    },
+    {
+      "cell_id": 49448,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.9185245037078857e-06,
+      "max_voltage_difference": 2.396106719970703e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 51087,
+      "cell_type": "Mi4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.24356210231781006,
+      "window_spike_counts": [
+        1,
+        1
+      ]
+    },
+    {
+      "cell_id": 57058,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.6763806343078613e-06,
+      "max_voltage_difference": 2.0205974578857422e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 61354,
+      "cell_type": "MeTu3c",
+      "superclass": "visual_projection",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.2641449570655823,
+      "window_spike_counts": [
+        16,
+        17
+      ]
+    },
+    {
+      "cell_id": 64549,
+      "cell_type": "Mi4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.122653067111969,
+      "window_spike_counts": [
+        5,
+        5
+      ]
+    },
+    {
+      "cell_id": 64559,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0579824447631836e-06,
+      "max_voltage_difference": 1.2814998626708984e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 65238,
+      "cell_type": "Mi4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.21145176887512207,
+      "window_spike_counts": [
+        4,
+        4
+      ]
+    },
+    {
+      "cell_id": 67549,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.8998980522155762e-06,
+      "max_voltage_difference": 2.276897430419922e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 72316,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.30385160446167e-06,
+      "max_voltage_difference": 1.5616416931152344e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 76606,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 0.00013462454080581665,
+      "max_voltage_difference": 0.0016298294067382812,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 77643,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 5.6821852922439575e-05,
+      "max_voltage_difference": 0.0006819367408752441,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 79840,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0468065738677979e-06,
+      "max_voltage_difference": 1.2576580047607422e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 80375,
+      "cell_type": "Dm12",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.16615015268325806,
+      "window_spike_counts": [
+        2,
+        2
+      ]
+    },
+    {
+      "cell_id": 105064,
+      "cell_type": "L5",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 3.2082200050354004e-05,
+      "max_voltage_difference": 0.0003849118947982788,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 109585,
+      "cell_type": "L5",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.3075768947601318e-06,
+      "max_voltage_difference": 1.583993434906006e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 120809,
+      "cell_type": "L5",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.440197229385376e-05,
+      "max_voltage_difference": 0.00017277896404266357,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 163631,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.5348196029663086e-06,
+      "max_voltage_difference": 1.8417835235595703e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 526050,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 2.115964889526367e-06,
+      "max_voltage_difference": 2.7894973754882812e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 533600,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.6652047634124756e-06,
+      "max_voltage_difference": 1.996755599975586e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 534648,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 0.0005018636584281921,
+      "max_voltage_difference": 0.006022334098815918,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 534649,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0728836059570312e-06,
+      "max_voltage_difference": 1.5616416931152344e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 540061,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 5.766376852989197e-05,
+      "max_voltage_difference": 0.0006920695304870605,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 544844,
+      "cell_type": "Dm2",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0,
+      "max_voltage_difference": 0.020060956478118896,
+      "window_spike_counts": [
+        20,
+        21
+      ]
+    },
+    {
+      "cell_id": 549340,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.0542571544647217e-06,
+      "max_voltage_difference": 1.2695789337158203e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 549402,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.5497207641601562e-06,
+      "max_voltage_difference": 1.8477439880371094e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    },
+    {
+      "cell_id": 553983,
+      "cell_type": "L4",
+      "superclass": "ol_intrinsic",
+      "fast_hops_to_turn": 2,
+      "max_actual_release_difference": 1.564621925354004e-06,
+      "max_voltage_difference": 1.8775463104248047e-05,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    }
+  ],
+  "depth_profile": [
+    {
+      "hops_to_turn": 0,
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 0
+    },
+    {
+      "hops_to_turn": 1,
+      "neurons": 2192,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1
+    },
+    {
+      "hops_to_turn": 2,
+      "neurons": 81506,
+      "changed_arrival_time_series": 30,
+      "changed_voltage_over_atol": 1587
+    },
+    {
+      "hops_to_turn": 3,
+      "neurons": 77431,
+      "changed_arrival_time_series": 340,
+      "changed_voltage_over_atol": 3106
+    },
+    {
+      "hops_to_turn": 4,
+      "neurons": 3778,
+      "changed_arrival_time_series": 4,
+      "changed_voltage_over_atol": 378
+    },
+    {
+      "hops_to_turn": 5,
+      "neurons": 14,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1
+    },
+    {
+      "hops_to_turn": 6,
+      "neurons": 0,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 0
+    },
+    {
+      "hops_to_turn": 7,
+      "neurons": 0,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 0
+    },
+    {
+      "hops_to_turn": 8,
+      "neurons": 0,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 0
+    }
+  ],
+  "turn_input_relays_receiving_changed_releases": [
+    {
+      "cell_id": 19331,
+      "cell_type": "AOTU017",
+      "superclass": "cb_intrinsic",
+      "changed_incoming_source_count": 1,
+      "changed_incoming_source_ids": [
+        61354
+      ],
+      "own_actual_release_changes": false,
+      "max_voltage_difference": 0.0,
+      "max_exc_conductance_difference": 0.0012761354446411133,
+      "max_inh_conductance_difference": 0.0,
+      "window_spike_counts": [
+        22,
+        22
+      ]
+    },
+    {
+      "cell_id": 10067,
+      "cell_type": "MeVPLp1",
+      "superclass": "visual_projection",
+      "changed_incoming_source_count": 27,
+      "changed_incoming_source_ids": [
+        14602,
+        19789,
+        37918,
+        43554,
+        49448,
+        51087,
+        57058,
+        64549,
+        64559,
+        65238,
+        67549,
+        72316,
+        76606,
+        77643,
+        79840,
+        80375,
+        105064,
+        163631,
+        526050,
+        533600,
+        534648,
+        534649,
+        540061,
+        544844,
+        549340,
+        549402,
+        553983
+      ],
+      "own_actual_release_changes": false,
+      "max_voltage_difference": 6.598234176635742e-05,
+      "max_exc_conductance_difference": 0.00017455965280532837,
+      "max_inh_conductance_difference": 0.0006975103169679642,
+      "window_spike_counts": [
+        15,
+        15
+      ]
+    },
+    {
+      "cell_id": 10260,
+      "cell_type": "MeVC11",
+      "superclass": "visual_centrifugal",
+      "changed_incoming_source_count": 2,
+      "changed_incoming_source_ids": [
+        109585,
+        120809
+      ],
+      "own_actual_release_changes": false,
+      "max_voltage_difference": 0.0,
+      "max_exc_conductance_difference": 0.0,
+      "max_inh_conductance_difference": 0.0,
+      "window_spike_counts": [
+        0,
+        0
+      ]
+    }
+  ],
+  "by_superclass": [
+    {
+      "name": "ol_intrinsic",
+      "neurons": 89403,
+      "changed_arrival_time_series": 366,
+      "changed_voltage_over_atol": 4375,
+      "changed_window_spike_counts": 3,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "ol_sensory",
+      "neurons": 6098,
+      "changed_arrival_time_series": 6,
+      "changed_voltage_over_atol": 401,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "visual_projection",
+      "neurons": 9201,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 362,
+      "changed_window_spike_counts": 2,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "visual_centrifugal",
+      "neurons": 563,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 29,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "cb_intrinsic",
+      "neurons": 32164,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 17,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    }
+  ],
+  "by_cell_type": [
+    {
+      "name": "L2",
+      "neurons": 1779,
+      "changed_arrival_time_series": 167,
+      "changed_voltage_over_atol": 173,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "L3",
+      "neurons": 1772,
+      "changed_arrival_time_series": 70,
+      "changed_voltage_over_atol": 89,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "L4",
+      "neurons": 1770,
+      "changed_arrival_time_series": 44,
+      "changed_voltage_over_atol": 221,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "L5",
+      "neurons": 1787,
+      "changed_arrival_time_series": 41,
+      "changed_voltage_over_atol": 176,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "L1",
+      "neurons": 1776,
+      "changed_arrival_time_series": 14,
+      "changed_voltage_over_atol": 66,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Mi4",
+      "neurons": 1772,
+      "changed_arrival_time_series": 5,
+      "changed_voltage_over_atol": 81,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "R1-R6",
+      "neurons": 3377,
+      "changed_arrival_time_series": 3,
+      "changed_voltage_over_atol": 389,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 4
+    },
+    {
+      "name": "Dm2",
+      "neurons": 1452,
+      "changed_arrival_time_series": 3,
+      "changed_voltage_over_atol": 50,
+      "changed_window_spike_counts": 1,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "Mi2",
+      "neurons": 986,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 69,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Dm12",
+      "neurons": 276,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 22,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "Cm3",
+      "neurons": 323,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 15,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "MeTu3c",
+      "neurons": 173,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 15,
+      "changed_window_spike_counts": 1,
+      "nearest_fast_hops_to_turn": 2
+    },
+    {
+      "name": "Cm12",
+      "neurons": 70,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "R8y",
+      "neurons": 481,
+      "changed_arrival_time_series": 2,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "T1",
+      "neurons": 1777,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 234,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 4
+    },
+    {
+      "name": "Dm15",
+      "neurons": 485,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 81,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Mi13",
+      "neurons": 910,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 45,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Tm5a",
+      "neurons": 624,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 43,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Dm10",
+      "neurons": 626,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 38,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Mi15",
+      "neurons": 1151,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 23,
+      "changed_window_spike_counts": 1,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Dm9",
+      "neurons": 273,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 21,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Cm5",
+      "neurons": 214,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 17,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Cm1",
+      "neurons": 472,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 16,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Cm8",
+      "neurons": 182,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Dm19",
+      "neurons": 30,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Tm30",
+      "neurons": 124,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Tm35",
+      "neurons": 86,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Cm11a",
+      "neurons": 75,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "R8_unclear",
+      "neurons": 442,
+      "changed_arrival_time_series": 1,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": 3
+    },
+    {
+      "name": "Tm4",
+      "neurons": 1670,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 243,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm2",
+      "neurons": 1766,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 239,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm1",
+      "neurons": 1777,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 237,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "C3",
+      "neurons": 1779,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 111,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi9",
+      "neurons": 1775,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 101,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm20",
+      "neurons": 1762,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 101,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi1",
+      "neurons": 1773,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 82,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm9",
+      "neurons": 1771,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 79,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm3b",
+      "neurons": 1137,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 78,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm3a",
+      "neurons": 1204,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 67,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm3",
+      "neurons": 2054,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 65,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY5a",
+      "neurons": 1364,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 60,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm3c",
+      "neurons": 787,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 57,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "C2",
+      "neurons": 1745,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 54,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm6",
+      "neurons": 1526,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 48,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm5Y",
+      "neurons": 898,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 46,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY18",
+      "neurons": 1367,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 46,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm8a",
+      "neurons": 572,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 43,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T2",
+      "neurons": 1630,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 43,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm5c",
+      "neurons": 750,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 42,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu1",
+      "neurons": 250,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 39,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY10",
+      "neurons": 552,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 39,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY3",
+      "neurons": 824,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 36,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm37",
+      "neurons": 559,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 34,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm16",
+      "neurons": 396,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 29,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Lawf2",
+      "neurons": 383,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 28,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm12",
+      "neurons": 967,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 27,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm8b",
+      "neurons": 532,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 25,
+      "changed_window_spike_counts": 1,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Lawf1",
+      "neurons": 361,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 25,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi14",
+      "neurons": 315,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 25,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY9b",
+      "neurons": 515,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 25,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm20",
+      "neurons": 98,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 24,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T2a",
+      "neurons": 1872,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 19,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm4",
+      "neurons": 251,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 18,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP6",
+      "neurons": 99,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 18,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi10",
+      "neurons": 444,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 18,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T4c",
+      "neurons": 1778,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 16,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm29",
+      "neurons": 544,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 16,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Y3",
+      "neurons": 627,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 16,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm11",
+      "neurons": 158,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 15,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm39",
+      "neurons": 426,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 15,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY13",
+      "neurons": 432,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 14,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm6",
+      "neurons": 62,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 13,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo1",
+      "neurons": 123,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 13,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi16",
+      "neurons": 191,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 13,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T4d",
+      "neurons": 1709,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 13,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm5b",
+      "neurons": 522,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 13,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm10",
+      "neurons": 89,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm6",
+      "neurons": 211,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm7",
+      "neurons": 184,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm9",
+      "neurons": 143,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC17",
+      "neurons": 353,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T4a",
+      "neurons": 1684,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T4b",
+      "neurons": 1690,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm32",
+      "neurons": 125,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY4",
+      "neurons": 562,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 12,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu3a",
+      "neurons": 42,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 11,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu4a",
+      "neurons": 95,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 11,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu4c",
+      "neurons": 87,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 11,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm4",
+      "neurons": 99,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo3b",
+      "neurons": 81,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu3b",
+      "neurons": 80,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu4e",
+      "neurons": 51,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi18",
+      "neurons": 69,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm33",
+      "neurons": 280,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 10,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm14",
+      "neurons": 34,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10c-1",
+      "neurons": 130,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo2",
+      "neurons": 145,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm24",
+      "neurons": 245,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm40",
+      "neurons": 180,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY14",
+      "neurons": 477,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY21",
+      "neurons": 372,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY9a",
+      "neurons": 471,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 9,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm11c",
+      "neurons": 44,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm14",
+      "neurons": 48,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm21",
+      "neurons": 25,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10a",
+      "neurons": 275,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 1,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "T3",
+      "neurons": 1940,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 8,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10c-2",
+      "neurons": 125,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC13",
+      "neurons": 177,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC16",
+      "neurons": 182,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LPLC2",
+      "neurons": 185,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu2b",
+      "neurons": 31,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm26",
+      "neurons": 103,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm36",
+      "neurons": 155,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 7,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm16",
+      "neurons": 38,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm1",
+      "neurons": 80,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm18",
+      "neurons": 58,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LPLC1",
+      "neurons": 134,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li19",
+      "neurons": 51,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "ME_unclear",
+      "neurons": 26,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo6",
+      "neurons": 62,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP1",
+      "neurons": 122,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe5",
+      "neurons": 19,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm9",
+      "neurons": 54,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY16",
+      "neurons": 168,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY17",
+      "neurons": 395,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 6,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm19",
+      "neurons": 30,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm28",
+      "neurons": 12,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm13",
+      "neurons": 53,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10d",
+      "neurons": 214,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li22",
+      "neurons": 232,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li34b",
+      "neurons": 60,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP12",
+      "neurons": 27,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP14",
+      "neurons": 33,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP4",
+      "neurons": 40,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm38",
+      "neurons": 223,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 5,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm11b",
+      "neurons": 56,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm2",
+      "neurons": 383,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm27",
+      "neurons": 9,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm16",
+      "neurons": 151,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm17",
+      "neurons": 8,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10b",
+      "neurons": 95,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li13",
+      "neurons": 65,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li14",
+      "neurons": 217,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li25",
+      "neurons": 117,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo8",
+      "neurons": 47,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP11",
+      "neurons": 55,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP3",
+      "neurons": 69,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe1",
+      "neurons": 12,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe2",
+      "neurons": 10,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm1",
+      "neurons": 246,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm2a",
+      "neurons": 219,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm3",
+      "neurons": 69,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY15",
+      "neurons": 209,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TmY20",
+      "neurons": 343,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuBu09",
+      "neurons": 21,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 4,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm17",
+      "neurons": 31,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm20",
+      "neurons": 26,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm29",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC26",
+      "neurons": 75,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC6",
+      "neurons": 124,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo13",
+      "neurons": 73,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo3a",
+      "neurons": 107,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo9",
+      "neurons": 82,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP15",
+      "neurons": 24,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP2",
+      "neurons": 76,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP58",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP62",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP9",
+      "neurons": 12,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPLo2",
+      "neurons": 14,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe12",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "OA-ASM1",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm4",
+      "neurons": 168,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe4",
+      "neurons": 19,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 3,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "",
+      "neurons": 2194,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "5-HTPMPV03",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "CL328",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm11d",
+      "neurons": 18,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm13",
+      "neurons": 52,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm22",
+      "neurons": 19,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm26",
+      "neurons": 13,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm30",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm31a",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Dm-DRA1",
+      "neurons": 50,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC15",
+      "neurons": 126,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC21",
+      "neurons": 153,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC22",
+      "neurons": 73,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC27",
+      "neurons": 46,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC9",
+      "neurons": 219,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LOLP1",
+      "neurons": 69,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT63",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li18a",
+      "neurons": 49,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li20",
+      "neurons": 40,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP14",
+      "neurons": 19,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP6",
+      "neurons": 22,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo10",
+      "neurons": 61,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeLo5",
+      "neurons": 37,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu2a",
+      "neurons": 70,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeTu4b",
+      "neurons": 32,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC20",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC22",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP7",
+      "neurons": 23,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPLo1",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe13",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe4",
+      "neurons": 3,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPOL1",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "OA-AL2i2",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm11",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm12",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm2b",
+      "neurons": 124,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm6",
+      "neurons": 50,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm7",
+      "neurons": 28,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "R7y",
+      "neurons": 482,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm34",
+      "neurons": 174,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Tm_unclear",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuBu07",
+      "neurons": 21,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuTuB_a",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe12",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe17b",
+      "neurons": 5,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe17c",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe26",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe30",
+      "neurons": 5,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe5",
+      "neurons": 42,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe9",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 2,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "AOTU046",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "AOTU055",
+      "neurons": 5,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "AOTU056",
+      "neurons": 8,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm-DRA",
+      "neurons": 7,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm18",
+      "neurons": 28,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm23",
+      "neurons": 17,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm31b",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm32",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm33",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm34",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Cm35",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC10e",
+      "neurons": 110,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC11",
+      "neurons": 143,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC14a-1",
+      "neurons": 30,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC20b",
+      "neurons": 79,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC24",
+      "neurons": 94,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC25",
+      "neurons": 56,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC29",
+      "neurons": 40,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC39a",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LC4",
+      "neurons": 126,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LO_unclear",
+      "neurons": 14,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT11",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT33",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT56",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT58",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT60",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT67",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT69",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT77",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LT79",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Lat3",
+      "neurons": 8,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li12",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li15",
+      "neurons": 41,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li16",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li31",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li34a",
+      "neurons": 68,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li37",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li38",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li39",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Li_unclear",
+      "neurons": 3,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP1",
+      "neurons": 52,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP102",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP106",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP107",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP32",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP42",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP50",
+      "neurons": 7,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP54",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP57",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP62",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP69",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "LoVP85",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "ME_LO_unclear",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC1",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC24",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC25",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVC6",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP16",
+      "neurons": 8,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP21",
+      "neurons": 6,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP28",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP29",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP32",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP33",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP34",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP36",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP38",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP39",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP45",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP46",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP47",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP51",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP52",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP53",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP55",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP59",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP8",
+      "neurons": 13,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPLp1",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe10",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe11",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe3",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe6",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe8",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPMe9",
+      "neurons": 12,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVP_unclear",
+      "neurons": 1,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "MeVPaMe1",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi17",
+      "neurons": 189,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Mi19",
+      "neurons": 12,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "OA-AL2i1",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "OA-AL2i3",
+      "neurons": 4,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "OA-AL2i4",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm10",
+      "neurons": 74,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm13",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm5",
+      "neurons": 182,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Pm8",
+      "neurons": 39,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "R7p",
+      "neurons": 332,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "R8p",
+      "neurons": 330,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "SMP370",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuBu01",
+      "neurons": 10,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuBu06",
+      "neurons": 10,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "TuBu10",
+      "neurons": 15,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Y13",
+      "neurons": 193,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "Y14",
+      "neurons": 208,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe17e",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "aMe25",
+      "neurons": 2,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    },
+    {
+      "name": "l-LNv",
+      "neurons": 8,
+      "changed_arrival_time_series": 0,
+      "changed_voltage_over_atol": 1,
+      "changed_window_spike_counts": 0,
+      "nearest_fast_hops_to_turn": null
+    }
+  ],
+  "release_change_atol": 1e-06,
+  "scope": "One frozen trained state, one fixed pose, two independent 100ms cold trajectories. No inference of global incapacity or a unique missing physiological mechanism.",
+  "source_sha256": "f8291a893149cca4c403ae6ae87541ef58609dedac98fb3b383697480996ffe7",
+  "catalog_sha256": "d9757b3aef5e2470156b08d7674fd3bf86b959bb5034fb952382f0940ba0f16b",
+  "arrays_sha256": "6a8c21d07198bdb5362f4c0afaf0e2ee85e012055f3cf1da593d808fe705ae72"
+}

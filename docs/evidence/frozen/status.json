@@ -1,0 +1,284 @@
+{
+  "status": "complete",
+  "pid": 91408,
+  "config": {
+    "graph": "runtime/supervised-graph-20261003-v4",
+    "dataset": "runtime/teacher-scenes-20261003-v1",
+    "normal_run": "runtime/teacher-afferent-probe-20261003-normal-v1",
+    "mismatch_run": "runtime/teacher-afferent-probe-20261003-mismatch-v1",
+    "output": "runtime/teacher-afferent-frozen-20261003-s1003-v1",
+    "episodes": 24,
+    "max_decisions": 100,
+    "world_seed": 81003
+  },
+  "normal_checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-normal-v1\\memory-0060.pt",
+    "sha256": "7d776128441f39266819f5fcaf37cc79c0827a2c2774687cc1bb510bbda2dee2",
+    "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380"
+  },
+  "mismatch_checkpoint": {
+    "path": "runtime\\teacher-afferent-probe-20261003-mismatch-v1\\memory-0060.pt",
+    "sha256": "8298a1c496461c2cf93fa9069a28dd080ee82dc14faae8d6dc1812e990fc7cdb",
+    "parameter_sha256": "7fb435413ecec7143a8b6783340e0ac089db996d8d8e66e5650293c85baa4f22"
+  },
+  "common_warm_checkpoint": {
+    "path": "C:\\Users\\wangs\\Documents\\Codex\\2026-09-12\\new-chat\\fly-brain-snake\\runtime\\teacher-spiking-fit-20261003-s1003-v1\\memory-0200.pt",
+    "sha256": "7221d5bc3d3df74e9cb4c92148f64c8f573b133011eeeb8b1f61ae4d4f1ed37f",
+    "parameter_sha256": "6c167fa33943ab535c12e8d4dddba28a3f74265791ab72fb199893cf480b5e0c"
+  },
+  "dataset_sha256": "44c4418c82daaf4626cc6208fa1a97ebc7de8c57e393929e1496d8c715a51d88",
+  "source_sha256": "cb020f51d046efca30819f2d04aeb81ce3b423ed969efc70f56fe3c3a3ec9968",
+  "brain_identity": {
+    "version": "complete-signed-RGB-existing-turn-afferent-plasticity-v2",
+    "graph_sha256": "8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f",
+    "dynamics": {
+      "dt_ms": 1.0,
+      "window_ms": 100,
+      "delay_steps": 2,
+      "refractory_steps": 2,
+      "synapse_ms": 5.0,
+      "threshold": 0.75,
+      "exc_reversal": 3.0,
+      "inh_reversal": -0.5,
+      "derivative_width": 0.15,
+      "margin": 0.2
+    },
+    "source_sha256": "9c2a193ba247694f487a497d238a1199a46a1006ad61f42c8fbd23deb84df952",
+    "optics_source_sha256": "9a4a822066e9295009c763f86699c328ad87eb010f83b4c641a6222cd0ab3bf8",
+    "motor_ids": {
+      "left": [
+        523769
+      ],
+      "right": [
+        10360
+      ],
+      "forward_left": [
+        10162
+      ],
+      "forward_right": [
+        10059
+      ]
+    },
+    "input": "fixed RGB uint8 only",
+    "numerics": {
+      "torch": "2.11.0+cu128",
+      "cuda": "12.8",
+      "device_type": "cuda",
+      "float_state_atol": 1e-06,
+      "integer_spikes_and_timing": "exact",
+      "GPU_bitwise_state_replay": false
+    },
+    "teacher_or_game_state_at_inference": false,
+    "external_action_network": false,
+    "learned": [
+      "Individual efficacy of existing DNa02 incoming synapses only"
+    ],
+    "fixed": [
+      "all graph endpoints",
+      "fast signs",
+      "optical sampling",
+      "motor decoder"
+    ],
+    "assumptions": "New normalized conductance dynamics and graded early vision; surrogate derivative during engineering training only. Not legacy native equivalence. Existing afferent plasticity is an engineering locus, not established in-vivo fruit-fly learning.",
+    "afferent_source_sha256": "b1f670b78a0a8a2484a924d464772408da3496cda064642882cfc1f2c69cc25b",
+    "afferent_edges": 2319,
+    "afferent_identity_sha256": "e4653b80e6d382d2f372178c5dbc287b941197c08962977bdc8ff2900616e094",
+    "frozen_upstream_neuron_parameters": true,
+    "gain_factor_bound": [
+      0.01831563888873418,
+      54.598150033144236
+    ]
+  },
+  "world_seeds": [
+    26733925,
+    2068516925,
+    1097461180,
+    1779799829,
+    1952354320,
+    580784330,
+    1630185806,
+    2019616464,
+    1056514675,
+    1120270661,
+    133524799,
+    1781387539,
+    2026118677,
+    2138079223,
+    898841510,
+    837257846,
+    1922770331,
+    209662202,
+    1468108588,
+    490948478,
+    554113210,
+    778766691,
+    1647535745,
+    853412058
+  ],
+  "test_training_pose_overlap": 0,
+  "training_seed_count": 1,
+  "control_scope": "New afferent stage only; both share the normal upstream 200-step fit.",
+  "inference_has_expert": false,
+  "reward_learning_enabled": false,
+  "ordinary_game_learning_validated": false,
+  "arms": {
+    "trained": {
+      "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+      "test_scenes": {
+        "cases": 72,
+        "accuracy": 0.4583333333333333,
+        "balanced_accuracy": 0.3844086021505377,
+        "recall": [
+          0.0,
+          0.9032258064516129,
+          0.25
+        ],
+        "class_counts": [
+          21,
+          31,
+          20
+        ],
+        "predicted_actions": [
+          0,
+          60,
+          12
+        ],
+        "silent": 0
+      },
+      "ordinary_games": {
+        "episodes": 24,
+        "board_size": 12,
+        "total_food": 0,
+        "mean_food_score": 0.0,
+        "deaths": 9,
+        "truncated": 15,
+        "death_reasons": {
+          "wall": 9
+        },
+        "actual_decisions": 1817,
+        "action_counts": {
+          "left": 2,
+          "forward": 131,
+          "right": 1684,
+          "None": 0
+        },
+        "reward_learning_enabled": false,
+        "neural_state": "continuous within each episode; reset between independent episodes"
+      }
+    },
+    "mismatch": {
+      "parameter_sha256": "7fb435413ecec7143a8b6783340e0ac089db996d8d8e66e5650293c85baa4f22",
+      "test_scenes": {
+        "cases": 72,
+        "accuracy": 0.4305555555555556,
+        "balanced_accuracy": 0.3333333333333333,
+        "recall": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "class_counts": [
+          21,
+          31,
+          20
+        ],
+        "predicted_actions": [
+          0,
+          72,
+          0
+        ],
+        "silent": 0
+      },
+      "ordinary_games": {
+        "episodes": 24,
+        "board_size": 12,
+        "total_food": 0,
+        "mean_food_score": 0.0,
+        "deaths": 24,
+        "truncated": 0,
+        "death_reasons": {
+          "wall": 24
+        },
+        "actual_decisions": 117,
+        "action_counts": {
+          "left": 0,
+          "forward": 117,
+          "right": 0,
+          "None": 0
+        },
+        "reward_learning_enabled": false,
+        "neural_state": "continuous within each episode; reset between independent episodes"
+      }
+    },
+    "reset-afferents": {
+      "parameter_sha256": "13fe6661f6dbd8dd39e2e5720ddbc3d4d6a23f1befcd223611672379fed2f386",
+      "test_scenes": {
+        "cases": 72,
+        "accuracy": 0.4305555555555556,
+        "balanced_accuracy": 0.3333333333333333,
+        "recall": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "class_counts": [
+          21,
+          31,
+          20
+        ],
+        "predicted_actions": [
+          0,
+          72,
+          0
+        ],
+        "silent": 0
+      },
+      "ordinary_games": {
+        "episodes": 24,
+        "board_size": 12,
+        "total_food": 0,
+        "mean_food_score": 0.0,
+        "deaths": 24,
+        "truncated": 0,
+        "death_reasons": {
+          "wall": 24
+        },
+        "actual_decisions": 117,
+        "action_counts": {
+          "left": 0,
+          "forward": 117,
+          "right": 0,
+          "None": 0
+        },
+        "reward_learning_enabled": false,
+        "neural_state": "continuous within each episode; reset between independent episodes"
+      }
+    },
+    "vision-off": {
+      "parameter_sha256": "d3bcb82fc0af0e57c432d8fd5b8828c61f9e90a5636a1dfd5d71fa38acb53380",
+      "test_scenes": {
+        "cases": 72,
+        "accuracy": 0.4305555555555556,
+        "balanced_accuracy": 0.3333333333333333,
+        "recall": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "class_counts": [
+          21,
+          31,
+          20
+        ],
+        "predicted_actions": [
+          0,
+          72,
+          0
+        ],
+        "silent": 0
+      }
+    }
+  },
+  "wall_seconds": 963.7505034999922,
+  "interpretation": "Fixed training checkpoints, new heldout poses and ordinary games. Any three-image fit is not proof of whole-game learning or natural fly plasticity."
+}
