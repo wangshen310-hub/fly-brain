@@ -18,7 +18,7 @@
 | 模型身份、所有包内文件和源码SHA-256 | [models/current/model.json](models/current/model.json) |
 | 实际冻结游戏、因果干预和时序记录 | [docs/evidence](docs/evidence) |
 
-完整图超过Git单文件100MB限制，因此保存在**同一仓库的Release附件**中。它不是Git LFS指针、删减图或随机替代模型。单独下载源代码ZIP不会包含Release附件，请使用下方命令一起下载。仓库为私有，下载需要有访问权限的GitHub登录。
+完整图超过Git单文件100MB限制，因此保存在**同一仓库的Release附件**中。它不是Git LFS指针、删减图或随机替代模型。单独下载源代码ZIP不会包含Release附件，请使用下方命令一起下载。仓库及Release现已公开，可直接下载[完整连接图](https://github.com/wangshen310-hub/fly-brain/releases/download/v0.1.0-audit/graph.npz)和[配套清单](https://github.com/wangshen310-hub/fly-brain/releases/download/v0.1.0-audit/manifest.json)，无需仓库访问授权。
 
 完整图SHA-256：`8b6a70780c1cb042e87a839b6beed36ca8c4681b1ec5643be14d6b26df18989f`。
 
@@ -50,7 +50,7 @@ cd fly-brain
 uv venv --python 3.12 .venv-supervised
 uv pip install --python .venv-supervised/Scripts/python.exe -r requirements-supervised.txt
 
-# gh auth login 用于尚未登录且有本私有仓库权限的账户。
+# 如果gh CLI提示未登录，可先执行gh auth login；也可直接下载上方公开Release附件。
 .venv-supervised/Scripts/python.exe scripts/download_current_graph.py
 .venv-supervised/Scripts/python.exe scripts/check_current_model.py --graph runtime/supervised-graph-20261003-v4 --output runtime/model-check.json
 ```

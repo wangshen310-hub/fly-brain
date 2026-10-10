@@ -21,4 +21,4 @@ Copyright (c) 2026 nftechie and DOOMFLY contributors. Its
 software, accounts, credentials or game artwork are included.
 
 No additional license grant for the original project code is made by this
-private research snapshot.
+research snapshot.
