@@ -87,3 +87,9 @@ uv pip install --python .venv-supervised/Scripts/python.exe -r requirements-supe
 MaleCNS v1.0数据来源、CC-BY-4.0归属及vendored MIT许可见[NOTICE.md](NOTICE.md)。源数据下载锁与图重建脚本保留；Release提供已经校验的完整导出，避免每次重新准备约1.1GB原始资料。
 
 旧研究代码、审计文件和`Start-*`启动器保留供回顾。它们的服务端口、嗅觉方案与运行说明属于历史版本，不能代表当前示范训练模型。原始说明在[历史README](docs/LEGACY_README.md)，当前版本以本页、模型清单和[当前审计](docs/current-model-audit.md)为准。旧本地存档保持原状，虚拟环境、下载缓存及全部历史运行目录不纳入Git。
+
+## 2026-10-18 条件重放研究代码
+
+新增的[独立连续学习实验目录](experiments/continuation-2026-10-18/README.md)包含双窗口条件训练、41点插值搜索、离线视觉可分性诊断、测试和[原始报告](experiments/continuation-2026-10-18/REPORT.md)。这不是默认模型升级，`models/current` 和完整脑核心保持不变，三个条件候选均未通过完整脑学习验收。
+
+本次整合在独立CPU目录通过13项测试（7项重放检查、6项导入器安全检查）；这不等于完整脑学习成功。实验原始NPZ及历史日志保留在对话交付的 `FlyBrain-continuation-kit-2026-10-18.zip`，未新增GitHub Release附件；复现需要按照实验README运行带SHA-256校验的导入脚本。主项目的原始GPU运行说明仍以上文为准。

@@ -1,0 +1,150 @@
+{
+  "version": "flybrain-conditional-continuation-delivery-2026-10-18",
+  "tested_utc_date": "2026-10-18",
+  "verified_python": "3.13.5",
+  "verified_torch": "2.10.0+cpu",
+  "verified_numpy": "2.3.5",
+  "verified_sklearn": "1.8.0",
+  "source_saved_commit": "3fdac042eb8ba18d04365b9124608d7441b8345e",
+  "original_brain_graph_present": false,
+  "uploaded_to_github": false,
+  "complete_brain_learning_confirmed": false,
+  "sealed_test_used": false,
+  "files": [
+    {
+      "name": "README.md",
+      "bytes": 6944,
+      "sha256": "bb7434051ae14f1ed1a96192075f24a088005758ea655b4605927c9bfd0d78d4"
+    },
+    {
+      "name": "continue_conditional_experiment.py",
+      "bytes": 9521,
+      "sha256": "a4d68bf610343a6db1b5945a93e428f0d13ca252f22e7796aaf31621d07286cf"
+    },
+    {
+      "name": "diagnose_visual_separability.py",
+      "bytes": 3257,
+      "sha256": "59017d9cd073ea4cfd3e394dacba760838b56d432563b9b6b5901747d2c7c7a0"
+    },
+    {
+      "name": "files/flysnake/research/learning_boundary_replay.py",
+      "bytes": 33838,
+      "sha256": "2daee829a99701dab5511686be85f321b6f45eaf0c9f6610ed9801031c5a6734"
+    },
+    {
+      "name": "files/flysnake/research/learning_decoder_margin.py",
+      "bytes": 11470,
+      "sha256": "7824b8a41b7811322e48a7552b9d467b2945f55d2b3f31c066a0e8252780f422"
+    },
+    {
+      "name": "files/flysnake/research/optical_sampling.py",
+      "bytes": 3356,
+      "sha256": "9a4a822066e9295009c763f86699c328ad87eb010f83b4c641a6222cd0ab3bf8"
+    },
+    {
+      "name": "files/flysnake/research/teacher_spiking.py",
+      "bytes": 18620,
+      "sha256": "9c2a193ba247694f487a497d238a1199a46a1006ad61f42c8fbd23deb84df952"
+    },
+    {
+      "name": "reproduction.log",
+      "bytes": 1039,
+      "sha256": "2e81679dafa6f1344e6b7f7376f0d70530fd5464147410541201f25d522b8159"
+    },
+    {
+      "name": "results/experiment-01/conditional-selected-parameters.npz",
+      "bytes": 11746,
+      "sha256": "196c0e68b116500b6e1e1bfe7b16ec393ca9fcb4dc00b8c56e750d95ea40dc26"
+    },
+    {
+      "name": "results/experiment-01/history.json",
+      "bytes": 10249,
+      "sha256": "c9a609b6bbabe0efbf1ec961f2f204acfeebb85cfdd34ff1b3e732584483640c"
+    },
+    {
+      "name": "results/experiment-01/summary.json",
+      "bytes": 3103,
+      "sha256": "5402c2d75a4ffe7b102f0a46efa39a87796fc20f5520ec8e737246b9656e3ccb"
+    },
+    {
+      "name": "results/experiment-02/conditional-selected-parameters.npz",
+      "bytes": 11740,
+      "sha256": "84fbff12b8e5dbb2992dc64f7c40159a7245f037daa453a9541acded1068bd1e"
+    },
+    {
+      "name": "results/experiment-02/history.json",
+      "bytes": 13544,
+      "sha256": "ed13185205a43f0d9e515338831d4d229ceef82af69b485789d11522bc2fa668"
+    },
+    {
+      "name": "results/experiment-02/summary.json",
+      "bytes": 3141,
+      "sha256": "9258ef1504a33a92c73a8bc34461f10061337be9e2b59c27a13a0fa3cd8cca49"
+    },
+    {
+      "name": "results/repro-A/conditional-selected-parameters.npz",
+      "bytes": 11746,
+      "sha256": "196c0e68b116500b6e1e1bfe7b16ec393ca9fcb4dc00b8c56e750d95ea40dc26"
+    },
+    {
+      "name": "results/repro-A/history.json",
+      "bytes": 10249,
+      "sha256": "c9a609b6bbabe0efbf1ec961f2f204acfeebb85cfdd34ff1b3e732584483640c"
+    },
+    {
+      "name": "results/repro-A/summary.json",
+      "bytes": 3129,
+      "sha256": "ef33a8dd5108bc45a3e42023753875bd41bd33c3c4784fde4e6366622d7f5916"
+    },
+    {
+      "name": "results/separability-01/separability.json",
+      "bytes": 3368,
+      "sha256": "225080e3f298b0594af23db5eb7de729463175ee5ff7423617ac091eaef4008f"
+    },
+    {
+      "name": "results/sweep-01/conditional-selected-parameters.npz",
+      "bytes": 11762,
+      "sha256": "9592025bd5a76f5dd5fdc90a7acfd09e40c4ef048eace76b3d94e8c282d9e4ff"
+    },
+    {
+      "name": "results/sweep-01/grid.json",
+      "bytes": 20189,
+      "sha256": "66240366c9eb586baf8f01a70bc728ee1df599715252994dea45c9bb3c5ed051"
+    },
+    {
+      "name": "results/sweep-01/summary.json",
+      "bytes": 2087,
+      "sha256": "44a311a1aee7ec8c2a75414f54695fe5b376685636f527d47ffb5508cbe7e09f"
+    },
+    {
+      "name": "runtime/learning-feedback-anchor-s1101-v1/train.boundary.metadata.json",
+      "bytes": 499028,
+      "sha256": "701ac9e191de2fed6b85d2825e406b45cf526f839305b2554a05d51f962a953c"
+    },
+    {
+      "name": "runtime/learning-feedback-anchor-s1101-v1/train.boundary.npz",
+      "bytes": 22840517,
+      "sha256": "c840375bb17f76c31e6d5967c5ae2494c62b822e5a2cba0eff80ceba79df4553"
+    },
+    {
+      "name": "runtime/learning-feedback-anchor-s1101-v1/validation.boundary.metadata.json",
+      "bytes": 275852,
+      "sha256": "4e69d93928c6f26f4314c4801e6f12bc4a3ceebff29f40dd97ce084197c3ea35"
+    },
+    {
+      "name": "runtime/learning-feedback-anchor-s1101-v1/validation.boundary.npz",
+      "bytes": 12559726,
+      "sha256": "33d683c76350e4ed8a151ffa424ded34a4228369d1d5afe6e6c257bdd2f0b889"
+    },
+    {
+      "name": "sweep_continuation.py",
+      "bytes": 3571,
+      "sha256": "0fdbce6b5e67a7ccbfcb965af5245a329e2c6dc3ad992300e93f933e87b17f66"
+    },
+    {
+      "name": "test_continuation.py",
+      "bytes": 4244,
+      "sha256": "ab3d96c4dc6d1f814490c10fb8cb60446fd02a52f7bfc413af366eed84a046c6"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "scope": "fixed-external-input five-cell conditional replay; not full-brain learning",
+  "source_saved_commit": "3fdac042eb8ba18d04365b9124608d7441b8345e",
+  "boundary_checkpoint": "learning-feedback-anchor-s1101-v1",
+  "source_archive_sha256": "942cc762b84bf1361f078d27a07471b011e3eb28bb5c43a6e48d39aebf00ef4b",
+  "train_samples": 48,
+  "development_validation_samples": 24,
+  "sealed_final_test_accessed": false,
+  "native_full_graph_runs_after_updates": 0,
+  "learning_gate_passed": false,
+  "trials": {
+    "experiment-01": {
+      "steps_completed": 12,
+      "learning_rate": 0.005,
+      "best_train": {
+        "loss": 1.8289324045181274,
+        "class_recall": [[0.75, 1.0, 0.5], [0.9375, 0.3125, 0.3125]],
+        "balanced_accuracy": [0.75, 0.5208333333333334],
+        "minimum_class_recall": 0.3125,
+        "minimum_window_balanced_accuracy": 0.5208333333333334,
+        "correct_cases": [36, 25]
+      },
+      "selected_validation": {
+        "loss": 2.011770725250244,
+        "class_recall": [[0.625, 1.0, 1.0], [0.625, 0.25, 0.0]],
+        "balanced_accuracy": [0.875, 0.2916666666666667],
+        "minimum_class_recall": 0.0,
+        "minimum_window_balanced_accuracy": 0.2916666666666667,
+        "correct_cases": [21, 7]
+      }
+    },
+    "experiment-02": {
+      "steps_completed": 16,
+      "learning_rate": 0.002,
+      "temporal_weight": 0.4,
+      "best_train": {
+        "loss": 1.32546865940094,
+        "class_recall": [[0.75, 1.0, 0.0], [0.4375, 0.75, 0.875]],
+        "balanced_accuracy": [0.5833333333333334, 0.6875],
+        "minimum_class_recall": 0.0,
+        "minimum_window_balanced_accuracy": 0.5833333333333334,
+        "correct_cases": [28, 33]
+      },
+      "selected_validation": {
+        "loss": 1.2660937309265137,
+        "class_recall": [[0.625, 1.0, 0.0], [0.375, 0.75, 0.875]],
+        "balanced_accuracy": [0.5416666666666666, 0.6666666666666666],
+        "minimum_class_recall": 0.0,
+        "minimum_window_balanced_accuracy": 0.5416666666666666,
+        "correct_cases": [13, 16]
+      }
+    },
+    "sweep-01": {
+      "steps": 41,
+      "selected_alpha": 0.4,
+      "training_selected": {
+        "loss": 1.4264843463897705,
+        "class_recall": [[0.75, 1.0, 0.0], [0.25, 0.6875, 0.9375]],
+        "balanced_accuracy": [0.5833333333333334, 0.625],
+        "minimum_class_recall": 0.0,
+        "minimum_window_balanced_accuracy": 0.5833333333333334,
+        "correct_cases": [28, 30]
+      },
+      "validation_selected": {
+        "loss": 1.328125,
+        "class_recall": [[0.625, 1.0, 0.0], [0.25, 0.875, 1.0]],
+        "balanced_accuracy": [0.5416666666666666, 0.7083333333333334],
+        "minimum_class_recall": 0.0,
+        "minimum_window_balanced_accuracy": 0.5416666666666666,
+        "correct_cases": [13, 17]
+      }
+    }
+  }
+}
