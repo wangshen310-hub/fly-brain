@@ -1,0 +1,21 @@
+{
+  "scope": "isolated integration of the 2026-10-18 conditional continuation kit",
+  "base_main_commit": "74f902ac2170b6514aa79104adb9028ed810a5bd",
+  "python": "3.13.5",
+  "torch": "2.10.0+cpu",
+  "numpy": "2.3.5",
+  "pytest": "9.0.2",
+  "local_test_command": "python -m pytest test_continuation.py test_import_artifacts.py -q",
+  "local_tests_passed": 13,
+  "local_tests_failed": 0,
+  "local_tests_skipped": 0,
+  "conditional_replay_tests": 7,
+  "synthetic_importer_safety_tests": 6,
+  "verified_imported_artifacts": 18,
+  "original_archive_sha256": "942cc762b84bf1361f078d27a07471b011e3eb28bb5c43a6e48d39aebf00ef4b",
+  "native_core_modified": false,
+  "models_current_modified": false,
+  "full_graph_evaluation_performed_in_this_merge": false,
+  "learning_success_claimed": false,
+  "github_ci_is_not_this_local_test_receipt": true
+}

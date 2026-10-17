@@ -1,0 +1,4 @@
+# Install CPU Torch separately; see README. Do not modify the main GPU environment.
+numpy==2.3.5
+scikit-learn==1.8.0
+pytest==9.0.2

@@ -1,0 +1,8 @@
+# Source and reports are versioned; original runtime artifacts stay in the verified ZIP.
+runtime/
+results/
+reproduction.log
+.venv/
+__pycache__/
+.pytest_cache/
+.artifact-import-*/
