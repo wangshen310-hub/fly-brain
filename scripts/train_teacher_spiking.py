@@ -21,11 +21,21 @@ def atomic_json(path,value):
     temp.replace(path)
 
 
-def metrics(motor,labels,rows):
+def metrics(motor,labels,rows,margin=.2):
+    """Score actual pulses; missing classes are unassessed, never a perfect BA."""
+    motor=np.asarray(motor);labels=np.asarray(labels)
+    if (labels.ndim!=1 or not len(labels) or not np.issubdtype(labels.dtype,np.integer)
+            or not np.isin(labels,[0,1,2]).all() or motor.shape!=(len(labels),4)
+            or len(rows)!=len(labels)):
+        raise ValueError('Aligned nonempty motor counts, rows and three-class integer labels required')
+    if (not np.issubdtype(motor.dtype,np.number) or np.iscomplexobj(motor)
+            or not np.isfinite(motor).all() or (motor<0).any()
+            or (motor>=2**63).any() or not np.equal(motor,np.floor(motor)).all()):
+        raise ValueError('Actual finite nonnegative integer motor counts required; no rounding')
     predictions=[];receipts=[];eaten=0;adjacent=0
     for values,row in zip(motor,rows):
         counts={'left':[int(values[0])],'right':[int(values[1])],'forward':[int(v) for v in values[2:]]}
-        receipt=decode_spikes(counts);action=receipt['action']
+        receipt=decode_spikes(counts,margin);action=receipt['action']
         predictions.append(ACTIONS.index(action) if action is not None else -1)
         receipts.append(receipt)
         if row['adjacent_eat']:
@@ -33,7 +43,8 @@ def metrics(motor,labels,rows):
     predictions=np.array(predictions)
     recall=[float(np.mean(predictions[labels==k]==k)) if np.any(labels==k) else None for k in range(3)]
     return {'accuracy':float(np.mean(predictions==labels)),
-        'balanced_accuracy':float(np.mean([x for x in recall if x is not None])),
+        'balanced_accuracy':float(np.mean(recall)) if all(x is not None for x in recall) else None,
+        'class_coverage_complete':all(x is not None for x in recall),
         'recall':recall,'class_counts':np.bincount(labels,minlength=3).tolist(),
         'predicted_actions':[int(np.sum(predictions==k)) for k in range(3)],
         'silent':int(np.sum(predictions<0)),'adjacent_food_choices':{'eaten':eaten,'cases':adjacent},
@@ -42,17 +53,66 @@ def metrics(motor,labels,rows):
         'scope':'isolated short scenes; not ordinary-game score or multi-step learning'}
 
 
+def two_window_gate(windows,window_ms):
+    """Necessary numeric gate only, not proof of learning/generalization."""
+    complete=(len(windows)==2 and all(m['class_coverage_complete'] for m in windows))
+    duration_ok=type(window_ms) is int and window_ms==100
+    passed=(complete and duration_ok
+        and all(m['balanced_accuracy']>=.8 and all(r>=.75 for r in m['recall']) for m in windows))
+    return {'passed':bool(passed),'required_windows':2,'required_window_ms':100,
+        'minimum_balanced_accuracy_each_window':.8,'minimum_recall_each_class_each_window':.75,
+        'all_classes_observed_each_window':bool(complete),
+        'window_duration_matches':duration_ok,'full_brain_learning_confirmed':False,
+        'scope':'Necessary two-window numeric gate only; no ordinary-game or generalization claim'}
+
+
 def evaluate(b,encoded,labels,rows,batch=12,visual=True):
-    result=[]
+    """Frozen same-image two-window audit, with all returned state passed through.
+
+    Top-level metrics remain the cold window for historical callers. The new
+    report cannot turn a cold-only score into a passed continuous-learning gate.
+    Training loss and checkpoint selection remain cold-window protocols.
+    """
+    if type(batch) is not int or batch<1 or encoded.ndim!=2 or encoded.shape[1]<1:
+        raise ValueError('Positive batch and nonempty encoded scenes required')
+    if len(labels)!=encoded.shape[1] or len(rows)!=encoded.shape[1]:
+        raise ValueError('Encoded scenes, labels and metadata rows must align')
+    result=[[],[]]
     with torch.no_grad():
         for start in range(0,encoded.shape[1],batch):
-            _,motor,_=b.integrate_encoded(encoded[:,start:start+batch],visual_enabled=visual)
-            result.append(motor.cpu().numpy().astype(np.int64))
-    return metrics(np.concatenate(result),labels,rows)
+            light=encoded[:,start:start+batch];state=None
+            for window in range(2):
+                _,motor,state=b.integrate_encoded(light,state,visual_enabled=visual)
+                b.validate_state(state)
+                if state['ticks']!=(window+1)*b.config.window_ms:
+                    raise ValueError('Continuous evaluation clock mismatch')
+                result[window].append(motor.cpu().numpy().copy())
+    windows=[metrics(np.concatenate(values),labels,rows,b.config.margin) for values in result]
+    for i,m in enumerate(windows):
+        m.update(start_tick=i*b.config.window_ms,end_tick=(i+1)*b.config.window_ms)
+    return {**windows[0],'continuous_two_window':{
+        'windows':windows,'gate':two_window_gate(windows,b.config.window_ms),
+        'same_input_each_window':True,'state_reset_between_windows':False,
+        'training_objective':'unchanged cold-window loss',
+        'checkpoint_selection':'unchanged cold-window balanced accuracy'}}
+
+
+def checked_optimizer_step(optimizer,parameters,max_norm=1.):
+    """Reject a nonfinite gradient on EVERY update before optimizer mutation."""
+    parameters=tuple(parameters)
+    if not parameters or not any(p.grad is not None for p in parameters):
+        raise ValueError('An optimizer update requires parameter gradients')
+    if not np.isfinite(max_norm) or max_norm<=0:
+        raise ValueError('Finite positive gradient norm bound required')
+    norm=torch.nn.utils.clip_grad_norm_(parameters,max_norm,error_if_nonfinite=True)
+    optimizer.step()
+    return float(norm)
 
 
 def compact(m):
-    return {k:v for k,v in m.items() if k not in ('motor_counts','receipts')}
+    if isinstance(m,dict):return {k:compact(v) for k,v in m.items() if k not in ('motor_counts','receipts')}
+    if isinstance(m,list):return [compact(v) for v in m]
+    return m
 
 
 def main():
@@ -111,6 +171,8 @@ def main():
     initial_parameters={k:v.detach().clone() for k,v in b.named_parameters()}
     initial_hash=b.parameter_hash()
     initial_validation=evaluate(b,validation_light,validation_labels,meta['rows']['validation'])
+    if initial_validation['balanced_accuracy'] is None:
+        raise ValueError('All three validation classes are required for checkpoint selection')
     if not args.resume:atomic_json(out/'initial-validation.json',initial_validation)
     status.update(initial_parameter_sha256=initial_hash,initial_validation=compact(initial_validation),
         parameter_count=sum(x.numel() for x in b.parameters()),phase='training')
@@ -149,8 +211,9 @@ def main():
             status['first_gradient']={name:{'nonzero':int(torch.count_nonzero(value.grad)),
                 'finite':bool(torch.isfinite(value.grad).all()),'norm':float(value.grad.norm())} for name,value in b.named_parameters()}
             if not all(v['finite'] for v in status['first_gradient'].values()):raise FloatingPointError('Nonfinite internal gradient')
-        torch.nn.utils.clip_grad_norm_(b.parameters(),1.);optimizer.step()
+        gradient_norm=checked_optimizer_step(optimizer,b.parameters())
         entry={'step':step,'loss':float(loss.detach()),'teacher_loss':float(ce.detach()),
+            'gradient_norm_before_clip':gradient_norm,
             'wall_seconds':time.perf_counter()-tick,'total_seconds':time.perf_counter()-start}
         status['progress'].append(entry)
         if step%args.eval_every==0 or step==args.steps:
@@ -182,7 +245,8 @@ def main():
     b.restore_checkpoint(best_checkpoint['path'],best_checkpoint['sha256'])
     summary={'trained':compact(trained),'initial_or_parameter_reset':compact(before),'vision_off':compact(vision_off),
         'selected_parameter_sha256':selected_hash,'initial_parameter_sha256':initial_hash,
-        'short_scene_improvement':trained['balanced_accuracy']-before['balanced_accuracy'],
+        'short_scene_improvement':(trained['balanced_accuracy']-before['balanced_accuracy']
+            if trained['balanced_accuracy'] is not None and before['balanced_accuracy'] is not None else None),
         'ordinary_game_learning_validated':False,'training_seed_count':1,
         'interpretation':'Short-scene supervised fit through complete graph, not dopamine learning or normal-game success.'}
     for label,m in [('test-trained',trained),('test-reset',before),('test-vision-off',vision_off)]:atomic_json(out/(label+'.json'),m)

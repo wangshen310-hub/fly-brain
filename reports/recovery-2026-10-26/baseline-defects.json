@@ -1,0 +1,20 @@
+{
+  "missing_classes": {
+    "class_counts": [
+      0,
+      1,
+      0
+    ],
+    "recall": [
+      null,
+      1.0,
+      null
+    ],
+    "balanced_accuracy": 1.0
+  },
+  "nonfinite_gradient": {
+    "preclip_norm": "inf",
+    "parameter_before": 1.0,
+    "parameter_after": "nan"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "CPU safety diagnosis and re-score of existing archived JSON, NOT new brain inference",
+  "source_base_commit": "e582e7405f3f4afc172539162060240221d18bd9",
+  "environment": {
+    "python": "3.12.14",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.3.3",
+    "cuda_available": false
+  },
+  "archived_receipt_rescore": {
+    "path": "docs/evidence/timecourse/summary.json",
+    "sha256": "594b4f332e03c657d9753607820f58d475fc0f790d9856ab98d4f3baddd2e1f3",
+    "sample_scope": "One archived training pose, three directional scenes; no generalization claim",
+    "windows": [
+      {
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6666666666666666,
+        "class_coverage_complete": true,
+        "recall": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "class_counts": [
+          1,
+          1,
+          1
+        ],
+        "predicted_actions": [
+          0,
+          2,
+          1
+        ],
+        "silent": 0,
+        "adjacent_food_choices": {
+          "eaten": 0,
+          "cases": 0
+        },
+        "best_constant_action_accuracy": 0.3333333333333333,
+        "scope": "isolated short scenes; not ordinary-game score or multi-step learning"
+      },
+      {
+        "accuracy": 0.3333333333333333,
+        "balanced_accuracy": 0.3333333333333333,
+        "class_coverage_complete": true,
+        "recall": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "class_counts": [
+          1,
+          1,
+          1
+        ],
+        "predicted_actions": [
+          0,
+          0,
+          3
+        ],
+        "silent": 0,
+        "adjacent_food_choices": {
+          "eaten": 0,
+          "cases": 0
+        },
+        "best_constant_action_accuracy": 0.3333333333333333,
+        "scope": "isolated short scenes; not ordinary-game score or multi-step learning"
+      }
+    ],
+    "gate": {
+      "passed": false,
+      "required_windows": 2,
+      "required_window_ms": 100,
+      "minimum_balanced_accuracy_each_window": 0.8,
+      "minimum_recall_each_class_each_window": 0.75,
+      "all_classes_observed_each_window": true,
+      "window_duration_matches": true,
+      "full_brain_learning_confirmed": false,
+      "scope": "Necessary two-window numeric gate only; no ordinary-game or generalization claim"
+    },
+    "new_inference_run": false
+  },
+  "missing_class_fixture": {
+    "accuracy": 1.0,
+    "balanced_accuracy": null,
+    "class_coverage_complete": false,
+    "recall": [
+      null,
+      1.0,
+      null
+    ],
+    "class_counts": [
+      0,
+      1,
+      0
+    ],
+    "predicted_actions": [
+      0,
+      1,
+      0
+    ],
+    "silent": 0,
+    "adjacent_food_choices": {
+      "eaten": 0,
+      "cases": 0
+    },
+    "best_constant_action_accuracy": 1.0,
+    "scope": "isolated short scenes; not ordinary-game score or multi-step learning"
+  },
+  "second_step_nonfinite_gradient_fixture": {
+    "rejected_before_optimizer_step": true,
+    "parameter_unchanged": true,
+    "adam_step_unchanged": true
+  },
+  "complete_brain_learning_confirmed": false,
+  "original_step_112_recovered": false
+}

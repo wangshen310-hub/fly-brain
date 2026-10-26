@@ -1,0 +1,12 @@
+{
+  "base_commit": "e582e7405f3f4afc172539162060240221d18bd9",
+  "files_unchanged_from_base_sha256": {
+    "flysnake/research/teacher_spiking.py": "9c2a193ba247694f487a497d238a1199a46a1006ad61f42c8fbd23deb84df952",
+    "flysnake/research/teacher_afferent.py": "b1f670b78a0a8a2484a924d464772408da3496cda064642882cfc1f2c69cc25b",
+    "flysnake/research/optical_sampling.py": "9a4a822066e9295009c763f86699c328ad87eb010f83b4c641a6222cd0ab3bf8",
+    "flysnake/decoder.py": "62b491cf01493b9cb5326536d1c8e070b049811675a7ed68acbf413d52b23070",
+    "models/current/model.json": "9e0e4a212d10e807e4a513bd43c027ceddf5c1dbaff4c20e0616058ac89dcf2e",
+    "models/current/graph-manifest.json": "10ac4f7a412f884cdb0053aa8d7f6c8ee2a7b73483935897d749f452099911dd"
+  },
+  "weights_graph_training_data_loaded": false
+}
