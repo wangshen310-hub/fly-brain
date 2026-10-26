@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import math
 import os
 from pathlib import Path
 import shutil
@@ -12,6 +13,25 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import numpy as np
 import torch
 from flysnake.research.teacher_spiking import SpikingConnectome, Dynamics, decode_spikes, file_hash, ACTIONS, STATE_ATOL
+
+LEGACY_PROTOCOL='legacy-cold-v1'
+CONTINUOUS_PROTOCOL='continuous-two-window-v1'
+GATE_ATOL=1e-12  # Floating representation tolerance, not percentage rounding.
+
+
+def protocol_details(protocol,window_ms):
+    if protocol not in (LEGACY_PROTOCOL,CONTINUOUS_PROTOCOL):
+        raise ValueError('Unknown teacher training protocol')
+    continuous=protocol==CONTINUOUS_PROTOCOL
+    if continuous and (type(window_ms) is not int or window_ms!=100):
+        raise ValueError('Continuous protocol requires exactly two 100 ms windows')
+    return {'name':protocol,'training_windows':2 if continuous else 1,
+        'training_objective':('mean of two continuous-window CE and silence losses' if continuous
+            else 'legacy cold-window CE and silence loss'),
+        'checkpoint_selection':('development-validation two-window gate; worst BA, minimum recall, mean BA'
+            if continuous else 'legacy cold-window balanced accuracy'),
+        'reset_between_training_batches':True,'detach_between_windows':False,
+        'full_brain_learning_confirmed':False}
 
 
 def atomic_json(path,value):
@@ -53,25 +73,90 @@ def metrics(motor,labels,rows,margin=.2):
         'scope':'isolated short scenes; not ordinary-game score or multi-step learning'}
 
 
+def _valid_three_class_metric(metric):
+    """Selection inputs fail closed, including NaN and absent/inconsistent fields."""
+    if not isinstance(metric,dict) or metric.get('class_coverage_complete') is not True:return False
+    support=metric.get('class_counts');recall=metric.get('recall');ba=metric.get('balanced_accuracy')
+    if (not isinstance(support,(list,tuple)) or len(support)!=3
+            or any(type(v) is not int or v<=0 for v in support)
+            or not isinstance(recall,(list,tuple)) or len(recall)!=3):return False
+    values=[ba,*recall]
+    if any(type(v) not in (int,float) or not math.isfinite(v) or not 0<=v<=1 for v in values):return False
+    return math.isclose(ba,sum(recall)/3.,rel_tol=0.,abs_tol=1e-12)
+
+
 def two_window_gate(windows,window_ms):
     """Necessary numeric gate only, not proof of learning/generalization."""
-    complete=(len(windows)==2 and all(m['class_coverage_complete'] for m in windows))
+    complete=(isinstance(windows,(list,tuple)) and len(windows)==2
+        and all(_valid_three_class_metric(m) for m in windows)
+        and windows[0]['class_counts']==windows[1]['class_counts'])
     duration_ok=type(window_ms) is int and window_ms==100
     passed=(complete and duration_ok
-        and all(m['balanced_accuracy']>=.8 and all(r>=.75 for r in m['recall']) for m in windows))
+        and all(m['balanced_accuracy']+GATE_ATOL>=.8
+            and all(r+GATE_ATOL>=.75 for r in m['recall']) for m in windows))
     return {'passed':bool(passed),'required_windows':2,'required_window_ms':100,
         'minimum_balanced_accuracy_each_window':.8,'minimum_recall_each_class_each_window':.75,
+        'floating_comparison_atol':GATE_ATOL,
         'all_classes_observed_each_window':bool(complete),
         'window_duration_matches':duration_ok,'full_brain_learning_confirmed':False,
         'scope':'Necessary two-window numeric gate only; no ordinary-game or generalization claim'}
 
 
-def evaluate(b,encoded,labels,rows,batch=12,visual=True):
+def checkpoint_score(evaluation,protocol,window_ms):
+    """Only gate-eligible continuous candidates get a selection rank.
+
+    Development validation is used for selection; it is not a sealed test.
+    None means unqualified, not a low score that may still be selected.
+    """
+    protocol_details(protocol,window_ms)
+    if protocol==LEGACY_PROTOCOL:
+        return evaluation['balanced_accuracy'] if _valid_three_class_metric(evaluation) else None
+    if not isinstance(evaluation,dict):return None
+    report=evaluation.get('continuous_two_window')
+    if (not isinstance(report,dict) or report.get('same_input_each_window') is not True
+            or report.get('state_reset_between_windows') is not False):return None
+    windows=report.get('windows')
+    if not two_window_gate(windows,window_ms)['passed']:return None
+    if any(type(m.get('start_tick')) is not int or type(m.get('end_tick')) is not int
+            or (m['start_tick'],m['end_tick'])!=(i*100,(i+1)*100) for i,m in enumerate(windows)):
+        return None
+    bas=[m['balanced_accuracy'] for m in windows]
+    return (min(bas),min(r for m in windows for r in m['recall']),sum(bas)/2.)
+
+
+def training_objective(b,light,labels,protocol=LEGACY_PROTOCOL):
+    """Original losses, optionally over an untruncated differentiable 200 ms.
+
+    State is passed directly: no detach, cloning, reset or fixed-boundary replay
+    is inserted between windows. Labels enter only this training-only loss.
+    """
+    spec=protocol_details(protocol,b.config.window_ms)
+    state=None;ces=[];silents=[]
+    for window in range(spec['training_windows']):
+        _,motor,state=b.integrate_encoded(light,state)
+        b.validate_state(state)
+        if state['ticks']!=(window+1)*b.config.window_ms:
+            raise ValueError('Continuous training clock mismatch')
+        ces.append(torch.nn.functional.cross_entropy(b.logits(motor),labels))
+        silents.append(.05*torch.nn.functional.softplus(2.-motor.sum(dim=1)).mean())
+    return {'teacher_loss':ces[0] if len(ces)==1 else torch.stack(ces).mean(),
+        'silence_loss':silents[0] if len(silents)==1 else torch.stack(silents).mean(),
+        'window_teacher_losses':ces,'window_silence_losses':silents}
+
+
+def validate_training_resume(extra,config,dataset_sha256,source_sha256):
+    if (extra.get('config')!=config or extra.get('dataset_sha256')!=dataset_sha256
+            or extra.get('protocol_source_sha256')!=source_sha256):
+        raise ValueError('Incompatible training resume protocol/source/dataset')
+    protocol_details(config['protocol'],config['window_ms'])
+
+
+def evaluate(b,encoded,labels,rows,batch=12,visual=True,protocol=LEGACY_PROTOCOL):
     """Frozen same-image two-window audit, with all returned state passed through.
 
     Top-level metrics remain the cold window for historical callers. The new
     report cannot turn a cold-only score into a passed continuous-learning gate.
-    Training loss and checkpoint selection remain cold-window protocols.
+    The training/selection protocol is explicit; this function never trains.
     """
     if type(batch) is not int or batch<1 or encoded.ndim!=2 or encoded.shape[1]<1:
         raise ValueError('Positive batch and nonempty encoded scenes required')
@@ -93,8 +178,7 @@ def evaluate(b,encoded,labels,rows,batch=12,visual=True):
     return {**windows[0],'continuous_two_window':{
         'windows':windows,'gate':two_window_gate(windows,b.config.window_ms),
         'same_input_each_window':True,'state_reset_between_windows':False,
-        'training_objective':'unchanged cold-window loss',
-        'checkpoint_selection':'unchanged cold-window balanced accuracy'}}
+        'protocol':protocol_details(protocol,b.config.window_ms)}}
 
 
 def checked_optimizer_step(optimizer,parameters,max_norm=1.):
@@ -121,8 +205,14 @@ def main():
     p.add_argument('--steps',type=int,default=200);p.add_argument('--batch',type=int,default=3)
     p.add_argument('--lr',type=float,default=.03);p.add_argument('--window-ms',type=int,default=100)
     p.add_argument('--eval-every',type=int,default=25);p.add_argument('--shuffle-labels',action='store_true')
+    p.add_argument('--protocol',choices=(LEGACY_PROTOCOL,CONTINUOUS_PROTOCOL),default=LEGACY_PROTOCOL,
+        help='Continuous mode retains a 200 ms autograd graph; full-brain memory/runtime are not measured here')
     p.add_argument('--resume',action='store_true');args=p.parse_args()
+    spec=protocol_details(args.protocol,args.window_ms)
     if args.batch%3 or args.batch<3:raise ValueError('Class-balanced batch must be a multiple of three')
+    if args.protocol==CONTINUOUS_PROTOCOL and (args.steps<1 or args.eval_every<1):
+        raise ValueError('Continuous protocol requires positive steps and evaluation interval')
+    config={k:v for k,v in vars(args).items() if k not in ('run','resume')}
     out=Path(args.run).resolve();out.mkdir(parents=True,exist_ok=args.resume)
     lock=(out/'writer.lock').open('a+b');lock.seek(0);lock.write(b'1');lock.flush();lock.seek(0)
     if os.name=='nt':
@@ -134,14 +224,16 @@ def main():
     previous_status=None
     if args.resume:
         previous_status=json.loads((out/'status.json').read_text(encoding='utf-8'))
+        if (previous_status.get('config')!=config
+                or previous_status.get('source_sha256')!=file_hash(__file__)):
+            raise ValueError('Incompatible training resume protocol/config/source')
         if previous_status['status']=='complete':
             print(json.dumps({'status':'already_complete','summary':previous_status['summary']}),flush=True)
             return
     torch.set_num_threads(4);torch.manual_seed(args.seed);rng=np.random.default_rng(args.seed)
-    config={k:v for k,v in vars(args).items() if k not in ('run','resume')}
     status={'status':'running','phase':'loading','process_id':os.getpid(),'config':config,
         'ordinary_game_learning_validated':False,'expert_available_at_inference':False,
-        'source_sha256':file_hash(__file__),'progress':[]}
+        'source_sha256':file_hash(__file__),'protocol':spec,'progress':[]}
     if not args.resume:atomic_json(out/'status.json',status)
     start=time.perf_counter();b=SpikingConnectome.load_graph(args.graph,device=args.device,
         seed=args.seed,config=Dynamics(window_ms=args.window_ms))
@@ -170,17 +262,19 @@ def main():
     if any(len(x)==0 for x in strata):raise ValueError('All three teacher action classes required')
     initial_parameters={k:v.detach().clone() for k,v in b.named_parameters()}
     initial_hash=b.parameter_hash()
-    initial_validation=evaluate(b,validation_light,validation_labels,meta['rows']['validation'])
+    initial_validation=evaluate(b,validation_light,validation_labels,meta['rows']['validation'],protocol=args.protocol)
     if initial_validation['balanced_accuracy'] is None:
         raise ValueError('All three validation classes are required for checkpoint selection')
     if not args.resume:atomic_json(out/'initial-validation.json',initial_validation)
     status.update(initial_parameter_sha256=initial_hash,initial_validation=compact(initial_validation),
         parameter_count=sum(x.numel() for x in b.parameters()),phase='training')
     optimizer=torch.optim.Adam(b.parameters(),lr=args.lr)
-    best=initial_validation['balanced_accuracy']
-    best_checkpoint=({'path':str(out/'initial.pt'),'sha256':file_hash(out/'initial.pt'),
+    best=checkpoint_score(initial_validation,args.protocol,args.window_ms)
+    initial_checkpoint=({'path':str(out/'initial.pt'),'sha256':file_hash(out/'initial.pt'),
         'parameter_sha256':initial_hash} if args.resume else b.save_checkpoint(out/'initial.pt'))
-    last_step=0
+    best_checkpoint=initial_checkpoint if best is not None else None
+    selected_step=0 if best is not None else None
+    last_step=0;last_memory_checkpoint=None
     if args.resume:
         if (previous_status['source_sha256']!=file_hash(__file__)
                 or previous_status['initial_parameter_sha256']!=initial_hash
@@ -188,10 +282,10 @@ def main():
             raise ValueError('Training source/initial state changed; preserve saved memory')
         previous=json.loads((out/'committed.json').read_text(encoding='utf-8'))
         _,extra=b.restore_checkpoint(previous['checkpoint']['path'],previous['checkpoint']['sha256'])
-        if extra['config']!=config or extra['dataset_sha256']!=meta['dataset_sha256']:
-            raise ValueError('Incompatible training resume')
+        validate_training_resume(extra,config,meta['dataset_sha256'],file_hash(__file__))
         optimizer.load_state_dict(extra['optimizer']);rng.bit_generator.state=json.loads(extra['rng_json'])
         last_step=extra['step'];best=extra['best'];best_checkpoint=extra['best_checkpoint']
+        selected_step=extra['selected_step'];last_memory_checkpoint=previous['checkpoint']
         status['progress']=previous['progress']
     atomic_json(out/'status.json',status)
     print(json.dumps({'stage':'initial','seed':args.seed,'initial_validation':compact(initial_validation),
@@ -199,10 +293,9 @@ def main():
     for step in range(last_step+1,args.steps+1):
         tick=time.perf_counter();idx=np.concatenate([rng.choice(x,args.batch//3,replace=True) for x in strata]);rng.shuffle(idx)
         optimizer.zero_grad(set_to_none=True)
-        _,motor,_=b.integrate_encoded(train_light[:,idx])
-        target=torch.as_tensor(labels[idx],device=motor.device)
-        ce=torch.nn.functional.cross_entropy(b.logits(motor),target)
-        silent=.05*torch.nn.functional.softplus(2.-motor.sum(dim=1)).mean()
+        target=torch.as_tensor(labels[idx],device=train_light.device)
+        terms=training_objective(b,train_light[:,idx],target,args.protocol)
+        ce=terms['teacher_loss'];silent=terms['silence_loss']
         regularizer=sum((value-initial_parameters[name]).square().mean() for name,value in b.named_parameters())*1e-5
         loss=ce+silent+regularizer
         if not torch.isfinite(loss):raise FloatingPointError('Nonfinite full-graph teacher loss')
@@ -213,42 +306,72 @@ def main():
             if not all(v['finite'] for v in status['first_gradient'].values()):raise FloatingPointError('Nonfinite internal gradient')
         gradient_norm=checked_optimizer_step(optimizer,b.parameters())
         entry={'step':step,'loss':float(loss.detach()),'teacher_loss':float(ce.detach()),
+            'window_teacher_losses':[float(v.detach()) for v in terms['window_teacher_losses']],
+            'window_silence_losses':[float(v.detach()) for v in terms['window_silence_losses']],
             'gradient_norm_before_clip':gradient_norm,
             'wall_seconds':time.perf_counter()-tick,'total_seconds':time.perf_counter()-start}
         status['progress'].append(entry)
         if step%args.eval_every==0 or step==args.steps:
-            validation=evaluate(b,validation_light,validation_labels,meta['rows']['validation'])
+            validation=evaluate(b,validation_light,validation_labels,meta['rows']['validation'],protocol=args.protocol)
             entry['validation']=compact(validation)
-            if validation['balanced_accuracy']>best:
-                best=validation['balanced_accuracy'];best_checkpoint=b.save_checkpoint(out/f'best-{step:04d}.pt')
+            candidate=checkpoint_score(validation,args.protocol,args.window_ms)
+            entry['checkpoint_eligible']=candidate is not None
+            entry['checkpoint_score']=candidate
+            if candidate is not None and (best is None or candidate>best):
+                best=candidate;best_checkpoint=b.save_checkpoint(out/f'best-{step:04d}.pt');selected_step=step
                 atomic_json(out/f'validation-{step:04d}.json',validation)
             extra={'step':step,'config':config,'dataset_sha256':meta['dataset_sha256'],
+                'protocol_source_sha256':file_hash(__file__),'selected_step':selected_step,
                 'optimizer':optimizer.state_dict(),'rng_json':json.dumps(rng.bit_generator.state),
                 'best':best,'best_checkpoint':best_checkpoint}
             checkpoint=b.save_checkpoint(out/f'memory-{step:04d}.pt',**extra)
+            last_memory_checkpoint=checkpoint
             atomic_json(out/'committed.json',{'checkpoint':checkpoint,'progress':status['progress']})
-        status.update(step=step,best_validation_balanced_accuracy=best,best_checkpoint=best_checkpoint,
+        status.update(step=step,best_validation_balanced_accuracy=best if args.protocol==LEGACY_PROTOCOL else None,
+            best_validation_score=best,best_checkpoint=best_checkpoint,selected_step=selected_step,
             current_parameter_sha256=b.parameter_hash())
         atomic_json(out/'status.json',status)
         print(json.dumps({'stage':'training','seed':args.seed,**entry}),flush=True)
-        del motor,loss,ce,silent,regularizer
+        del terms,loss,ce,silent,regularizer
+    if best_checkpoint is None:
+        # Keep the last recoverable update, optimizer/RNG and all diagnostics.
+        # Never consume sealed test arrays for an unqualified candidate.
+        summary={'protocol':spec,'selection_state':'no_eligible_checkpoint',
+            'best_checkpoint':None,'selected_checkpoint_origin':None,'eligible_checkpoint_found':False,
+            'last_memory_checkpoint':last_memory_checkpoint,'heldout_test_evaluated':False,
+            'ordinary_game_learning_validated':False,'full_brain_learning_confirmed':False,
+            'interpretation':'No development-validation candidate passed both windows and all six recalls.'}
+        atomic_json(out/'summary.json',summary)
+        status.update(status='complete',phase='complete',summary=summary,wall_seconds=time.perf_counter()-start,
+            parameter_sha256=b.parameter_hash())
+        atomic_json(out/'status.json',status);print(json.dumps(summary),flush=True)
+        return
     # The heldout test pixels and labels are first used only after training and
     # validation-based checkpoint selection have finished.
     b.restore_checkpoint(best_checkpoint['path'],best_checkpoint['sha256'])
     test_light=b.encode(data['test_rgb']);test_labels=data['test_labels']
-    trained=evaluate(b,test_light,test_labels,meta['rows']['test'])
-    vision_off=evaluate(b,test_light,test_labels,meta['rows']['test'],visual=False)
+    trained=evaluate(b,test_light,test_labels,meta['rows']['test'],protocol=args.protocol)
+    vision_off=evaluate(b,test_light,test_labels,meta['rows']['test'],visual=False,protocol=args.protocol)
     selected_hash=b.parameter_hash()
     with torch.no_grad():
         for name,value in b.named_parameters():value.copy_(initial_parameters[name])
-    before=evaluate(b,test_light,test_labels,meta['rows']['test'])
+    before=evaluate(b,test_light,test_labels,meta['rows']['test'],protocol=args.protocol)
     b.restore_checkpoint(best_checkpoint['path'],best_checkpoint['sha256'])
     summary={'trained':compact(trained),'initial_or_parameter_reset':compact(before),'vision_off':compact(vision_off),
+        'protocol':spec,'eligible_checkpoint_found':True,'selected_training_step':selected_step,
+        'selected_checkpoint_origin':'unchanged_initial' if selected_step==0 else 'trained_update',
+        'selected_checkpoint_evaluation':compact(trained),
+        'trained_field_is_legacy_alias_for_selected_checkpoint':True,
+        'qualified_updated_checkpoint_selected':args.protocol==CONTINUOUS_PROTOCOL and selected_step>0,
+        'heldout_test_evaluated':True,'full_brain_learning_confirmed':False,
         'selected_parameter_sha256':selected_hash,'initial_parameter_sha256':initial_hash,
         'short_scene_improvement':(trained['balanced_accuracy']-before['balanced_accuracy']
             if trained['balanced_accuracy'] is not None and before['balanced_accuracy'] is not None else None),
         'ordinary_game_learning_validated':False,'training_seed_count':1,
-        'interpretation':'Short-scene supervised fit through complete graph, not dopamine learning or normal-game success.'}
+        'interpretation':('Unchanged initial checkpoint selected; no improved trained checkpoint was selected. '
+            'No learning or ordinary-game success claim.' if selected_step==0 else
+            'Selected supervised update; development-validation selection is not unbiased generalization '
+            'or dopamine learning or normal-game success.')}
     for label,m in [('test-trained',trained),('test-reset',before),('test-vision-off',vision_off)]:atomic_json(out/(label+'.json'),m)
     atomic_json(out/'summary.json',summary)
     # Persist a nonzero state and its exact continuation for an independent
